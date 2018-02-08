@@ -1,2 +1,16 @@
 .button--coupon {
   background: red; }
+
+.indicators__title {
+  font-size: 50px;
+  text-align: center; }
+
+.indicators__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 3%;
+  justify-items: center; }
+
+.indicators__list--item-img {
+  width: 100%; }
