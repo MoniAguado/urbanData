@@ -19,12 +19,9 @@ class App extends Component {
 				<main>
 					<Cover />
 					<Info />
-					<section className="info"></section>
 					<Indicators />
 					<Demo />
 					<Faq />
-					<TestFetch />
-
 					<Contact />
 				</main>
 				<Footer />

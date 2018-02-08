@@ -6,7 +6,7 @@ class Faq extends Component{
 	render(){
 
 		return(
-			<div className="faq">
+			<section className="faq">
 				<div className="faq__container">
 					<h3 className="faq__title">Frequently asked questions</h3>
 					<ul className="faq__list">
@@ -44,9 +44,9 @@ class Faq extends Component{
 						</li>
 
 
-						</ul>
-						</div>
-					</div>
+					</ul>
+				</div>
+			</section>
 					);
 					}
 					}
