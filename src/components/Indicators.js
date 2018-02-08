@@ -72,9 +72,6 @@ render(){
 
 }
 
-
-
-
 }
 
 export default Indicators;

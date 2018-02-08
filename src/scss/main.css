@@ -108,7 +108,8 @@
   text-align: center; }
 
 .indicators__description--text {
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 .indicators__list {
   list-style-type: none;
@@ -117,8 +118,12 @@
   grid-column-gap: 3%;
   justify-items: center; }
 
-.indicators__list--item-img {
-  width: 100%; }
+.indicators__list--item-element-title {
+  padding: 10px;
+  padding-left: 0; }
+
+.indicators__list--item-element-list {
+  list-style-type: none; }
 
 .faq__list {
   list-style-type: none;
