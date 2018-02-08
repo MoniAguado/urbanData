@@ -1,0 +1,27 @@
+.info {
+	background-color: #EFF2F7;
+	color: #07090D;
+	padding: 30px;
+}
+
+.info__container {
+	display: flex;
+}
+.info__details--description {
+	width: auto;
+	margin-right: 35px;
+}
+.info__details--action {
+	display: flex;
+	flex-direction: column;
+}
+.button__primary {
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #20232E;
+	color: #fff;
+	align-self: center;
+	font-size: inherit;
+
+}
