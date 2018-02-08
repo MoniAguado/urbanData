@@ -4,6 +4,9 @@ import Footer from '././components/Footer';
 import Header from '././components/Header';
 import Indicators from './components/Indicators';
 
+import TestFetch from './components/TestFetch';
+
+
 import '././scss/main.css';
 
 class App extends Component {
