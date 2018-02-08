@@ -19,7 +19,7 @@ class App extends Component {
 					<Info />
 					<section className="info"></section>
 					<Indicators />
-					<section className="demo">
+					<Demo />
 
 					</section>
 					<section className="faqs"></section>
