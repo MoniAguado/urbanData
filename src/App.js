@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import '././scss/main.css';
-import Header from '././components/Header';
+import Cover from './components/Cover';
 import Footer from '././components/Footer';
+import Header from '././components/Header';
+import Indicators from './components/Indicators';
+
+import '././scss/main.css';
 
 class App extends Component {
   render() {
@@ -9,9 +12,9 @@ class App extends Component {
       <div className="App">
 				<Header />
 				<main>
-					<section className="cover"></section>
+					<Cover />
 					<section className="info"></section>
-					<section className="indicators"></section>
+					<Indicators />
 					<section className="demo">
 						<button className="button--coupon">cupón</button>
 						<button className="button--report"></button>

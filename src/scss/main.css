@@ -1,6 +1,44 @@
 .button--coupon {
   background: red; }
 
+.background {
+  background-image: url(../images/madridCover.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%; }
+
+.cover__photo {
+  height: 0; }
+
+.title-block {
+  height: 25%;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 30px;
+  margin-top: 200px; }
+
+.cover__title {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  padding: 30px;
+  color: #000000; }
+
+.indicators__title {
+  font-size: 50px;
+  text-align: center; }
+
+.indicators__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 3%;
+  justify-items: center; }
+
+.indicators__list--item-img {
+  width: 100%; }
+
 .footer {
   background: #20232E;
   color: #B7BCC6;
@@ -32,3 +70,7 @@
 .nav__item a {
   text-decoration: none;
   color: #fff; }
+
+* {
+  margin: 0;
+  padding: 0; }
