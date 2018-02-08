@@ -1,5 +1,104 @@
+.info {
+  background-color: #EFF2F7;
+  color: #07090D;
+  padding: 30px; }
+
+.info__container {
+  display: flex; }
+
+.info__details--description {
+  margin-right: 35px; }
+
+.info__details--action {
+  display: flex;
+  flex-direction: column; }
+
+.info__text {
+  margin-bottom: 15px; }
+
+.button__primary {
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #20232E;
+  color: #fff;
+  align-self: center;
+  font-size: inherit; }
+
 .button--coupon {
   background: red; }
+
+.contact {
+  height: 200px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #474e5e; }
+
+.contact__text {
+  padding: 30px; }
+
+.contact__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.form__name, .form__email, .form__message {
+  margin: 5px; }
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.message-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.background {
+  background-image: url(../images/madridCover.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%; }
+
+.cover__photo {
+  height: 0; }
+
+.title-block {
+  height: 25%;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 30px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column; }
+
+.cover__title {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  padding: 10px;
+  color: #000000; }
+
+.cover__button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 20%;
+  color: #666666;
+  background-color: #ebebeb;
+  cursor: pointer;
+  display: inline-block;
+  border-style: none;
+  border: 1px solid transparent; }
 
 .indicators__title {
   font-size: 50px;
@@ -15,6 +114,7 @@
 .indicators__list--item-img {
   width: 100%; }
 
+<<<<<<< HEAD
 .faq__list {
   list-style-type: none;
   display: grid;
@@ -22,3 +122,44 @@
 
 .faq__list--item {
   padding: 10px; }
+=======
+.testfetch {
+  background: lavender;
+  height: 100vh; }
+
+.footer {
+  background: #20232E;
+  color: #B7BCC6;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0; }
+
+.footer__item {
+  margin: 0 50px; }
+
+.footer__item a {
+  text-decoration: none;
+  color: #B7BCC6; }
+
+.header {
+  background: #07090D; }
+
+.nav {
+  padding: 0;
+  margin-left: 0;
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-around; }
+
+.nav__item {
+  margin: 10px 0; }
+
+.nav__item a {
+  text-decoration: none;
+  color: #fff; }
+
+* {
+  margin: 0;
+  padding: 0; }
+>>>>>>> 65e3bfe82cd2d306397133e9d2b2fbdeabb4765a

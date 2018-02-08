@@ -2,14 +2,19 @@
 @import 'core/mixins';
 @import 'core/variables';
 
+@import 'components/info';
 @import 'components/buttons';
+@import 'components/contact';
 @import 'components/coupon';
+@import 'components/cover';
 @import 'components/forms';
 @import 'components/links';
 @import 'components/titles';
 @import 'components/typography';
 @import 'components/indicators';
 @import 'components/faq';
+@import 'components/testfetch';
+
 
 @import 'layout/demo';
 @import 'layout/footer';

@@ -1,0 +1,42 @@
+
+.background {
+	background-image: url(../images/madridCover.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+}
+.cover__photo {
+	height: 0;
+}
+
+.title-block {
+	height: 25%;
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 30px;
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cover__title {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	padding: 10px;
+	color: #000000;
+}
+
+.cover__button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	width: 20%;
+	color: #666666;
+	background-color: #ebebeb;
+	cursor: pointer;
+  display: inline-block;
+	border-style: none;
+	border: 1px solid transparent;
+}

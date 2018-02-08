@@ -15,20 +15,19 @@ class Indicators extends Component{
 render(){
 
 	return(
-		<div className="indicators">
+		<section className="indicators">
 			<div className="indicators__container">
 				<h3 className="indicators__title">
 					Who let the dogs out?
 				</h3>
-					<ul className="indicators__list">
-						<li className="indicators__list--item"><img src={madrid} alt="indicator1" className="indicators__list--item-img"/>
-						</li>
-						<li className="indicators__list--item"><img src={madrid} alt="indicator2" className="indicators__list--item-img" /></li>
-						<li className="indicators__list--item"><img src={madrid} alt="indicator3" className="indicators__list--item-img"/></li>
-					</ul>
-
+				<ul className="indicators__list">
+					<li className="indicators__list--item"><img src={madrid} alt="indicator1" className="indicators__list--item-img"/>
+					</li>
+					<li className="indicators__list--item"><img src={madrid} alt="indicator2" className="indicators__list--item-img" /></li>
+					<li className="indicators__list--item"><img src={madrid} alt="indicator3" className="indicators__list--item-img"/></li>
+				</ul>
 			</div>
-		</div>
+		</section>
 	);
 
 
