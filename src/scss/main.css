@@ -1,6 +1,39 @@
 .button--coupon {
   background: red; }
 
+.contact {
+  height: 200px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #474e5e; }
+
+.contact__text {
+  padding: 30px; }
+
+.contact__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.form__name, .form__email, .form__message {
+  margin: 5px; }
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.message-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .background {
   background-image: url(../images/madridCover.jpg);
   background-position: center center;
@@ -26,7 +59,6 @@
   font-style: normal;
   padding: 10px;
   color: #000000; }
-
 
 .cover__button {
   margin-top: 5px;
@@ -54,8 +86,6 @@
 .indicators__list--item-img {
   width: 100%; }
 
-<<<<<<< HEAD
-=======
 .footer {
   background: #20232E;
   color: #B7BCC6;
@@ -88,7 +118,6 @@
   text-decoration: none;
   color: #fff; }
 
->>>>>>> 5c60686555a3f554553a5d3628f2ea354df90aa8
 * {
   margin: 0;
   padding: 0; }
