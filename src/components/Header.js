@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logouda from './../images/logo-uda.png';
+import logouda from './../images/udaWhite.png';
 
 class Header extends Component {
   render() {
