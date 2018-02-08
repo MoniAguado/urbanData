@@ -1,2 +1,34 @@
 .button--coupon {
   background: red; }
+
+.footer {
+  background: #20232E;
+  color: #B7BCC6;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0; }
+
+.footer__item {
+  margin: 0 50px; }
+
+.footer__item a {
+  text-decoration: none;
+  color: #B7BCC6; }
+
+.header {
+  background: #07090D; }
+
+.nav {
+  padding: 0;
+  margin-left: 0;
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-around; }
+
+.nav__item {
+  margin: 10px 0; }
+
+.nav__item a {
+  text-decoration: none;
+  color: #fff; }

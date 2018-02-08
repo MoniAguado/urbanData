@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import '././scss/main.css';
+import Header from '././components/Header';
+import Footer from '././components/Footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-				<header>
-					<nav></nav>
-					<button className="button--coupon">cupón</button>
-					<img />
-				</header>
+				<Header />
 				<main>
 					<section className="cover"></section>
 					<section className="info"></section>
@@ -20,9 +18,7 @@ class App extends Component {
 					</section>
 					<section className="faqs"></section>
 				</main>
-				<footer>
-					<img />
-				</footer>
+				<Footer />
       </div>
     );
   }
