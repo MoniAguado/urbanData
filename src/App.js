@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Indicators from './components/Indicators';
 import '././scss/main.css';
 import Cover from './components/Cover';
 
@@ -14,7 +15,7 @@ class App extends Component {
 				<main>
 					<Cover />
 					<section className="info"></section>
-					<section className="indicators"></section>
+					<Indicators />
 					<section className="demo">
 						<button className="button--coupon">cupón</button>
 						<button className="button--report"></button>
