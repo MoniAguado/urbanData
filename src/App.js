@@ -20,8 +20,6 @@ class App extends Component {
 					<Info />
 					<Indicators />
 					<Demo />
-
-
 					<section className="faqs"></section>
 					<Contact />
 				</main>
