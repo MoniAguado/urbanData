@@ -100,11 +100,15 @@
   border-style: none;
   border: 1px solid transparent; }
 
+
+.indicators__description--title {
+  text-align: center;
+}
 * {
   font-family: 'Open Sans', sans-serif; }
 
-.indicators__title {
-  font-size: 50px;
+
+.indicators__description--text {
   text-align: center; }
 
 .indicators__list {
