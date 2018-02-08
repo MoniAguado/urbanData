@@ -12,10 +12,11 @@ class Header extends Component {
 					<div className="header__item">
 						<nav className="header__nav">
 							<ul className="nav">
-								<li class="nav__item"><a href="#">item 1</a></li>
-								<li class="nav__item"><a href="#">item 2</a></li>
-								<li class="nav__item"><a href="#">item 3</a></li>
-								<li class="nav__item"><a href="#">item 4</a></li>
+								<li class="nav__item"><a href="#">¿Qué es?</a></li>
+								<li class="nav__item"><a href="#">¿Cómo funciona?</a></li>
+								<li class="nav__item"><a href="#">Demo</a></li>
+								<li class="nav__item"><a href="#">Faq</a></li>
+								<li class="nav__item"><a href="#">Contacto</a></li>
 							</ul>
 						</nav>
 					</div>
