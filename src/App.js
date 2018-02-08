@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Info from './components/Info';
 
 
+
 import '././scss/main.css';
 
 class App extends Component {
@@ -17,11 +18,10 @@ class App extends Component {
 				<main>
 					<Cover />
 					<Info />
-					<section className="info"></section>
 					<Indicators />
 					<Demo />
 
-					</section>
+
 					<section className="faqs"></section>
 					<Contact />
 				</main>
