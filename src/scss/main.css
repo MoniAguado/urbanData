@@ -114,6 +114,10 @@
 .indicators__list--item-img {
   width: 100%; }
 
+.testfetch {
+  background: lavender;
+  height: 100vh; }
+
 .footer {
   background: #20232E;
   color: #B7BCC6;
