@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '././scss/main.css';
+import Cover from './components/Cover';
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
 					<img />
 				</header>
 				<main>
-					<section className="cover"></section>
+					<Cover />
 					<section className="info"></section>
 					<section className="indicators"></section>
 					<section className="demo">
