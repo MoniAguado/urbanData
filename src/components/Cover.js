@@ -8,7 +8,7 @@ class Cover extends React.Component{
 				<div className="background" style={{backgroundImage:`url(${madridCover})`}}>
 					<img src={madridCover} className="cover__photo" alt="cover"></img>
 					<div className="title-block">
-						<h2 className="cover__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+						<h2 className="cover__title">Introduce inteligencia inmobiliaria en tu negocio via APIs</h2>
 						<button className="cover__button">Más info</button>
 					</div>
 				</div>
