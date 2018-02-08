@@ -100,6 +100,9 @@
   border-style: none;
   border: 1px solid transparent; }
 
+* {
+  font-family: 'Open Sans', sans-serif; }
+
 .indicators__title {
   font-size: 50px;
   text-align: center; }
@@ -114,9 +117,34 @@
 .indicators__list--item-img {
   width: 100%; }
 
+.faq__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.faq__list--item {
+  padding: 10px; }
+
 .testfetch {
   background: lavender;
   height: 100vh; }
+
+.demo {
+  background-color: lavender; }
+
+.demo__container {
+  margin: 30px;
+  padding-top: 40px; }
+
+.demo__title {
+  font-size: 20px; }
+
+.demo__text {
+  font-size: 15px;
+  margin-top: 20px; }
+
+.demo__input {
+  margin-top: 15px; }
 
 .footer {
   background: #262b3a;

@@ -1,0 +1,8 @@
+.faq__list{
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.faq__list--item{
+	padding: 10px;
+}
