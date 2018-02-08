@@ -11,7 +11,6 @@ import Info from './components/Info';
 import Popup from './components/Popup';
 
 
-
 import '././scss/main.css';
 
 class App extends Component {

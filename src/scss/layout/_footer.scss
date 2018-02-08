@@ -1,6 +1,6 @@
 .footer{
-	background:#20232E;
-	color: #B7BCC6;
+	background:$color-darkGrey;
+	color: $color-lightGrey;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
@@ -12,6 +12,5 @@ margin: 0 50px;
 
 .footer__item a{
 	text-decoration: none;
-	color: #B7BCC6;
-
+	color: $color-lightGrey;
 }

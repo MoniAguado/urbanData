@@ -26,6 +26,10 @@ render(){
 	return(
 		<section className="demo">
 			<div className="demo__container">
+				<h2 className="demo__title">REDapi DEMO</h2>
+				<h3 className="demo__text">Introduce una dirección y prueba ejemplos de visualización de nuestras APIs.</h3>
+				<input className="demo__input" type="text" placeholder="Calle Sagasta, 5 Madrid" required="required"></input>
+				<button className="demo__button">Buscar</button>
 				<TestFetch />
 			</div>
 		</section>
