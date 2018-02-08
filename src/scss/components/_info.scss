@@ -8,14 +8,17 @@
 	display: flex;
 }
 .info__details--description {
-	width: auto;
 	margin-right: 35px;
 }
 .info__details--action {
 	display: flex;
 	flex-direction: column;
 }
+.info__text {
+	margin-bottom: 15px;
+}
 .button__primary {
+	margin-top: 15px;
 	width: 200px;
 	height: 50px;
 	border-radius: 10px;
