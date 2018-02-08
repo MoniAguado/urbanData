@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Indicators from './components/Indicators';
+import Demo from './components/Demo';
+import Faq from './components/Faq';
 import '././scss/main.css';
 
 class App extends Component {
@@ -15,11 +17,8 @@ class App extends Component {
 					<section className="cover"></section>
 					<section className="info"></section>
 					<Indicators />
-					<section className="demo">
-						<button className="button--coupon">cupón</button>
-						<button className="button--report"></button>
-					</section>
-					<section className="faqs"></section>
+					<Demo />
+					<Faq />
 				</main>
 				<footer>
 					<img />
