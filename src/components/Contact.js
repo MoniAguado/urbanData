@@ -5,11 +5,14 @@ class Contact extends React.Component {
 		return(
 			<section className="contact">
 				<div className="block__container">
-					<button className="button--contact">Contacta con nosotros</button>
+					<div className="contact__container">
+						<p className="contact__text">¿Preparado para comenzar a integrar nuestras APIs?</p>
+						<button className="button--contact">Contacta con nosotros</button>
+					</div>
 				</div>
 			</section>
-		)
-	}
-}
+					)
+					}
+					}
 
-export default Contact;
+					export default Contact;
