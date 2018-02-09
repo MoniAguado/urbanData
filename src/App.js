@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Indicators from './components/Indicators';
 import Info from './components/Info';
+import Reports from './components/Reports';
+import Steps from './components/Steps';
 
 import '././scss/main.css';
 
@@ -42,6 +44,8 @@ class App extends Component {
 					<Cover />
 					<Info openCoupon={this.openCoupon}/>
 					<Indicators />
+					<Reports />
+					<Steps />
 					<Demo />
 					<Faq />
 					<Contact openCoupon={this.openCoupon}/>
