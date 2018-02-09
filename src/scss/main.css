@@ -77,6 +77,9 @@
   outline: none;
   border: 1px solid #fff; }
 
+.coupon {
+  display: none; }
+
 .coupon__background {
   position: fixed;
   width: 100%;
