@@ -7,7 +7,7 @@ class Faq extends Component{
 
 		return(
 			<section className="faq">
-				<div className="faq__container">
+				<div className="block__container">
 					<h3 className="faq__title">Frequently asked questions</h3>
 					<ul className="faq__list">
 						<li className="faq__list--item">

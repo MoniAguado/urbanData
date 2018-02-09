@@ -1,20 +1,18 @@
 .info {
 	background-color: $color-lightGrey;
 	color: $color-darkBlue;
-	padding: 30px;
 }
 
 .info__container {
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 30px;
 }
-.info__details--description {
-	margin-right: 35px;
-}
+
 .info__details--action {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
 }
 .info__title {
 	margin-bottom: 20px;

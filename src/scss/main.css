@@ -35,20 +35,16 @@
 
 .info {
   background-color: #b7bcc6;
-  color: #070d1e;
-  padding: 30px; }
+  color: #070d1e; }
 
 .info__container {
-  display: flex; }
-
-.info__details--description {
-  margin-right: 35px; }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px; }
 
 .info__details--action {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
 
 .info__title {
   margin-bottom: 20px; }
@@ -332,3 +328,6 @@ h1, h2, h3 {
 * {
   margin: 0;
   padding: 0; }
+
+.block__container {
+  padding: 60px; }

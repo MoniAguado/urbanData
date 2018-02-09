@@ -16,7 +16,7 @@ render(){
 
 	return(
 		<section className="indicators">
-			<div className="indicators__container">
+			<div className="block__container">
 				<div className="indicators__description">
 					<h3 className="indicators__description--title">
 						Indicadores
