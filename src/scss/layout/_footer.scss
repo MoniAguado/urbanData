@@ -1,16 +1,28 @@
 .footer{
 	background:$color-darkGrey;
 	color: $color-lightGrey;
+	box-sizing: border-box;
+}
+.footer__container{
+	padding: 15px 30px;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 0;
-
 }
 .footer__item{
 margin: 0 50px;
+text-align: center;
 }
-
 .footer__item a{
 	text-decoration: none;
 	color: $color-lightGrey;
+}
+.footer__image--logo{
+	width: 110px;
+	height: 45px;
+}
+.footer__image--premio{
+display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 10px 30px 0 30px;
 }

@@ -10,17 +10,17 @@ constructor(props){
 	}
 }
 
-	componentDidMount(){
-		fetch('http://reds.urbandataanalytics.com/reds/api/v1.0/')
-		.then(response => response.json())
-		.then(json => {
-			const myArray = json
-			this.setState({
-				cities: myArray
-			});
-			console.log(this.state.cities);
-		})
-	}
+	// componentDidMount(){
+	// 	fetch('http://reds.urbandataanalytics.com/reds/api/v1.0/')
+	// 	.then(response => response.json())
+	// 	.then(json => {
+	// 		const myArray = json
+	// 		this.setState({
+	// 			cities: myArray
+	// 		});
+	// 		console.log(this.state.cities);
+	// 	})
+	// }
 
 render(){
 	return(

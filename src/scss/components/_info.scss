@@ -1,6 +1,6 @@
 .info {
-	background-color: #EFF2F7;
-	color: #07090D;
+	background-color: $color-lightGrey;
+	color: $color-darkBlue;
 	padding: 30px;
 }
 
@@ -16,4 +16,17 @@
 }
 .info__text {
 	margin-bottom: 15px;
+}
+.button--contact {
+	cursor: pointer;
+	outline: none;
+	margin-top: 15px;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: $color-darkGrey;
+	color: $color-white;
+	align-self: center;
+	font-size: inherit;
+
 }
