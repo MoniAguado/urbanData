@@ -8,11 +8,11 @@ class Contact extends React.Component {
 
 					<div className="contact__container">
 						<p className="contact__text">¿Preparado para comenzar a integrar nuestras APIs?</p>
-						<button className="button--contact">Contacta con nosotros</button>
+						<button className="button button--contact">CONTACTA CON NOSOTROS</button>
 					</div>
 
-					<button className="button button--contact">CONTACTA CON NOSOTROS</button>
-					
+
+
 				</div>
 			</section>
 					)
