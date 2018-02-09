@@ -38,8 +38,8 @@ class Coupon extends React.Component {
 								<input type="checkbox" name="checkbox" id="checkbox"/>
 								<label htmlFor="checkbox">Tu privacidad nos importa. Acepta con tranquilidad nuestra política de privacidad y condiciones del servicio.</label>
 							</div>
-							<button className="button--submit">Enviar</button>
-							<button className="button--close" onClick={this.props.closeCoupon}>X</button>
+							<button className="button button--submit">Enviar</button>
+							<button className="button button--close" onClick={this.props.closeCoupon}>X</button>
 
 						</div>
 					</form>

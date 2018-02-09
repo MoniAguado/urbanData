@@ -13,7 +13,7 @@
 	padding: 0;
 	margin-left: 0;
 	list-style-type: none;
-	color: #fff;
+	color: $color-white;
 	display: flex;
 	justify-content: space-around;
 }
@@ -22,7 +22,7 @@ margin: 0 50px;
 }
 .nav__item a{
  text-decoration: none;
- color: #fff;
+ color: $color-white;
 }
 .header__item:last-child{
 	padding-left: 25px;

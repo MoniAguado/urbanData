@@ -5,7 +5,7 @@ class Contact extends React.Component {
 		return(
 			<section className="contact">
 				<div className="block__container">
-					<button className="button--contact">Contacta con nosotros</button>
+					<button className="button button--contact">CONTACTA CON NOSOTROS</button>
 				</div>
 			</section>
 		)
