@@ -4,28 +4,20 @@
 }
 
 .info__container {
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 30px;
 }
-.info__details--description {
-	margin-right: 35px;
-}
+
 .info__details--action {
 	display: flex;
 	flex-direction: column;
+
 }
+.info__title {
+	margin-bottom: 20px;
+}
+
 .info__text {
 	margin-bottom: 15px;
-}
-.button--contact {
-	cursor: pointer;
-	outline: none;
-	margin-top: 15px;
-	width: 200px;
-	height: 50px;
-	border-radius: 10px;
-	background-color: $color-darkGrey;
-	color: $color-white;
-	align-self: center;
-	font-size: inherit;
-
 }

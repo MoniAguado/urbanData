@@ -1,8 +1,10 @@
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 .block__container {
-	padding: 60px;
+	margin: 0 60px;
+	padding: 60px 0;
 }
