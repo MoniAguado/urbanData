@@ -18,9 +18,9 @@ render(){
 		<section className="indicators">
 			<div className="block__container">
 				<div className="indicators__description">
-					<h3 className="indicators__description--title">
+					<h2 className="indicators__description--title">
 						Indicadores
-					</h3>
+					</h2>
 					<p className="indicators__description--text">Recibe hasta 150€ de datos inmobiliarios gratis </p>
 					<p className="indicators__description--text">Aquí se muestran  algunos ejemplos de indicadores, aunque existen muchos más.</p>
 				</div>
