@@ -7,7 +7,7 @@ class Steps extends React.Component {
 			<section className="steps">
 				<div className="block__container">
 					<div className="steps__container">
-						<img className="steps__img" src={madrid} width="100%" height="300px" />
+						<img className="steps__img" src={madrid} width="100%" height="300px" alt=""/>
 					</div>
 				</div>
 			</section>
