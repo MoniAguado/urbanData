@@ -16,6 +16,9 @@
 .info__text {
   margin-bottom: 15px; }
 
+.button--coupon {
+  background: red; }
+
 .button__primary {
   margin-top: 15px;
   width: 200px;
@@ -26,8 +29,16 @@
   align-self: center;
   font-size: inherit; }
 
-.button--coupon {
-  background: red; }
+.indicators__button-demo {
+  margin-top: 35px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1ps solid #687790;
+  color: #687790;
+  align-self: center;
+  font-size: inherit; }
 
 .contact {
   height: 200px;
@@ -102,6 +113,10 @@
 
 * {
   font-family: 'Open Sans', sans-serif; }
+
+.indicators__container {
+  display: flex;
+  flex-direction: column; }
 
 .indicators__description--title {
   font-size: 50px;
