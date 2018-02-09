@@ -33,25 +33,6 @@
   font-weight: normal;
   font-style: normal; }
 
-.info {
-  background-color: #b7bcc6;
-  color: #070d1e; }
-
-.info__container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 30px; }
-
-.info__details--action {
-  display: flex;
-  flex-direction: column; }
-
-.info__title {
-  margin-bottom: 20px; }
-
-.info__text {
-  margin-bottom: 15px; }
-
 .button {
   background-color: #070d1e;
   color: #fff;
@@ -78,6 +59,15 @@
   padding: 5px 10px;
   outline: none;
   border: 1px solid #fff; }
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact__text {
+  margin-bottom: 20px; }
 
 .coupon {
   display: none; }
@@ -205,25 +195,13 @@
   width: 60%;
   margin-bottom: 20px; }
 
-h1 {
-  font-family: 'Gotham Light';
-  font-size: 40px;
-  text-transform: uppercase;
-  margin-bottom: 20px; }
+.faq__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 50% 50%; }
 
-h2 {
-  font-family: 'Gotham Book';
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px; }
-
-h3 {
-  font-family: 'Gotham Book';
-  font-size: 18px; }
-
-* {
-  font-family: 'Open Sans', sans-serif; }
+.faq__list--item {
+  padding: 10px; }
 
 .indicators__container {
   display: flex;
@@ -252,17 +230,54 @@ h3 {
   margin-bottom: 20px;
   text-align: center; }
 
-.faq__list {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 50% 50%; }
+.info {
+  background-color: #b7bcc6;
+  color: #070d1e; }
 
-.faq__list--item {
-  padding: 10px; }
+.info__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px; }
+
+.info__details--action {
+  display: flex;
+  flex-direction: column; }
+
+.info__title {
+  margin-bottom: 20px; }
+
+.info__text {
+  margin-bottom: 15px; }
+
+.reports__description {
+  display: flex; }
+
+.reports__container--img {
+  margin-left: 20px; }
 
 .testfetch {
   background: lavender;
   height: 100vh; }
+
+h1 {
+  font-family: 'Gotham Light';
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+h2 {
+  font-family: 'Gotham Book';
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px; }
+
+h3 {
+  font-family: 'Gotham Book';
+  font-size: 18px; }
+
+* {
+  font-family: 'Open Sans', sans-serif; }
 
 .demo {
   background-color: lavender; }
@@ -320,7 +335,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px; }
+  padding: 20px 30px; }
 
 .nav {
   padding: 0;

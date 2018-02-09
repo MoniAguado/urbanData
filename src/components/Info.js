@@ -11,7 +11,7 @@ class Info extends React.Component {
 					</div>
 					<div className="info__details--action">
 						<h3 className="info__title">¿Quieres saber cómo integrar las APIs de urbanData Analytics  en tu empresa?</h3>
-						<button className="button--contact" onClick={this.props.openCoupon}>Contacta con nosotros</button>
+						<button className="button button--contact" onClick={this.props.openCoupon}>Contacta con nosotros</button>
 					</div>
 				</div>
 			</section>
