@@ -66,6 +66,9 @@
   justify-content: center;
   align-items: center; }
 
+.contact__text {
+  margin-bottom: 20px; }
+
 .coupon {
   display: none; }
 
