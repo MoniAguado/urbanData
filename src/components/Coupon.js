@@ -10,17 +10,17 @@ class Coupon extends React.Component {
 						<div className="coupon__details">
 							<h3 className="coupon__title">¡Envíanos un correo!</h3>
 							<div className="name-surname">
-								<div className="input__container">
+								<div className="input__container input__modifier">
 									<label htmlFor="name">Nombre<span className="asterisk">*</span></label>
-									<input type="text" id="name" name="name" placeholder="Nombre" required="required" />
+									<input type="text" className="name" id="name" name="name" placeholder="Nombre" required="required" />
 								</div>
 								<div className="input__container">
 									<label htmlFor="surname">Apellidos<span className="asterisk">*</span></label>
-									<input type="text" id="surname" name="surname" placeholder="Apellidos" required="required"/>
+									<input type="text" className="surname" id="surname" name="surname" placeholder="Apellidos" required="required"/>
 								</div>
 							</div>
 							<div className="mail-phone">
-								<div className="input__container">
+								<div className="input__container input__modifier">
 									<label htmlFor="mail">E-mail<span className="asterisk">*</span></label>
 									<input type="email" name="mail" id="mail" placeholder="E-mail" required="required"/>
 								</div>
@@ -38,8 +38,8 @@ class Coupon extends React.Component {
 								<input type="checkbox" name="checkbox" id="checkbox"/>
 								<label htmlFor="checkbox">Tu privacidad nos importa. Acepta con tranquilidad nuestra política de privacidad y condiciones del servicio.</label>
 							</div>
-							<button className="button--submit">Enviar</button>
-							<button className="button--close" onClick={this.props.closeCoupon}>X</button>
+							<button className="button button--submit">Enviar</button>
+							<button className="button button--close" onClick={this.props.closeCoupon}>X</button>
 
 						</div>
 					</form>
