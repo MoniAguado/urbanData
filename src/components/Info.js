@@ -6,12 +6,12 @@ class Info extends React.Component {
 			<section className="info">
 				<div className="info__container">
 					<div className="info__details--description">
-						<p className="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p className="info__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p className="info__text">“REDapi es una plataforma global de información y abierta de APIs que te permite acceder a indicadores inmobiliarios de manera ágil e implementarlas fácilmente en tu empresa".</p>
+						<p className="info__text">“Obtén indicadores financieros y urbanos tanto para alquiler como compraventa que apoyen tu modelo de negocio”.</p>
 					</div>
 					<div className="info__details--action">
-						<h2 className="info__title">¿Quieres saber como integrar las APIs de uDA en tu empresa?</h2>
-						<button className="button__primary">Contacta con nosotros</button>
+						<h2 className="info__title">¿Quieres saber cómo integrar las APIs de urbanData Analytics  en tu empresa?</h2>
+						<button className="button--contact" onClick={this.props.openCoupon}>Contacta con nosotros</button>
 					</div>
 				</div>
 			</section>
