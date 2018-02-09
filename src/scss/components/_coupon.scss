@@ -1,6 +1,3 @@
-.coupon {
-	display: none;
-}
 .coupon__background {
 	position: fixed;
 	width: 100%;
@@ -13,16 +10,15 @@
 	color: $color-red;
 }
 .coupon__container {
-	font-size: 14px;
+	font-size: 13px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: $color-white;
-	padding: 15px;
+	padding: 20px;
 	width: 90%;
 	max-width: 500px;
-	border-radius: 5px;
 }
 .coupon__details {
 	display: flex;
@@ -30,6 +26,8 @@
 }
 .coupon__title {
 	text-align: center;
+	color: $color-red;
+	font-size: 20px;
 }
 .input__container {
 	display: flex;
@@ -41,15 +39,20 @@
 	}
 	input {
 		height: 20px;
-		padding: 5px;
-		font-size: 12px;
-		border-radius: 5px;
+		padding: 5px 10px;
+		font-size: 13px;
+		border-radius: 2px;
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+		border: none;
 	}
 	textarea {
-		height: 50px;
-		padding: 5px;
-		font-size: 12px;
-		border-radius: 5px;
+		height: 70px;
+		padding: 5px 10px;
+		font-size: 13px;
+		border-radius: 2px;
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+		border: none;
+		resize: none;
 	}
 }
 
@@ -62,17 +65,11 @@
 .input__modifier {
 	margin-right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.input__submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 // Custom Checkbox
 
@@ -112,7 +109,6 @@
         border: none;
       }
       +label:after {
-
         transform: rotate(-45deg);
         top: (15px / 2) - ($checkmark / 4) - 15px/10;
         left: 4px;

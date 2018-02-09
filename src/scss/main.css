@@ -40,7 +40,8 @@
   padding: 10px 24px;
   border: none;
   outline: none;
-  border: 1px solid #fff; }
+  border: 1px solid #fff;
+  cursor: pointer; }
 
 .button--demo {
   background-color: #ca1c24;
@@ -60,6 +61,23 @@
   outline: none;
   border: 1px solid #fff; }
 
+.button--submit {
+  width: 150px;
+  padding: 7px 20px; }
+
+.button--close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  padding: 3px 15px; }
+
+.coupon__title {
+  margin-bottom: 40px; }
+
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -68,9 +86,6 @@
 
 .contact__text {
   margin-bottom: 20px; }
-
-.coupon {
-  display: none; }
 
 .coupon__background {
   position: fixed;
@@ -84,23 +99,24 @@
   color: #ca1c24; }
 
 .coupon__container {
-  font-size: 14px;
+  font-size: 13px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 15px;
+  padding: 20px;
   width: 90%;
-  max-width: 500px;
-  border-radius: 5px; }
+  max-width: 500px; }
 
 .coupon__details {
   display: flex;
   flex-direction: column; }
 
 .coupon__title {
-  text-align: center; }
+  text-align: center;
+  color: #ca1c24;
+  font-size: 20px; }
 
 .input__container {
   display: flex;
@@ -111,14 +127,19 @@
     margin-bottom: 5px; }
   .input__container input {
     height: 20px;
-    padding: 5px;
-    font-size: 12px;
-    border-radius: 5px; }
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border: none; }
   .input__container textarea {
-    height: 50px;
-    padding: 5px;
-    font-size: 12px;
-    border-radius: 5px; }
+    height: 70px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    resize: none; }
 
 .name-surname,
 .mail-phone {
@@ -128,6 +149,11 @@
 
 .input__modifier {
   margin-right: 20px; }
+
+.input__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .input__checkbox--custom {
   position: relative;

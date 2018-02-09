@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import madrid from '../images/madrid.jpg';
 
 class Indicators extends Component{
 	//constructor(props){

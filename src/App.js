@@ -21,12 +21,18 @@ class App extends Component {
 		this.state = {
 			isCouponVisible: false
 		};
-		this.toggleCoupon=this.toggleCoupon.bind(this);
+		this.openCoupon=this.openCoupon.bind(this);
+		this.closeCoupon=this.closeCoupon.bind(this);
 	}
 
-	toggleCoupon() {
+	openCoupon() {
 		this.setState({
-			isCouponVisible: !this.state.isCouponVisible
+			isCouponVisible: true
+		});
+	}
+	closeCoupon() {
+		this.setState({
+			isCouponVisible: false
 		});
 	}
 
@@ -36,16 +42,17 @@ class App extends Component {
 				<Header />
 				<main>
 					<Cover />
-					<Info openCoupon={this.toggleCoupon}/>
+					<Info openCoupon={this.openCoupon}/>
 					<Indicators />
 					<Reports />
 					<Steps />
 					<Demo />
 					<Faq />
-					<Contact />
+					<Contact openCoupon={this.openCoupon}/>
 				</main>
 				<Footer />
-				<Coupon closeCoupon={this.toggleCoupon} status={this.state.isCouponVisible}/>
+
+				<Coupon show={this.state.isCouponVisible} closeCoupon={this.closeCoupon}/>
       </div>
     );
   }
