@@ -1,1 +1,26 @@
 
+.button--coupon{
+	background:red;
+}
+
+.button__primary {
+	margin-top: 15px;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #20232E;
+	color: #fff;
+	align-self: center;
+	font-size: inherit;
+}
+.indicators__button-demo{
+	margin-top: 35px;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: $color-white;
+	border: 1ps solid $color-midGrey;
+	color: $color-midGrey;
+	align-self: center;
+	font-size: inherit;
+}

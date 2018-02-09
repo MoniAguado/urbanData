@@ -1,3 +1,7 @@
+.indicators__container{
+	display: flex;
+	flex-direction: column;
+}
 .indicators__description--title{
 	font-size: 50px;
 	text-align: center;
