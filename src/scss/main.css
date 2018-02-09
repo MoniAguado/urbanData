@@ -35,8 +35,7 @@
 
 .info {
   background-color: #dadbe1;
-  color: #070d1e;
-  padding: 30px; }
+  color: #070d1e; }
 
 .info__container {
   display: flex; }
@@ -166,12 +165,8 @@
   align-items: left; }
 
 .cover__title {
-<<<<<<< HEAD
   font-family: sans-serif;
   font-size: 30px;
-=======
-  font-size: 20px;
->>>>>>> 030b1299311af6e1802dcb3b79b1eff4c0aad0d8
   font-style: normal;
   padding: 10px;
   color: #0f1115;
@@ -309,3 +304,6 @@
 * {
   margin: 0;
   padding: 0; }
+
+.block__container {
+  padding: 60px; }
