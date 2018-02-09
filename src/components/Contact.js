@@ -4,7 +4,7 @@ class Contact extends React.Component {
 	render(){
 		return(
 			<section className="contact">
-				<button className="button--contact">Contacta con nosotros</button>
+				<button className="button button--contact">Contacta con nosotros</button>
 			</section>
 		)
 	}

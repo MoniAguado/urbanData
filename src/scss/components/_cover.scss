@@ -22,26 +22,11 @@
 }
 
 .cover__title {
-	font-family: sans-serif;
 	font-size: 30px;
-	font-style: normal;
-	padding: 10px;
-	color: #0f1115;
+	color: $color-darkBlue;
 	text-align: left;
 	text-transform: uppercase;
+	line-height: 37px;
 	width: 60%;
-}
-
-.cover__button {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 10px;
-	width: 10%;
-	height: 50px;
-	color: #666666;
-	background-color: #ebebeb;
-	cursor: pointer;
-	border-style: none;
-	border: 1px solid #0f1115;
-	align-items: left;
+	margin-bottom: 20px;
 }

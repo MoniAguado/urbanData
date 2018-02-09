@@ -65,7 +65,9 @@ render(){
 						</div>
 					</li>
 				</ul>
-				<button className="indicators__button-demo" href='#demo'>Demo</button>
+				<div className="indicators_container--demo">
+					<button className="button button--demo" href='#demo'>DEMO</button>
+				</div>
 			</div>
 		</section>
 	);
