@@ -21,7 +21,8 @@ render(){
 					<h3 className="indicators__description--title">
 						Indicadores
 					</h3>
-					<p className="indicators__description--text">Estos son algunos ejemplos de indicadores, pero existen muchos más. </p>
+					<p className="indicators__description--text">Recibe hasta 150€ de datos inmobiliarios gratis </p>
+					<p className="indicators__description--text">Aquí se muestran  algunos ejemplos de indicadores, aunque existen muchos más.</p>
 				</div>
 				<ul className="indicators__list">
 					<li className="indicators__list--item">
@@ -63,8 +64,8 @@ render(){
 							</ul>
 						</div>
 					</li>
-
 				</ul>
+				<button className="indicators__button-demo" href='#demo'>Demo</button>
 			</div>
 		</section>
 	);
