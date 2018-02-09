@@ -6,6 +6,7 @@
   border: none;
 	outline: none;
 	border: 1px solid $color-white;
+	cursor: pointer;
 }
 
 .button--demo{
@@ -25,9 +26,21 @@
 	border: 1px solid #fff;
 }
 .button--submit{
-
+	width: 150px;
+	padding: 7px 20px;
 }
 
- .button--close{
+.button--close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	padding: 3px 15px;
 
- }
+}
+.coupon__title {
+	margin-bottom: 40px;
+}
