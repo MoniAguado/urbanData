@@ -88,9 +88,6 @@
   align-self: center;
   font-size: inherit; }
 
-.coupon {
-  display: none; }
-
 .coupon__background {
   position: fixed;
   width: 100%;
@@ -124,6 +121,7 @@
 .input__container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-bottom: 20px; }
   .input__container label {
     margin-bottom: 5px; }
@@ -132,6 +130,20 @@
     padding: 5px;
     font-size: 12px;
     border-radius: 5px; }
+  .input__container textarea {
+    height: 50px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px; }
+
+.name-surname,
+.mail-phone {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.input__modifier {
+  margin-right: 20px; }
 
 .input__checkbox--custom {
   position: relative;
