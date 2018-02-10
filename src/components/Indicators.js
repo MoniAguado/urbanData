@@ -15,7 +15,7 @@ render(){
 
 	return(
 		<section className="indicators">
-			<div className="block__container">
+			<div className="block__container indicators__container">
 				<div className="indicators__description">
 					<h2 className="indicators__description--title">
 						Indicadores
@@ -64,7 +64,7 @@ render(){
 						</div>
 					</li>
 				</ul>
-				<div className="indicators_container--demo">
+				<div className="indicators_container--btndemo">
 					<button className="button button--demo" href='#demo'>DEMO</button>
 				</div>
 			</div>
