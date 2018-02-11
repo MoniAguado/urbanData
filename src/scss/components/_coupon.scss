@@ -26,11 +26,11 @@
 .coupon__title {
 	text-align: center;
 	color: $color-red;
-	font-size: 22px;
+	font-size: 1.4em;
 	margin-bottom: 25px;
-	@media all and (max-width: 768px) {
+	@media all and (max-width: 619px) {
 		margin-bottom: 15px;
-		font-size: 18px;
+		font-size: 1.2em;
 	}
 }
 .input__container {
@@ -40,27 +40,27 @@
 	margin-bottom: 12px;
 	label {
 		margin-bottom: 6px;
-		@media all and (max-width: 768px) {
-			font-size: 14px;
+		@media all and (max-width: 619px) {
+			font-size: 0.9em;
 		}
 	}
 	input,
 	textarea {
 		border: 2px solid $color-darkBlue;
-		font-size: 14px;
+		font-size: 0.9em;
 		height: 40px;
 		padding: 5px 10px;
 		border-radius: 3px;
 		outline: none;
-		@media all and (max-width: 768px) {
+		@media all and (max-width: 619px) {
 			height: 30px;
-			font-size: 12px;
+			font-size: 0.75em;
 		}
 	}
 	textarea {
 		height: 80px;
 		resize: none;
-		@media all and (max-width: 768px) {
+		@media all and (max-width: 619px) {
 			height: 60px;
 		}
 	}
@@ -70,7 +70,7 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	@media all and (max-width: 768px) {
+	@media all and (max-width: 619px) {
 		flex-direction: column;
 	}
 }

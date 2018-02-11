@@ -111,7 +111,7 @@
   color: #ca1c24;
   font-size: 22px;
   margin-bottom: 25px; }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 619px) {
     .coupon__title {
       margin-bottom: 15px;
       font-size: 18px; } }
@@ -123,7 +123,7 @@
   margin-bottom: 12px; }
   .input__container label {
     margin-bottom: 6px; }
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 619px) {
       .input__container label {
         font-size: 14px; } }
   .input__container input,
@@ -134,7 +134,7 @@
     padding: 5px 10px;
     border-radius: 3px;
     outline: none; }
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 619px) {
       .input__container input,
       .input__container textarea {
         height: 30px;
@@ -142,7 +142,7 @@
   .input__container textarea {
     height: 80px;
     resize: none; }
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 619px) {
       .input__container textarea {
         height: 60px; } }
 
@@ -151,7 +151,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between; }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 619px) {
     .name-surname,
     .mail-phone {
       flex-direction: column; } }
