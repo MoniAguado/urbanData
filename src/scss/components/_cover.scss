@@ -5,6 +5,10 @@
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
+	@media all and (max-width: 619px){
+		height: 70vh;
+		background-position: 75%;
+ 	}
 }
 .cover__photo {
 	height: 0;
@@ -18,6 +22,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
+  @media all and (max-width: 619px){
+  margin-top: 15%;
+  margin-left: 5%;
+		.button--info{
+			font-size: 15px;
+  		padding: 8px 20px;
+  	}
+	}
 }
 
 .cover__title {
@@ -25,7 +37,12 @@
 	color: $color-darkBlue;
 	text-align: left;
 	text-transform: uppercase;
-	line-height: 37px;
+	line-height: 45px;
 	width: 60%;
 	margin-bottom: 20px;
+	@media all and (max-width: 619px){
+		font-size: 23px;
+    line-height: 36px;
+		width: 72%;
+	}
 }

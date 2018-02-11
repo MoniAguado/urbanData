@@ -1,29 +1,54 @@
-.indicators__container{
-	display: flex;
-	flex-direction: column;
+.block__container.indicators__container{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: 0;
 }
 
 .indicators__description--text{
 	text-align: center;
-	padding: 20px;
+	padding: 15px;
+	padding-left: 60px;
+	padding-right: 60px;
+	@media all and (max-width: 619px){
+		padding: 13px;
+		font-size: 0.9em;
+	}
 }
 .indicators__list{
-	list-style-type: none;
 	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	grid-column-gap: 3%;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 30px;
+	list-style-type: none;
 	justify-items: center;
+	grid-gap: 25px;
+	padding: 0 10px;
+	@media all and (max-width: 619px){
+		grid-template-columns: 1fr;
+		grid-gap: 25px;
+		margin-top: 20px;
+		text-align: center;
+	}
 }
 .indicators__list--item-element-title{
-	padding: 10px;
 	padding-left: 0;
+	text-transform: uppercase;
+	font-size: 1em;
+	line-height: 20px;
+	padding-bottom: 20px;
+	@media all and (max-width: 619px){
+		font-size: 1.15em;
+		line-height: 30px;
+	}
 }
 .indicators__list--item-element-list{
 	list-style-type: none;
+	@media all and (max-width: 619px){
+		font-size: 0.9em;
+	  line-height: 30px;
+	}
 }
-
-.indicators_container--demo{
-	margin-top: 30px;
+.indicators_container--btndemo{
+	margin-top: 40px;
 	margin-bottom: 20px;
-text-align: center;
+	text-align: center;
 }
