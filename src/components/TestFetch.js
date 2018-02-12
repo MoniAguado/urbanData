@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 
 
 class TestFetch extends Component {
-  render() {
-    return (
+
+	constructor(props){
+		super(props);
+	}
+
+
+	render() {
+		return (
 			<div className="testfetch">
-				
+
 			</div>
-    );
-  }
+		);
+	}
 }
 
 export default TestFetch;
