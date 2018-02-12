@@ -1,7 +1,19 @@
+.reports{
+	background-color: $color-superlightGrey;
+}
+
 .reports__description{
 	display: flex;
+	flex-direction: row;
 }
 
 .reports__container--img{
 	margin-left: 20px;
+}
+
+.reports_links{
+	margin-top: 20px;
+}
+.button--report{
+	margin-right: 10px;
 }

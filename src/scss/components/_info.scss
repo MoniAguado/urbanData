@@ -1,14 +1,19 @@
 .info {
-	background-color: $color-lightGrey;
+	background-color: $color-superlightGrey;
 	color: $color-darkBlue;
 }
 .info__container {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 3fr 2fr;
 	grid-gap: 30px;
+	justify-items: center;
+	align-content: center;
+	height: 100%;
+	line-height: 35px;
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
 		grid-gap: 25px;
+		line-height: normal;
 	}
 }
 
@@ -38,7 +43,7 @@
 	}
 }
 .info__title {
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	font-size: 1.3em;
   text-align: center;
 	@media all and (max-width: 828px){
