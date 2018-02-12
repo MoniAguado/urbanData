@@ -37,7 +37,7 @@ class Coupon extends React.Component {
 								<textarea name="request" id="request"  placeholder="Mensaje" >
 								</textarea>
 							</div>
-							<div className="input__checkbox input__checkbox--custom">
+							<div className="input__container input__checkbox">
 								<input type="checkbox" name="checkbox" id="checkbox"/>
 								<label htmlFor="checkbox">Tu privacidad nos importa. Acepta con tranquilidad nuestra política de privacidad y condiciones del servicio.</label>
 							</div>
@@ -45,12 +45,10 @@ class Coupon extends React.Component {
 								<button className="button button--submit">ENVIAR</button>
 							</div>
 							<button className="button button--close" onClick={this.props.closeCoupon}>X</button>
-
 						</div>
 					</form>
 				</div>
 			</section>
-
 		);
 	}
 }

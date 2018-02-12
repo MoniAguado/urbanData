@@ -19,7 +19,7 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isCouponVisible: false
+			visible: false
 		};
 		this.openCoupon=this.openCoupon.bind(this);
 		this.closeCoupon=this.closeCoupon.bind(this);
@@ -27,12 +27,12 @@ class App extends Component {
 
 	openCoupon() {
 		this.setState({
-			isCouponVisible: true
+			visible: true
 		});
 	}
 	closeCoupon() {
 		this.setState({
-			isCouponVisible: false
+			visible: false
 		});
 	}
 
@@ -52,7 +52,7 @@ class App extends Component {
 				</main>
 				<Footer />
 
-				<Coupon show={this.state.isCouponVisible} closeCoupon={this.closeCoupon}/>
+				<Coupon show={this.state.visible} closeCoupon={this.closeCoupon}/>
       </div>
     );
   }

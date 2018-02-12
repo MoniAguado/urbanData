@@ -6,7 +6,7 @@ class Info extends React.Component {
 			<section className="info">
 				<div className="block__container info__container">
 					<div className="info__details--description">
-						<p className="info__text">REDapi es una plataforma global de información y abierta de APIs que te permite acceder a indicadores inmobiliarios de manera ágil e implementarlas fácilmente en tu empresa.</p>
+						<p className="info__text"><span className="redapi_text">REDapi</span> es una plataforma global de información y abierta de APIs que te permite acceder a indicadores inmobiliarios de manera ágil e implementarlas fácilmente en tu empresa.</p>
 						<p className="info__text">“Obtén indicadores financieros y urbanos tanto para alquiler como compraventa que apoyen tu modelo de negocio”.</p>
 					</div>
 					<div className="info__details--action">

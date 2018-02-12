@@ -1,7 +1,7 @@
 .coupon__background {
 	position: fixed;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -10,15 +10,14 @@
 	color: $color-red;
 }
 .coupon__container {
-	font-size: 13px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: $color-white;
-	padding: 20px;
-	width: 90%;
-	max-width: 500px;
+	padding: 20px 30px;
+	width: 85%;
+	max-width: 450px;
 }
 .coupon__details {
 	display: flex;
@@ -27,40 +26,53 @@
 .coupon__title {
 	text-align: center;
 	color: $color-red;
-	font-size: 20px;
+	font-size: 1.4em;
+	margin-bottom: 25px;
+	@media all and (max-width: 619px) {
+		margin-bottom: 15px;
+		font-size: 1.2em;
+	}
 }
 .input__container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 	label {
-		margin-bottom: 5px;
+		margin-bottom: 6px;
+		@media all and (max-width: 619px) {
+			font-size: 0.9em;
+		}
 	}
-	input {
-		height: 20px;
+	input,
+	textarea {
+		border: 2px solid $color-darkBlue;
+		font-size: 0.9em;
+		height: 40px;
 		padding: 5px 10px;
-		font-size: 13px;
-		border-radius: 2px;
-		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
-		border: none;
+		border-radius: 3px;
+		outline: none;
+		@media all and (max-width: 619px) {
+			height: 30px;
+			font-size: 0.75em;
+		}
 	}
 	textarea {
-		height: 70px;
-		padding: 5px 10px;
-		font-size: 13px;
-		border-radius: 2px;
-		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
-		border: none;
+		height: 80px;
 		resize: none;
+		@media all and (max-width: 619px) {
+			height: 60px;
+		}
 	}
 }
-
 .name-surname,
 .mail-phone {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	@media all and (max-width: 619px) {
+		flex-direction: column;
+	}
 }
 .input__modifier {
 	margin-right: 20px;
@@ -71,11 +83,13 @@
 	justify-content: center;
 }
 
-// Custom Checkbox
+// Custom Input__Checkbox
 
-.input__checkbox--custom {
+.input__checkbox {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: row;
   position: relative;
-  margin: 16px 0;
 	padding-left: 30px;
 
   label {
@@ -85,35 +99,38 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 0;
+      top: 5px;
     }
     &:before {
       width:  18px;
       height: 18px;
       background: $color-white;
-      border: 1px solid $color-midGrey;
+      border: 2px solid $color-darkBlue;
       border-radius: 2px;
       cursor: pointer;
       transition: background-color .3s;
 			box-sizing: border-box;
     }
   }
+
   input[type="checkbox"] {
 		position: absolute;
 		left:0;
-		top:0;
+		top: 5px;
     outline: 0;
+		opacity:0;
     &:checked {
       +label:before {
         background: $color-red;
         border: none;
+				top:5px;
       }
       +label:after {
         transform: rotate(-45deg);
-        top: (15px / 2) - ($checkmark / 4) - 15px/10;
-        left: 4px;
-        width: $checkmark;
-        height: $checkmark / 2;
+        top: 8px;
+        left: 3px;
+        width: 11px;
+        height: 6px;
         border: 2px solid $color-white;
         border-top-style: none;
         border-right-style: none;
