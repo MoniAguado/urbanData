@@ -267,15 +267,21 @@
   color: #070d1e;
   text-align: left;
   text-transform: uppercase;
-  line-height: 45px; }
+  line-height: 45px;
+  margin-top: 7%;
+  margin-left: 6%; }
   @media all and (max-width: 1000px) {
     .cover__title {
       font-size: 25px;
-      line-height: 38px; } }
+      line-height: 38px;
+      margin-top: 6%;
+      margin-left: 6%; } }
   @media all and (max-width: 619px) {
     .cover__title {
-      font-size: 22px;
-      line-height: 35px; } }
+      font-size: 1.25em;
+      line-height: 32px;
+      margin-top: 0;
+      margin-left: 0; } }
 
 .faq__list {
   list-style-type: none;

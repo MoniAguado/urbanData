@@ -3,7 +3,7 @@ import React from 'react';
 class Info extends React.Component {
 	render () {
 		return (
-			<section className="info">
+			<section className="info" id="info">
 				<div className="block__container info__container">
 					<div className="info__details--description">
 						<p className="info__text"><span className="redapi_text">REDapi</span> es una plataforma global de información y abierta de APIs que te permite acceder a indicadores inmobiliarios de manera ágil e implementarlas fácilmente en tu empresa.</p>

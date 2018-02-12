@@ -19,10 +19,10 @@ class Header extends Component {
 					<nav className="header__nav__mobile">
 						<i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
 						<ul className="nav">
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#">¿Qué es?</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#">¿Cómo funciona?</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#">Demo</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#">Faq</a></li>
+							<li className="nav__item" onClick={this.burgerToggle}><a href="#info">¿Qué es?</a></li>
+							<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
+							<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
+							<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Faq</a></li>
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#">Contacto</a></li>
 						</ul>
 					</nav>
@@ -32,11 +32,11 @@ class Header extends Component {
 					<div className="header__item">
 						<nav className="header__nav">
 							<ul className="nav">
-								<li className="nav__item"><a href="#">¿Qué es?</a></li>
-								<li className="nav__item"><a href="#">¿Cómo funciona?</a></li>
-								<li className="nav__item"><a href="#">Demo</a></li>
-								<li className="nav__item"><a href="#">Faq</a></li>
-								<li className="nav__item"><a href="#">Contacto</a></li>
+								<li className="nav__item" onClick={this.burgerToggle}><a href="#info">¿Qué es?</a></li>
+								<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
+								<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
+								<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Faq</a></li>
+								<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Contacto</a></li>
 							</ul>
 						</nav>
 					</div>
