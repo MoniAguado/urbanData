@@ -11,10 +11,8 @@ class Reports extends React.Component {
 						<h2 className="reports__title">Posibilidad de generación de informes</h2>
 						<div className="reports__description">
 							<p className="reports__description--text">Accede a todos los indicadores integrando nuestra API en minutos ya sea para desarrollar herramientas online, informes en pdf o en Excel</p>
-							<div className="reports_links">
-								<a href="#" className="button--report">EXCEL</a>
-								<a href="#" className="button--report">PDF</a>
-							</div>
+							<img className="reports__img-excel" src={excel} />
+							<a href="#" className="button--report">PDF</a>
 						</div>
 					</div>
 				</div>

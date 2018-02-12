@@ -1,12 +1,10 @@
 .demo{
 	background-color: lavender;
 }
-
 .demo__container {
 	margin: 30px;
 	padding-top: 40px;
 }
-
 
 .demo__text {
 	font-size: 15px;
@@ -23,4 +21,9 @@
 	margin-right: 20px;
 	border: 1px solid #070d1f;
 	padding: 2px 9px;
+	@media all and (max-width: 619px){
+			width: 260px;
+			margin-bottom: 10px;
+			font-size: 1em
+ 	}
 }

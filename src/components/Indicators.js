@@ -15,7 +15,7 @@ class Indicators extends Component{
 render(){
 
 	return(
-		<section className="indicators">
+		<section className="indicators" id="indicators">
 			<div className="block__container indicators__container">
 				<div className="indicators__background">
 					<div className="indicators__description">
