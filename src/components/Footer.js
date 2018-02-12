@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import logouda from './../images/udaWhite.png';
+import premio1 from './../images/aci-logo.png';
+import premio2 from './../images/mipim-logo.png';
+import premio3 from './../images/odine-logo.png';
 
 class Footer extends Component {
   render() {
@@ -12,9 +15,11 @@ class Footer extends Component {
 					</div>
 					<div className="footer__item">
 						<h3 className="footer__title">Premios</h3>
-						<img src="http://placehold.it/30/30" alt="premio 1" className="footer__image--premio" />
-						<img src="http://placehold.it/30/30" alt="premio 1" className="footer__image--premio" />
-						<img src="http://placehold.it/30/30" alt="premio 1" className="footer__image--premio" />
+						<div className="premios__container">
+							<img src={premio1} alt="premio 1" className="footer__image--premio" />
+							<img src={premio2} alt="premio 1" className="footer__image--premio" />
+							<img src={premio3} alt="premio 1" className="footer__image--premio" />
+						</div>
 					</div>
 				</div>
 			</footer>

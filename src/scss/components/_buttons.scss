@@ -45,3 +45,15 @@
 	width: 20px;
 	padding: 3px 15px;
 }
+
+.button--report{
+	background-color: $color-darkBlue;
+	color: $color-white;
+	font-size: 1em;
+	padding: 5px 18px;
+	border: none;
+	outline: none;
+	border: 1px solid $color-white;
+	cursor: pointer;
+	text-decoration: none;
+}

@@ -72,6 +72,20 @@
   width: 20px;
   padding: 3px 15px; }
 
+.button--report {
+  background-color: #070d1e;
+  color: #fff;
+  font-size: 1em;
+  padding: 5px 18px;
+  border: none;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  text-decoration: none; }
+
+.contact {
+  background-color: #eff2f7; }
+
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -80,6 +94,9 @@
 
 .contact__text {
   margin-bottom: 20px; }
+
+.contact_button {
+  margin-top: 20px; }
 
 .coupon__background {
   position: fixed;
@@ -109,12 +126,12 @@
 .coupon__title {
   text-align: center;
   color: #ca1c24;
-  font-size: 22px;
+  font-size: 1.4em;
   margin-bottom: 25px; }
   @media all and (max-width: 619px) {
     .coupon__title {
       margin-bottom: 15px;
-      font-size: 18px; } }
+      font-size: 1.2em; } }
 
 .input__container {
   display: flex;
@@ -125,11 +142,11 @@
     margin-bottom: 6px; }
     @media all and (max-width: 619px) {
       .input__container label {
-        font-size: 14px; } }
+        font-size: 0.9em; } }
   .input__container input,
   .input__container textarea {
     border: 2px solid #070d1e;
-    font-size: 14px;
+    font-size: 0.9em;
     height: 40px;
     padding: 5px 10px;
     border-radius: 3px;
@@ -138,7 +155,7 @@
       .input__container input,
       .input__container textarea {
         height: 30px;
-        font-size: 12px; } }
+        font-size: 0.75em; } }
   .input__container textarea {
     height: 80px;
     resize: none; }
@@ -312,7 +329,7 @@
   text-align: center; }
 
 .info {
-  background-color: #b7bcc6;
+  background-color: #eff2f7;
   color: #070d1e; }
 
 .info__container {
@@ -385,11 +402,20 @@
 .redapi_text {
   font-weight: bold; }
 
+.reports {
+  background-color: #eff2f7; }
+
 .reports__description {
   display: flex; }
 
 .reports__container--img {
   margin-left: 20px; }
+
+.reports_links {
+  margin-top: 20px; }
+
+.button--report {
+  margin-right: 10px; }
 
 .testfetch {
   background: lavender;
@@ -458,11 +484,13 @@ h3 {
   width: 110px;
   height: 45px; }
 
-.footer__image--premio {
+.premios__container {
+  margin-top: 10px; }
+
+.premios__container img {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: 10px 30px 0 30px; }
+  width: 90px;
+  margin-right: 10px; }
 
 .header {
   background: #070d1e; }
