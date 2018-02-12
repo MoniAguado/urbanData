@@ -21,12 +21,12 @@
 		grid-gap: 25px;
 		margin-top: 20px;
 		text-align: center;
+		margin-left: 0;
 	}
 }
 
 .step {
 	color: $color-white;
-	width: 250px;
 }
 
 .step-circle {
@@ -50,12 +50,4 @@
 	margin: 0 auto;
 	color: $color-white;
 	font-size: 20px;
-}
-
-.step-line {
-	height: 10px;
-	width: 25%;
-	border-radius: 15%;
-	background: none repeat scroll 0 0 $color-white;
-	transition: width 1.2s ease-out 0s;
 }
