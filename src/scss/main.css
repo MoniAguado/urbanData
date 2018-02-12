@@ -217,14 +217,14 @@
       border-top-style: none;
       border-right-style: none; }
 
-.background {
+.cover__background {
   background-image: url(../images/ny2.jpg);
   background-position: center top;
   background-size: cover;
   height: 100vh;
   width: 100%; }
   @media all and (max-width: 619px) {
-    .background {
+    .cover__background {
       height: 70vh;
       background-position: 75%; } }
 
@@ -233,33 +233,32 @@
   width: 0; }
 
 .title-block {
-  margin-top: 15%;
-  margin-left: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left; }
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  max-width: 650px; }
+  @media all and (max-width: 1000px) {
+    .title-block {
+      max-width: 450px; } }
   @media all and (max-width: 619px) {
     .title-block {
-      margin-top: 15%;
-      margin-left: 5%; }
-      .title-block .button--info {
-        font-size: 15px;
-        padding: 8px 20px; } }
+      max-width: 250px; } }
 
 .cover__title {
+  width: 100%;
   font-size: 30px;
   color: #070d1e;
   text-align: left;
   text-transform: uppercase;
-  line-height: 45px;
-  width: 60%;
-  margin-bottom: 20px; }
+  line-height: 45px; }
+  @media all and (max-width: 1000px) {
+    .cover__title {
+      font-size: 25px;
+      line-height: 38px; } }
   @media all and (max-width: 619px) {
     .cover__title {
-      font-size: 23px;
-      line-height: 36px;
-      width: 72%; } }
+      font-size: 22px;
+      line-height: 35px; } }
 
 .faq__list {
   list-style-type: none;
