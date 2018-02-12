@@ -1,15 +1,16 @@
 .block__container.indicators__container{
 	margin: 0;
+	padding: 0;
 }
 
 .indicators__background{
 	background-image: url(../images/city.jpg);
 	background-position: center top;
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	@media all and (max-width: 619px){
-		height: 70vh;
+		height: 100%;
 		background-position: 75%;
  	}
 }
