@@ -1,6 +1,7 @@
 
 .steps__title {
 	color: $color-white;
+	margin-bottom: 20px;
 }
 
 .steps {
@@ -10,7 +11,7 @@
 .icon-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin-top: 30px;
+	margin-top: 70px;
 	list-style-type: none;
 	justify-items: center;
 	grid-gap: 25px;
@@ -26,7 +27,6 @@
 
 .step {
 	color: $color-white;
-	width: 250px;
 }
 
 .step-circle {
