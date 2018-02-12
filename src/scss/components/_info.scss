@@ -8,7 +8,7 @@
 	grid-gap: 30px;
 	justify-items: center;
 	align-content: center;
-	height: 100%;
+	padding: 50px 0;
 	line-height: 35px;
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
@@ -28,7 +28,6 @@
 	}
 	@media all and (max-width: 828px){
 		.button--contact{
-			width: 100%;
 			font-size: 0.84em;
 			padding: 8px 6px;
 		}
@@ -82,4 +81,11 @@
 }
 .redapi_text{
 	font-weight: bold;
+	color: $color-red;
+	font-size: 2em;
+}
+.redapi_text2{
+	font-weight: bold;
+	color: $color-darkBlue;
+	font-size: 1.5em;
 }

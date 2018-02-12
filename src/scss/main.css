@@ -345,15 +345,23 @@
   border: solid 1px;
   border-radius: 5px;
   margin-top: 70px;
-  width: 280px;
+  width: 250px;
   text-align: center; }
+  @media all and (max-width: 828px) {
+    .indicators__list--item {
+      width: 180px;
+      font-size: 0.9em; } }
+  @media all and (max-width: 619px) {
+    .indicators__list--item {
+      width: 280px;
+      font-size: 1em; } }
 
 .indicators__list--item-element-title {
   padding-left: 0;
   text-transform: uppercase;
   font-size: 1.2em;
   line-height: 20px;
-  padding-bottom: 20px; }
+  padding: 20px 0; }
   @media all and (max-width: 619px) {
     .indicators__list--item-element-title {
       font-size: 1.15em;
@@ -381,7 +389,7 @@
   grid-gap: 30px;
   justify-items: center;
   align-content: center;
-  height: 100%;
+  padding: 50px 0;
   line-height: 35px; }
   @media all and (max-width: 619px) {
     .info__container {
@@ -399,7 +407,6 @@
     padding: 10px 19px; }
   @media all and (max-width: 828px) {
     .info__details--action .button--contact {
-      width: 100%;
       font-size: 0.84em;
       padding: 8px 6px; } }
   @media all and (max-width: 619px) {
@@ -448,23 +455,38 @@
       font-size: 18px; } }
 
 .redapi_text {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #ca1c24;
+  font-size: 2em; }
+
+.redapi_text2 {
+  font-weight: bold;
+  color: #070d1e;
+  font-size: 1.5em; }
 
 .reports {
   background-color: #eff2f7; }
 
 .reports__description {
-  display: flex;
-  flex-direction: row; }
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 10px; }
+  @media all and (max-width: 619px) {
+    .reports__description {
+      grid-template-columns: 1fr; } }
 
-.reports__container--img {
-  margin-left: 20px; }
-
-.reports_links {
-  margin-top: 20px; }
+.reports__img-excel {
+  width: 50px;
+  height: 50px;
+  justify-content: space-around;
+  align-self: center;
+  justify-self: center; }
 
 .button--report {
-  margin-right: 10px; }
+  height: 30px;
+  width: 70px;
+  align-self: center;
+  justify-self: center; }
 
 .testfetch {
   background: lavender;
