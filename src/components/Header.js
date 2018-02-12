@@ -23,7 +23,7 @@ class Header extends Component {
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Faq</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#">Contacto</a></li>
+							<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Contacto</a></li>
 						</ul>
 					</nav>
 					<div className="header__item--big">

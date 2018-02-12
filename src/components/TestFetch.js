@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 class TestFetch extends Component {
 
-	constructor(props){
-		super(props);
-	}
+// 	constructor(props){
+// 		super(props);
+// 	}
 
 
 	render() {
