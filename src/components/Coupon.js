@@ -13,28 +13,28 @@ class Coupon extends React.Component {
 						<div className="coupon__details">
 							<h3 className="coupon__title">¡Envíanos un correo!</h3>
 							<div className="name-surname">
-								<div className="input__container input__modifier">
+								<div className="input__container input__modifier-left">
 									<label htmlFor="name">Nombre<span className="asterisk">*</span></label>
-									<input type="text" className="name" id="name" name="name" placeholder="Nombre"  />
+									<input type="text" className="name" id="name" name="name"/>
 								</div>
-								<div className="input__container">
+								<div className="input__container input__modifier-right">
 									<label htmlFor="surname">Apellidos<span className="asterisk">*</span></label>
-									<input type="text" className="surname" id="surname" name="surname" placeholder="Apellidos" />
+									<input type="text" className="surname" id="surname" name="surname"/>
 								</div>
 							</div>
 							<div className="mail-phone">
-								<div className="input__container input__modifier">
+								<div className="input__container input__modifier-left">
 									<label htmlFor="mail">E-mail<span className="asterisk">*</span></label>
-									<input type="email" name="mail" id="mail" placeholder="E-mail" />
+									<input type="email" name="mail" id="mail"/>
 								</div>
-								<div className="input__container">
+								<div className="input__container input__modifier-right">
 									<label htmlFor="phone">Teléfono<span className="asterisk">*</span></label>
-									<input type="tel" name="phone" id="phone" placeholder="Teléfono" />
+									<input type="tel" name="phone" id="phone"/>
 								</div>
 							</div>
 							<div className="input__container">
 								<label htmlFor="request">Consulta<span className="asterisk">*</span></label>
-								<textarea name="request" id="request"  placeholder="Mensaje" >
+								<textarea name="request" id="request">
 								</textarea>
 							</div>
 							<div className="input__container input__checkbox">

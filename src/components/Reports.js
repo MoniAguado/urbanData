@@ -10,14 +10,15 @@ class Reports extends React.Component {
 					<div className="reports__container">
 						<h2 className="reports__title">Posibilidad de generación de informes</h2>
 						<div className="reports__description">
-							<p className="reports__description--text">Accede a todos los indicadores integrando nuestra API en minutos ya sea para desarrollar herramientas online, informes en pdf o en Excel </p>
-							<img className="reports__description--img" src={madrid} width="100px" height="100px" alt="madrid"/>
-							<img className="reports__container--img" src={excel} width="100px" height="100px" alt="excel icono"/>
-							<button className="reports__button--download">Descargar PDF</button>
+							<p className="reports__description--text">Accede a todos los indicadores integrando nuestra API en minutos ya sea para desarrollar herramientas online, informes en pdf o en Excel</p>
+						</div>
+						<div className="reports_links">
+							<a href="#" className="button--report">EXCEL</a>
+							<a href="#" className="button--report">PDF</a>
 						</div>
 					</div>
 				</div>
-				</section>
+			</section>
 		)
 	}
 }
