@@ -301,11 +301,11 @@
   background-image: url(../images/city.jpg);
   background-position: center top;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%; }
   @media all and (max-width: 619px) {
     .indicators__background {
-      height: 70vh;
+      height: 100%;
       background-position: 75%; } }
 
 .indicators__description {
@@ -377,12 +377,17 @@
 
 .info__container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 30px; }
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 30px;
+  justify-items: center;
+  align-content: center;
+  height: 100%;
+  line-height: 35px; }
   @media all and (max-width: 619px) {
     .info__container {
       grid-template-columns: 1fr;
-      grid-gap: 25px; } }
+      grid-gap: 25px;
+      line-height: normal; } }
 
 .info__details--action {
   text-align: center; }
@@ -405,7 +410,7 @@
       font-size: 1em; } }
 
 .info__title {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 1.3em;
   text-align: center; }
   @media all and (max-width: 828px) {
