@@ -109,12 +109,12 @@
 .coupon__title {
   text-align: center;
   color: #ca1c24;
-  font-size: 22px;
+  font-size: 1.4em;
   margin-bottom: 25px; }
   @media all and (max-width: 619px) {
     .coupon__title {
       margin-bottom: 15px;
-      font-size: 18px; } }
+      font-size: 1.2em; } }
 
 .input__container {
   display: flex;
@@ -125,11 +125,11 @@
     margin-bottom: 6px; }
     @media all and (max-width: 619px) {
       .input__container label {
-        font-size: 14px; } }
+        font-size: 0.9em; } }
   .input__container input,
   .input__container textarea {
     border: 2px solid #070d1e;
-    font-size: 14px;
+    font-size: 0.9em;
     height: 40px;
     padding: 5px 10px;
     border-radius: 3px;
@@ -138,7 +138,7 @@
       .input__container input,
       .input__container textarea {
         height: 30px;
-        font-size: 12px; } }
+        font-size: 0.75em; } }
   .input__container textarea {
     height: 80px;
     resize: none; }
@@ -259,15 +259,28 @@
   padding: 10px; }
 
 .block__container.indicators__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin: 0; }
+
+.indicators__background {
+  background-image: url(../images/city.jpg);
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+  @media all and (max-width: 619px) {
+    .indicators__background {
+      height: 70vh;
+      background-position: 75%; } }
+
+.indicators__description {
+  padding-top: 70px; }
 
 .indicators__description--text {
   text-align: center;
   padding: 15px;
   padding-left: 60px;
-  padding-right: 60px; }
+  padding-right: 60px;
+  font-size: 18px; }
   @media all and (max-width: 619px) {
     .indicators__description--text {
       padding: 13px;
@@ -288,10 +301,21 @@
       margin-top: 20px;
       text-align: center; } }
 
+.indicators__list--item {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #070d1e;
+  padding: 10px;
+  border: 1 solid #070d1e;
+  border: solid 1px;
+  border-radius: 5px;
+  margin-top: 70px;
+  width: 280px;
+  text-align: center; }
+
 .indicators__list--item-element-title {
   padding-left: 0;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 20px;
   padding-bottom: 20px; }
   @media all and (max-width: 619px) {
