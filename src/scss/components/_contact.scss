@@ -1,3 +1,7 @@
+.contact{
+	background-color: $color-superlightGrey;
+}
+
 .contact__container{
 	display: flex;
 	flex-direction: column;
@@ -5,7 +9,9 @@
 	align-items: center;
 }
 
-
 .contact__text{
 	margin-bottom: 20px;
+}
+.contact_button{
+	margin-top: 20px;
 }
