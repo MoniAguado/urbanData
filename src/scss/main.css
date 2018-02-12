@@ -294,7 +294,8 @@
   padding: 10px; }
 
 .block__container.indicators__container {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .indicators__background {
   background-image: url(../images/city.jpg);
@@ -448,7 +449,8 @@
   background-color: #eff2f7; }
 
 .reports__description {
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
 
 .reports__container--img {
   margin-left: 20px; }
