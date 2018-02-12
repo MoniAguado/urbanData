@@ -223,14 +223,14 @@
       border-top-style: none;
       border-right-style: none; }
 
-.background {
+.cover__background {
   background-image: url(../images/ny2.jpg);
   background-position: center top;
   background-size: cover;
   height: 100vh;
   width: 100%; }
   @media all and (max-width: 619px) {
-    .background {
+    .cover__background {
       height: 70vh;
       background-position: 75%; } }
 
@@ -270,7 +270,15 @@
 .faq__list {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  padding: 0 20px; }
+  @media all and (max-width: 619px) {
+    .faq__list {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      margin-top: 20px;
+      text-align: center; } }
 
 .faq__list--item {
   padding: 10px; }
