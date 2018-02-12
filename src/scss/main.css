@@ -479,10 +479,17 @@ h3 {
   padding: 15px 30px;
   display: flex;
   justify-content: space-between; }
+  @media all and (max-width: 619px) {
+    .footer__container {
+      flex-direction: column; } }
 
 .footer__item {
-  margin: 0 50px;
+  margin: 10px 50px;
   text-align: center; }
+
+@media all and (max-width: 619px) {
+  .footer__item p {
+    font-size: 0.9em; } }
 
 .footer__item a {
   text-decoration: none;
@@ -493,10 +500,12 @@ h3 {
   height: 45px; }
 
 .premios__container {
-  margin-top: 10px; }
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .premios__container img {
-  display: inline-block;
   width: 90px;
   margin-right: 10px; }
 

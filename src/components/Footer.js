@@ -11,7 +11,7 @@ class Footer extends Component {
 				<div className="footer__container">
 					<div className="footer__item">
 						<a href="http://www.urbandataanalytics.com/" target="_blank" rel="noopener noreferrer"><img src={logouda} alt="Urban Data Analytics logo" className="footer__image--logo" /></a>
-						<p>uDA urbanData Analytics © 2018</p>
+						<p>uDA © 2018</p>
 					</div>
 					<div className="footer__item">
 						<h3 className="footer__title">Premios</h3>
