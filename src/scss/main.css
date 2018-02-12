@@ -109,12 +109,12 @@
 .coupon__title {
   text-align: center;
   color: #ca1c24;
-  font-size: 22px;
+  font-size: 1.4em;
   margin-bottom: 25px; }
   @media all and (max-width: 619px) {
     .coupon__title {
       margin-bottom: 15px;
-      font-size: 18px; } }
+      font-size: 1.2em; } }
 
 .input__container {
   display: flex;
@@ -125,11 +125,11 @@
     margin-bottom: 6px; }
     @media all and (max-width: 619px) {
       .input__container label {
-        font-size: 14px; } }
+        font-size: 0.9em; } }
   .input__container input,
   .input__container textarea {
     border: 2px solid #070d1e;
-    font-size: 14px;
+    font-size: 0.9em;
     height: 40px;
     padding: 5px 10px;
     border-radius: 3px;
@@ -138,7 +138,7 @@
       .input__container input,
       .input__container textarea {
         height: 30px;
-        font-size: 12px; } }
+        font-size: 0.75em; } }
   .input__container textarea {
     height: 80px;
     resize: none; }
@@ -206,14 +206,14 @@
       border-top-style: none;
       border-right-style: none; }
 
-.background {
+.cover__background {
   background-image: url(../images/ny2.jpg);
   background-position: center top;
   background-size: cover;
   height: 100vh;
   width: 100%; }
   @media all and (max-width: 619px) {
-    .background {
+    .cover__background {
       height: 70vh;
       background-position: 75%; } }
 
@@ -391,6 +391,60 @@
 .reports__container--img {
   margin-left: 20px; }
 
+.steps__title {
+  color: #fff; }
+
+.steps {
+  background: #20232e; }
+
+.icon-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  list-style-type: none;
+  justify-items: center;
+  grid-gap: 25px;
+  padding: 0 10px;
+  font-size: 13px; }
+  @media all and (max-width: 619px) {
+    .icon-list {
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+      margin-top: 20px;
+      text-align: center; } }
+
+.step {
+  color: #fff;
+  width: 250px; }
+
+.step-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ca1c24;
+  position: relative;
+  margin-bottom: 20px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.step-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px; }
+
+.step-line {
+  height: 10px;
+  width: 25%;
+  border-radius: 15%;
+  background: none repeat scroll 0 0 #fff;
+  transition: width 1.2s ease-out 0s; }
+
 .testfetch {
   background: lavender;
   height: 100vh; }
@@ -561,5 +615,5 @@ body {
   overflow-x: hidden; }
 
 .block__container {
-  margin: 0 60px;
-  padding: 60px 0; }
+  margin: 0 80px;
+  padding: 80px 0; }
