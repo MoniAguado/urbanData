@@ -301,6 +301,13 @@
   padding: 15px 0;
   list-style-type: none; }
 
+.last-question {
+  grid-column: span 2;
+  justify-self: center; }
+  @media all and (max-width: 619px) {
+    .last-question {
+      grid-column: auto; } }
+
 .block__container.indicators__container {
   margin: 0;
   padding: 0; }

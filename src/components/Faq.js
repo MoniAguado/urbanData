@@ -45,7 +45,7 @@ class Faq extends Component{
 								<p className="faq__list--answer-text"> Con una ubicación es suficiente. Si nos das más información podemos precisar más. Por ejemplo, si incluyes la superficie de las viviendas por las que preguntas te damos más grado de detalle.</p>
 							</div>
 						</li>
-						<li className="faq__list--item">
+						<li className="faq__list--item last-question">
 							<div className="faq__list--question">
 								<h3 className="faq__list--question-title">¿Qué tipo de preguntas le puedo hacer a vuestra API?
 								</h3>
@@ -60,8 +60,6 @@ class Faq extends Component{
 								</ul>
 							</div>
 						</li>
-
-
 					</ul>
 				</div>
 			</section>
