@@ -297,6 +297,10 @@
       margin-top: 20px;
       text-align: center; } }
 
+.faq__list--answer-text {
+  padding: 15px 0;
+  list-style-type: none; }
+
 .block__container.indicators__container {
   margin: 0;
   padding: 0; }
