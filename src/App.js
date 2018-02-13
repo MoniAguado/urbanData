@@ -35,6 +35,14 @@ class App extends Component {
 			visible: false
 		});
 	}
+	// 
+	// fetch('http://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=o_pm,s_p&operations=1&geo_codes=72400013000280007900013000000000000000&category_codes=P_01&period_codes=2016Q1' {
+  // 	headers: {
+  //   authorization:'Token ' + '3iq4pxi5tj9pw2n444m5cqoyk3fm2bqgcdxq3m4y'
+	//  }
+	// })
+
+
 
   render() {
     return (
