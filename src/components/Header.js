@@ -35,7 +35,7 @@ class Header extends Component {
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#info">¿Qué es?</a></li>
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Faq</a></li>
+								<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">FAQ</a></li>
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Contacto</a></li>
 							</ul>
 						</nav>
