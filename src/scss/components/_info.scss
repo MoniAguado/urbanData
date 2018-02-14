@@ -1,6 +1,6 @@
 .info {
-	background-color: $color-superlightGrey;
-	color: $color-darkBlue;
+	background-color: $color-darkGrey;
+	color: $color-white;
 }
 .info__container {
 	display: grid;
@@ -9,7 +9,7 @@
 	justify-items: center;
 	align-content: center;
 	padding: 50px 0;
-	line-height: 35px;
+	// line-height: 35px;
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
 		grid-gap: 25px;
@@ -86,6 +86,6 @@
 }
 .redapi_text2{
 	font-weight: bold;
-	color: $color-darkBlue;
+	color: $color-white;
 	font-size: 1.5em;
 }
