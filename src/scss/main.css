@@ -77,11 +77,16 @@
   color: #fff;
   font-size: 1em;
   padding: 5px 18px;
+  padding-top: 13px;
   border: none;
   outline: none;
   border: 1px solid #fff;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  height: 50px;
+  width: 250px; }
 
 .contact {
   background-color: #eff2f7; }
@@ -482,26 +487,13 @@
 .reports {
   background-color: #eff2f7; }
 
-.reports__description {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-gap: 10px; }
-  @media all and (max-width: 619px) {
-    .reports__description {
-      grid-template-columns: 1fr; } }
-
 .reports__img-excel {
   width: 50px;
   height: 50px;
-  justify-content: space-around;
-  align-self: center;
-  justify-self: center; }
+  margin: 20px; }
 
-.button--report {
-  height: 30px;
-  width: 70px;
-  align-self: center;
-  justify-self: center; }
+.reports__img-preview {
+  padding: 10px; }
 
 .steps__title {
   color: #fff;
@@ -639,6 +631,49 @@ h3 {
 .premios__container img {
   width: 90px;
   margin-right: 10px; }
+
+.reports__description {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px; }
+  @media all and (max-width: 828px) {
+    .reports__description {
+      display: flex;
+      flex-direction: column; } }
+
+.reports__description--text {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center; }
+  @media all and (max-width: 828px) {
+    .reports__description--text {
+      display: flex;
+      flex-direction: column; } }
+
+.reports__img-excel {
+  grid-row: 2;
+  grid-column: 1;
+  align-self: baseline;
+  justify-self: center; }
+  @media all and (max-width: 828px) {
+    .reports__img-excel {
+      align-self: center; } }
+
+.button--report {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: baseline;
+  justify-self: center; }
+  @media (min-width: 619px) and (max-width: 828px) {
+    .button--report {
+      align-self: center; } }
+
+.reports__img-preview {
+  grid-row: 1 / 4; }
+  @media (min-width: 619px) and (max-width: 828px) {
+    .reports__img-preview {
+      align-self: center; } }
 
 .header {
   background: #070d1e; }
