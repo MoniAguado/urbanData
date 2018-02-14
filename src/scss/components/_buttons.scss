@@ -51,9 +51,14 @@
 	color: $color-white;
 	font-size: 1em;
 	padding: 5px 18px;
+	padding-top: 13px;
 	border: none;
 	outline: none;
 	border: 1px solid $color-white;
 	cursor: pointer;
 	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	height: 50px;
+	width: 250px;
 }

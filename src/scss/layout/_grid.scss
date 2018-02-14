@@ -1,0 +1,44 @@
+//Sección informes
+.reports__description{
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	@media all and(max-width: 828px){
+		display: flex;
+		flex-direction: column;
+}
+}
+.reports__description--text{
+	grid-column: 1;
+	grid-row: 1;
+	align-self: center;
+	@media all and(max-width: 828px){
+		display: flex;
+		flex-direction: column;
+	}
+}
+.reports__img-excel{
+	 grid-row: 2;
+	 grid-column: 1;
+	 align-self: baseline;
+	 justify-self: center;
+	 @media all and(max-width: 828px){
+		 align-self: center;
+	 }
+}
+.button--report{
+	grid-column: 1;
+	grid-row: 3;
+	align-self: baseline;
+	justify-self: center;
+	@media (min-width: 619px) and (max-width: 828px){
+		align-self: center;
+	}
+}
+.reports__img-preview{
+	grid-row: 1 / 4;
+	@media (min-width: 619px) and (max-width: 828px){
+		align-self: center;
+	}
+}
