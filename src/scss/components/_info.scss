@@ -1,6 +1,6 @@
 .info {
-	background-color: $color-superlightGrey;
-	color: $color-darkBlue;
+	background-color: $color-darkGrey;
+	color: $color-white;
 }
 .info__container {
 	display: grid;
@@ -8,8 +8,8 @@
 	grid-gap: 30px;
 	justify-items: center;
 	align-content: center;
-	padding: 50px 0;
-	line-height: 35px;
+	padding: 20px 0;
+	// line-height: 35px;
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
 		grid-gap: 25px;
@@ -25,6 +25,7 @@
 		margin-top: 10px;
 		font-size: 1.08em;
 		padding: 10px 19px;
+		background-color: $color-red;
 	}
 	@media all and (max-width: 828px){
 		.button--contact{
@@ -42,8 +43,9 @@
 	}
 }
 .info__title {
-	margin-bottom: 60px;
+	margin-bottom: 27px;
 	font-size: 1.3em;
+	line-height: 1.8;
   text-align: center;
 	@media all and (max-width: 828px){
 		font-size: 1.15em;
@@ -86,6 +88,6 @@
 }
 .redapi_text2{
 	font-weight: bold;
-	color: $color-darkBlue;
+	color: $color-white;
 	font-size: 1.5em;
 }
