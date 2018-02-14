@@ -20,6 +20,7 @@ class Area extends Component {
 	}
 
 	render() {
+
 		return (
 			<div className="testfetch">
 
