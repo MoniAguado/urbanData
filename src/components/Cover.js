@@ -1,5 +1,6 @@
 import React from 'react';
-import nyCover from '../images/ny2.jpg';
+import nyCover from '../images/newcover.jpg';
+
 
 class Cover extends React.Component{
 	render(){
