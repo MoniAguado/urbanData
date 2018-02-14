@@ -11,7 +11,7 @@ class Income extends Component {
 		headers.append('Authorization', 'Token ' + data.token);
 
 	fetch(url, {method:'GET',
-		headers: headers,
+		headers: headers
 	})
 	.then(response => response.json())
 	.then(json => console.log(json));

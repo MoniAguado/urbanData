@@ -5,7 +5,7 @@ import Income from './Income';
 import Salestime from './Salestime';
 import Services from './Services';
 
-import data from '../token.json';
+
 
 class Demo extends Component{
 constructor(props){

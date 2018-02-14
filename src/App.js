@@ -54,7 +54,9 @@ class App extends Component {
 				</main>
 				<Footer />
 
-				<Coupon show={this.state.visible} closeCoupon={this.closeCoupon}/>
+				<Coupon show={this.state.visible}
+					onRequestClose={this.closeCoupon}
+				/>
 			</div>
 		);
 	}
