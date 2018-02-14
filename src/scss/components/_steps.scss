@@ -16,7 +16,6 @@
 	justify-items: center;
 	grid-gap: 25px;
 	padding: 0 10px;
-	font-size: 13px;
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
 		grid-gap: 25px;
@@ -50,5 +49,5 @@
 	text-align: center;
 	margin: 0 auto;
 	color: $color-white;
-	font-size: 20px;
+	font-size: 25px;
 }
