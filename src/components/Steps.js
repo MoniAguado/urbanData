@@ -1,5 +1,4 @@
 import React from 'react';
-import madrid from '../images/madrid.jpg';
 
 class Steps extends React.Component {
 	render(){
