@@ -270,7 +270,7 @@
 
 .cover__title {
   width: 100%;
-  color: #070d1e;
+  color: #fff;
   text-align: left;
   text-transform: uppercase;
   line-height: 45px;
@@ -346,6 +346,7 @@
 
 .indicators__description--text {
   text-align: center;
+  color: #fff;
   padding: 8px;
   padding-left: 60px;
   padding-right: 60px; }
@@ -353,6 +354,9 @@
     .indicators__description--text {
       padding: 13px;
       font-size: 0.9em; } }
+
+.indicators__description--title {
+  color: #fff; }
 
 .indicators__list {
   display: grid;
@@ -411,8 +415,8 @@
   text-align: center; }
 
 .info {
-  background-color: #20232e;
-  color: #fff; }
+  background-color: #eff2f7;
+  color: #20232e; }
 
 .info__container {
   display: grid;
