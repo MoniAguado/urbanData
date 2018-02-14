@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import Contact from './components/Contact';
 import Coupon from './components/Coupon';
 import Cover from './components/Cover';
@@ -44,9 +45,10 @@ class App extends Component {
 
 
 
-  render() {
-    return (
-      <div className="App">
+
+	render() {
+		return (
+			<div className="App">
 				<Header />
 				<main>
 					<Cover />
@@ -61,9 +63,9 @@ class App extends Component {
 				<Footer />
 
 				<Coupon show={this.state.visible} closeCoupon={this.closeCoupon}/>
-      </div>
-    );
-  }
+			</div>
+		);
+	}
 }
 
 export default App;
