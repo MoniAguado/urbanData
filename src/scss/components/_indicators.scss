@@ -14,9 +14,11 @@
 		background-position: 75%;
  	}
 }
-.indicators__description{
-	padding-top: 70px;
+
+.indicators__description {
+	padding-top: 60px;
 }
+
 .indicators__description--text{
 	text-align: center;
 	padding: 8px;
@@ -30,7 +32,6 @@
 .indicators__list{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin-top: 30px;
 	list-style-type: none;
 	justify-items: center;
 	grid-gap: 25px;

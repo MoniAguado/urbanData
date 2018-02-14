@@ -10,6 +10,10 @@
 	color: $color-red;
 }
 
+.faq__list--answer-text-li {
+	line-height: 1.3;
+}
+
 .faq__list{
 	list-style-type: none;
 	display: grid;
