@@ -244,7 +244,7 @@
   background-image: url(../images/ny2.jpg);
   background-position: center top;
   background-size: cover;
-  height: 100vh;
+  height: 65vh;
   width: 100%; }
   @media all and (max-width: 619px) {
     .cover__background {
@@ -257,37 +257,44 @@
 
 .title-block {
   position: absolute;
-  top: 50%;
-  left: 5%;
-  max-width: 650px; }
-  @media all and (max-width: 1000px) {
-    .title-block {
-      max-width: 450px; } }
+  top: 40%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%); }
   @media all and (max-width: 619px) {
     .title-block {
-      max-width: 250px;
-      top: 22%; } }
+      top: 50%; } }
 
 .cover__title {
   width: 100%;
   color: #fff;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   line-height: 45px;
-  margin-top: 7%;
-  margin-left: 6%; }
+  margin-top: 7%; }
   @media all and (max-width: 1000px) {
     .cover__title {
-      font-size: 25px;
-      line-height: 38px;
-      margin-top: 6%;
-      margin-left: 6%; } }
+      font-size: 1.8em;
+      margin-top: 6%; } }
   @media all and (max-width: 619px) {
     .cover__title {
-      font-size: 1.25em;
-      line-height: 32px;
-      margin-top: 0;
-      margin-left: 0; } }
+      font-size: 1.2em;
+      margin-top: 10%; } }
+
+.cover__subtitle {
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.3em;
+  text-transform: none; }
+  @media all and (max-width: 1000px) {
+    .cover__subtitle {
+      font-size: 1em;
+      margin-top: 6%; } }
+  @media all and (max-width: 619px) {
+    .cover__subtitle {
+      font-size: 0.8em;
+      margin-top: 10%; } }
 
 .faq {
   background-color: #20232e; }
@@ -560,7 +567,7 @@
 
 h1 {
   font-family: 'Gotham Light';
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 20px; }
 
