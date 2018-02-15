@@ -696,7 +696,16 @@ p {
       align-self: center; } }
 
 .header {
-  background: #070d1e; }
+  background: rgba(7, 13, 30, 0.6);
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+.header__nav .nav__item:last-child {
+  background: #070d1e;
+  padding: 9px;
+  font-weight: bold;
+  border: 1px solid #fff; }
 
 .header__container {
   display: flex;
@@ -730,7 +739,7 @@ p {
     display: none; }
   .header__nav__mobile .nav__item {
     display: block;
-    padding: 11px 0;
+    padding: 15px 0;
     width: 150px;
     text-align: right;
     padding-right: 20px;
@@ -757,7 +766,8 @@ p {
 
 .nav__item a {
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  height: 100%; }
 
 .header__item:last-child {
   padding-left: 25px;

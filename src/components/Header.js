@@ -12,6 +12,8 @@ class Header extends Component {
 		linksEl.style.display = 'block';
 	}
 }
+
+
   render() {
     return (
     	<header className="header">
@@ -23,7 +25,7 @@ class Header extends Component {
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
 							<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Faq</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Contacto</a></li>
+							<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Registrate ahora</a></li>
 						</ul>
 					</nav>
 					<div className="header__item--big">
@@ -36,7 +38,7 @@ class Header extends Component {
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
 								<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Preguntas Frecuentes</a></li>
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Contacto</a></li>
+								<li className="nav__item button--type" onClick={this.burgerToggle}><a href="#contact" className="button--type">Registrate ahora</a></li>
 							</ul>
 						</nav>
 					</div>
