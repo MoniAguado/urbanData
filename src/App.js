@@ -12,7 +12,6 @@ import Indicators from './components/Indicators';
 import Info from './components/Info';
 import Reports from './components/Reports';
 import Steps from './components/Steps';
-import Test from './components/Test';
 import '././scss/main.css';
 
 class App extends Component {
