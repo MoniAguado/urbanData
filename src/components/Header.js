@@ -25,7 +25,7 @@ class Header extends Component {
 							<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
 							<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
 							<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Faq</a></li>
-							<li className="nav__item" onClick={this.menuToggle}><a href="#contact">Registrate ahora</a></li>
+							<li className="nav__item" onClick={this.menuToggle}><a href="#contact">Regístrate ahora</a></li>
 						</ul>
 					</nav>
 					<div className="header__item--big">
@@ -38,7 +38,7 @@ class Header extends Component {
 								<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
 								<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
 								<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Preguntas Frecuentes</a></li>
-								<li className="nav__item button--type" onClick={this.menuToggle}><a href="#contact" className="button--type">Registrate ahora</a></li>
+								<li className="nav__item button--type" onClick={this.menuToggle}><a href="#contact" className="button--type">Regístrate ahora</a></li>
 							</ul>
 						</nav>
 					</div>
