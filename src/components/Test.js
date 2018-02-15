@@ -11,8 +11,8 @@ render(){
 	    categories: ['2017Q1', '2017Q2', '2017Q3']
 	  },
 	  series: [{
-	    //  data: [29.9, 71.5, 106.4]
-		  data: [`{this.props.getPrices}`]
+	    data: [29.9, 71.5, 106.4]
+		 
 
 	  }]
 	};
