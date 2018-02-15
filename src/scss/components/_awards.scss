@@ -1,0 +1,25 @@
+
+.awards__container {
+	height: 150px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.awards__container-img {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.awards__container img{
+	margin-right: 10px;
+}
+
+.awards-img {
+	width: 200px;
+	margin-right: 20%;
+}

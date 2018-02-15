@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Coupon from './components/Coupon';
 import Cover from './components/Cover';
@@ -59,6 +60,7 @@ class App extends Component {
 					<Faq />
 					<Test />
 					<Contact openCoupon={this.openCoupon}/>
+					<Awards />
 				</main>
 				<Footer />
 

@@ -33,6 +33,28 @@
   font-weight: normal;
   font-style: normal; }
 
+.awards__container {
+  height: 150px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.awards__container-img {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.awards__container img {
+  margin-right: 10px; }
+
+.awards-img {
+  width: 200px;
+  margin-right: 20%; }
+
 .button {
   background-color: #070d1e;
   color: #fff;
@@ -241,10 +263,10 @@
       border-right-style: none; }
 
 .cover__background {
-  background-image: url(../images/ny2.jpg);
+  background-image: url(../images/mad.jpg);
   background-position: center top;
   background-size: cover;
-  height: 100vh;
+  height: 65vh;
   width: 100%; }
   @media all and (max-width: 619px) {
     .cover__background {
@@ -257,37 +279,44 @@
 
 .title-block {
   position: absolute;
-  top: 50%;
-  left: 5%;
-  max-width: 650px; }
-  @media all and (max-width: 1000px) {
-    .title-block {
-      max-width: 450px; } }
+  top: 40%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%); }
   @media all and (max-width: 619px) {
     .title-block {
-      max-width: 250px;
-      top: 22%; } }
+      top: 50%; } }
 
 .cover__title {
   width: 100%;
   color: #fff;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   line-height: 45px;
-  margin-top: 7%;
-  margin-left: 6%; }
+  margin-top: 7%; }
   @media all and (max-width: 1000px) {
     .cover__title {
-      font-size: 25px;
-      line-height: 38px;
-      margin-top: 6%;
-      margin-left: 6%; } }
+      font-size: 1.8em;
+      margin-top: 6%; } }
   @media all and (max-width: 619px) {
     .cover__title {
-      font-size: 1.25em;
-      line-height: 32px;
-      margin-top: 0;
-      margin-left: 0; } }
+      font-size: 1.2em;
+      margin-top: 10%; } }
+
+.cover__subtitle {
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.3em;
+  text-transform: none; }
+  @media all and (max-width: 1000px) {
+    .cover__subtitle {
+      font-size: 1em;
+      margin-top: 6%; } }
+  @media all and (max-width: 619px) {
+    .cover__subtitle {
+      font-size: 0.8em;
+      margin-top: 10%; } }
 
 .faq {
   background-color: #20232e; }
@@ -331,7 +360,7 @@
   padding: 0; }
 
 .indicators__background {
-  background-image: url("../images/newpic.jpg");
+  background-image: url("../images/bcn.jpg");
   background-position: center top;
   background-size: cover;
   height: 100%;
@@ -564,7 +593,7 @@
 
 h1 {
   font-family: 'Gotham Light';
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 20px; }
 
@@ -621,36 +650,26 @@ p {
 .footer__container {
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between; }
-  @media all and (max-width: 619px) {
-    .footer__container {
-      flex-direction: column; } }
+  justify-content: center; }
 
 .footer__item {
   margin: 10px 50px;
   text-align: center; }
 
-@media all and (max-width: 619px) {
-  .footer__item p {
-    font-size: 0.9em; } }
+.footer__item p {
+  padding-top: 10px;
+  font-size: 1.2em; }
+  @media all and (max-width: 619px) {
+    .footer__item p {
+      font-size: 0.9em; } }
 
 .footer__item a {
   text-decoration: none;
   color: #b7bcc6; }
 
 .footer__image--logo {
-  width: 110px;
-  height: 45px; }
-
-.premios__container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.premios__container img {
-  width: 90px;
-  margin-right: 10px; }
+  width: 170px;
+  height: 52px; }
 
 .reports__description {
   display: grid;
@@ -696,7 +715,16 @@ p {
       align-self: center; } }
 
 .header {
-  background: #070d1e; }
+  background: rgba(7, 13, 30, 0.15);
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+.header__nav .nav__item:last-child {
+  background: #070d1e;
+  padding: 9px;
+  font-weight: bold;
+  border: 1px solid #fff; }
 
 .header__container {
   display: flex;
@@ -730,7 +758,7 @@ p {
     display: none; }
   .header__nav__mobile .nav__item {
     display: block;
-    padding: 11px 0;
+    padding: 15px 0;
     width: 150px;
     text-align: right;
     padding-right: 20px;
@@ -757,7 +785,8 @@ p {
 
 .nav__item a {
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  height: 100%; }
 
 .header__item:last-child {
   padding-left: 25px;
