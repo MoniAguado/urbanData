@@ -1,7 +1,7 @@
 
 .cover__background {
-	background-image: url(../images/mad.jpg);
-	background-position: center top;
+	background-image: url(../images/sky.jpg);
+	background-position: center bottom;
 	background-size: cover;
 	height: 65vh;
 	width: 100%;
@@ -17,11 +17,13 @@
 
 .title-block {
 	position: absolute;
-	top: 40%;
+	top: 28%;
 	left: 50%;
 	width: 70%;
 	transform: translate(-50%, -50%);
-
+	@media all and (max-width: 828px){
+		top: 38%;
+		}
 	@media all and (max-width: 619px){
 		top: 40%;
 		}
@@ -39,6 +41,7 @@
 	}
 	@media all and (max-width: 619px){
 		font-size: 1.2em;
+		line-height: 25px;
 		margin-top: 10%;
 	}
 }
