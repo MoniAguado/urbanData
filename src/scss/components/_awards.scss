@@ -1,0 +1,51 @@
+
+.awards__container {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@media all and (max-width: 690px){
+		height: 470px;
+	}
+}
+
+
+.awards__text {
+	color: $color-white;
+}
+
+.awards__container-img {
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	@media all and (max-width: 690px){
+		flex-direction: column;
+		margin-top: 30px;
+	}
+}
+.awards__container img{
+	margin-right: 40px;
+	@media all and (max-width: 690px){
+		margin-top: 30px;
+	}
+}
+
+.awards-img {
+	width: 200px;
+	margin-right: 20%;
+}
+
+.awards{
+	background-image: url('../images/map_02_CO.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	@media all and (max-width: 619px){
+		height: 100%;
+		background-position: 75%;
+ 	}
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import logoapi from './../images/REDapi.png';
 
 class Info extends React.Component {
 	render () {
@@ -7,7 +8,9 @@ class Info extends React.Component {
 				<div className="block__container">
 					<div className="info__container">
 						<div className="info__details--description">
-							<p className="info__text"><span className="redapi_text">RED</span><span className="redapi_text2">api</span> es una plataforma global de información y abierta de APIs que te permite acceder a indicadores inmobiliarios de manera ágil e implementarlas fácilmente en tu empresa.</p>
+							<p className="info__text">
+								<span className="info__span--logo"><img src={logoapi} alt="RED api logo" className="header__image" padding-right="20px" /></span> 
+							es una plataforma global de información y abierta de APIs que te permite acceder a indicadores inmobiliarios de manera ágil e implementarlas fácilmente en tu empresa.</p>
 							<p className="info__text">“Obtén indicadores financieros y urbanos tanto para alquiler como compraventa que apoyen tu modelo de negocio”.</p>
 						</div>
 						<div className="info__details--action">

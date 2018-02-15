@@ -4,7 +4,7 @@
 }
 
 .indicators__background{
-	background-image: url(../images/city.jpg);
+	background-image: url('../images/bcn.jpg');
 	background-position: center top;
 	background-size: cover;
 	height: 100%;
@@ -14,24 +14,30 @@
 		background-position: 75%;
  	}
 }
-.indicators__description{
-	padding-top: 70px;
+
+.indicators__description {
+	padding-top: 60px;
 }
+
 .indicators__description--text{
 	text-align: center;
-	padding: 15px;
+	color: $color-white;
+	padding: 8px;
 	padding-left: 60px;
 	padding-right: 60px;
-	font-size: 18px;
+	font-weight: bold;
 	@media all and (max-width: 619px){
 		padding: 13px;
 		font-size: 0.9em;
 	}
 }
+
+.indicators__description--title {
+	color: $color-white;
+}
 .indicators__list{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin-top: 30px;
 	list-style-type: none;
 	justify-items: center;
 	grid-gap: 25px;
@@ -66,7 +72,6 @@
 .indicators__list--item-element-title{
 	padding-left: 0;
 	text-transform: uppercase;
-	font-size: 1.2em;
 	line-height: 20px;
 	padding: 20px 0;
 	@media all and (max-width: 619px){
@@ -76,6 +81,7 @@
 }
 .indicators__list--item-element-list{
 	list-style-type: none;
+	font-size: 1em;
 	@media all and (max-width: 619px){
 		font-size: 0.9em;
 	  line-height: 30px;

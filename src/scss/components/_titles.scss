@@ -7,14 +7,20 @@ h1 {
 }
 
 h2 {
-	font-family: 'Gotham Book';
-	font-size: 30px;
+	font-family: 'Gotham Light';
+	font-size: 25px;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 20px;
 }
 
 h3 {
-	font-family: 'Gotham Book';
+	font-family: 'Gotham Light';
 	font-size: 18px;
+}
+
+p {
+	font-family: 'Gotham Light';
+	font-size: 1em;
+	line-height: 1.3;
 }

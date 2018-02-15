@@ -1,26 +1,18 @@
 import React, { Component } from 'react';
-import TestFetch from './TestFetch.js';
+import Area from './Area';
+import Carto from './Carto';
+import Income from './Income';
+import Salestime from './Salestime';
+import Services from './Services';
+
+
 
 class Demo extends Component{
 constructor(props){
 	super(props);
 
-	this.state ={
-		cities: ''
-	}
 }
 
-	// componentDidMount(){
-	// 	fetch('http://reds.urbandataanalytics.com/reds/api/v1.0/')
-	// 	.then(response => response.json())
-	// 	.then(json => {
-	// 		const myArray = json
-	// 		this.setState({
-	// 			cities: myArray
-	// 		});
-	// 		console.log(this.state.cities);
-	// 	})
-	// }
 
 render(){
 	return(
@@ -31,7 +23,12 @@ render(){
 				<div className="demo__form">
 					<input className="demo__input" type="text" placeholder="Calle Sagasta, 5 Madrid" required="required"></input>
 					<button className="button button--search">BUSCAR</button>
-					<TestFetch />
+					<Area />
+					<Carto />
+					<Income />
+					<Salestime />
+					<Services />
+
 				</div>
 			</div>
 		</section>

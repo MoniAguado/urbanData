@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import city from '../images/city.jpg';
 
 class Indicators extends Component{
 	//constructor(props){
@@ -20,15 +19,13 @@ render(){
 				<div className="indicators__background">
 					<div className="indicators__description">
 						<h2 className="indicators__description--title">
-							Indicadores
-						</h2>
+						INDICADORES INMOBILIARIOS	</h2>
 						<p className="indicators__description--text">Recibe hasta 150€ de datos inmobiliarios gratis </p>
-						<p className="indicators__description--text">Aquí se muestran  algunos ejemplos de indicadores, aunque existen muchos más.</p>
 					</div>
 					<ul className="indicators__list">
 						<li className="indicators__list--item">
 							<div className="indicators__list--item-element">
-								<h4 className="indicators__list--item-element-title">Valor de inmueble</h4>
+								<h4 className="indicators__list--item-element-title">Inmueble</h4>
 								<ul className="indicators__list--item-element-list">
 									<li className="indicators__list--item-element-list-item">
 									Precio estimado</li>
@@ -36,6 +33,7 @@ render(){
 									<li className="indicators__list--item-element-list-item">Precio tipología inmueble</li>
 									<li className="indicators__list--item-element-list-item">Precio por estado conservación inmueble</li>
 									<li className="indicators__list--item-element-list-item">Operaciones similares cerradas</li>
+									<li>...</li>
 								</ul>
 							</div>
 						</li>
@@ -49,6 +47,7 @@ render(){
 									<li className="indicators__list--item-element-list-item">Margen de negociación</li>
 									<li className="indicators__list--item-element-list-item">Rentabilidad</li>
 									<li className="indicators__list--item-element-list-item">Rating inversión</li>
+									<li>...</li>
 								</ul>
 							</div>
 						</li>
@@ -62,6 +61,7 @@ render(){
 									<li className="indicators__list--item-element-list-item">Origen de la población</li>
 									<li className="indicators__list--item-element-list-item">Nivel de estudios</li>
 									<li className="indicators__list--item-element-list-item">Rating instalaciones</li>
+									<li>...</li>
 								</ul>
 							</div>
 						</li>

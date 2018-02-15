@@ -4,7 +4,7 @@ import logoapi from './../images/REDapi.png';
 
 class Header extends Component {
 
-	burgerToggle() {
+	menuToggle() {
 	let linksEl = document.querySelector('.nav');
 	if (linksEl.style.display === 'block') {
 		linksEl.style.display = 'none';
@@ -12,18 +12,20 @@ class Header extends Component {
 		linksEl.style.display = 'block';
 	}
 }
+
+
   render() {
     return (
     	<header className="header">
 				<div className="header__container">
 					<nav className="header__nav__mobile">
-						<i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
+						<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>
 						<ul className="nav">
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#info">¿Qué es?</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">FAQ</a></li>
-							<li className="nav__item" onClick={this.burgerToggle}><a href="#">Contacto</a></li>
+							<li className="nav__item" onClick={this.menuToggle}><a href="#info">¿Qué es?</a></li>
+							<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
+							<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
+							<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Faq</a></li>
+							<li className="nav__item" onClick={this.menuToggle}><a href="#contact">Regístrate ahora</a></li>
 						</ul>
 					</nav>
 					<div className="header__item--big">
@@ -32,11 +34,11 @@ class Header extends Component {
 					<div className="header__item">
 						<nav className="header__nav">
 							<ul className="nav">
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#info">¿Qué es?</a></li>
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#indicators">¿Cómo funciona?</a></li>
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#demo">Demo</a></li>
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#faq">Faq</a></li>
-								<li className="nav__item" onClick={this.burgerToggle}><a href="#contact">Contacto</a></li>
+								<li className="nav__item" onClick={this.menuToggle}><a href="#info">¿Qué es?</a></li>
+								<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
+								<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
+								<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Preguntas Frecuentes</a></li>
+								<li className="nav__item button--type" onClick={this.menuToggle}><a href="#contact" className="button--type">Regístrate ahora</a></li>
 							</ul>
 						</nav>
 					</div>

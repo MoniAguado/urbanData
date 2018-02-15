@@ -1,13 +1,59 @@
+.faq__background{
+	background-image: url('../images/sky.jpg');
+	// background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	@media all and (max-width: 619px){
+		height: 100%;
+		background-position: 75%;
+ 	}
+}
+.faq {
+	background-color: $color-darkGrey;
+}
+
+.faq__title {
+	color: $color-white;
+}
+
+.faq__list--question-title {
+	color: $color-red;
+}
+
+.faq__list--answer-text-li {
+	line-height: 1.3;
+}
+
 .faq__list{
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-gap: 30px;
 	padding: 0 20px;
+	color: $color-white;
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
 		grid-gap: 20px;
 		margin-top: 20px;
 		text-align: center;
 	}
+}
+
+.faq__list--answer-text{
+	padding: 15px 0;
+	list-style-type: none;
+}
+.last-question{
+	grid-column: span 2;
+	justify-self: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: $color-darkBlue;
+	padding: 10px;
+	@media all and(max-width: 619px){
+		grid-column:auto;
+	}
+}
+.faq__list--question-title{
+	margin-top: 10px;
 }
