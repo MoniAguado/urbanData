@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import data from '../token.json';
+import Test from './Test';
 
 class Area extends Component {
 	constructor(props){
@@ -37,7 +37,7 @@ class Area extends Component {
 
 		return (
 			<div className="testfetch">
-
+				<Test />
 			</div>
 		);
 	}
