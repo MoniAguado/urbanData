@@ -672,7 +672,7 @@ p {
 .demo__input {
   font-size: 20px;
   width: 280px;
-  margin-right: 20px;
+  margin: 20px 20px 20px 0;
   border: 1px solid #070d1f;
   padding: 2px 9px; }
   @media all and (max-width: 619px) {
@@ -828,7 +828,7 @@ p {
   height: 100%; }
 
 .header__nav .nav__item:last-child {
-  background: #070d1e;
+  background: #ca1c24;
   padding: 9px;
   font-weight: bold;
   border: 1px solid #fff;
