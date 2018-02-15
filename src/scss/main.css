@@ -667,13 +667,10 @@ p {
   text-decoration: none;
   color: #b7bcc6; }
 
-<<<<<<< HEAD
-=======
 .footer__image--logo {
   width: 170px;
   height: 52px; }
 
->>>>>>> 341288b5d247ec7b6286af69d73543f43d600eb7
 .reports__description {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
