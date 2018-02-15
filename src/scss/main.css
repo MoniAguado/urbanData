@@ -34,26 +34,49 @@
   font-style: normal; }
 
 .awards__container {
-  height: 150px;
-  margin-top: 10px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media all and (max-width: 690px) {
+    .awards__container {
+      height: 470px; } }
+
+.awards__text {
+  color: #fff; }
 
 .awards__container-img {
-  margin-top: 30px;
+  margin-top: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  @media all and (max-width: 690px) {
+    .awards__container-img {
+      flex-direction: column;
+      margin-top: 30px; } }
 
 .awards__container img {
-  margin-right: 10px; }
+  margin-right: 40px; }
+  @media all and (max-width: 690px) {
+    .awards__container img {
+      margin-top: 30px; } }
 
 .awards-img {
   width: 200px;
   margin-right: 20%; }
+
+.awards {
+  background-image: url("../images/map_02_CO.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+  @media all and (max-width: 619px) {
+    .awards {
+      height: 100%;
+      background-position: 75%; } }
 
 .button {
   background-color: #070d1e;
@@ -285,7 +308,7 @@
   transform: translate(-50%, -50%); }
   @media all and (max-width: 619px) {
     .title-block {
-      top: 50%; } }
+      top: 40%; } }
 
 .cover__title {
   width: 100%;
@@ -667,13 +690,10 @@ p {
   text-decoration: none;
   color: #b7bcc6; }
 
-<<<<<<< HEAD
-=======
 .footer__image--logo {
   width: 170px;
   height: 52px; }
 
->>>>>>> 341288b5d247ec7b6286af69d73543f43d600eb7
 .reports__description {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
