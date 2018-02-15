@@ -318,6 +318,16 @@
       font-size: 0.8em;
       margin-top: 10%; } }
 
+.faq__background {
+  background-image: url("../images/sky.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+  @media all and (max-width: 619px) {
+    .faq__background {
+      height: 100%;
+      background-position: 75%; } }
+
 .faq {
   background-color: #20232e; }
 
@@ -350,10 +360,16 @@
 
 .last-question {
   grid-column: span 2;
-  justify-self: center; }
+  justify-self: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #070d1e;
+  padding: 10px; }
   @media all and (max-width: 619px) {
     .last-question {
       grid-column: auto; } }
+
+.faq__list--question-title {
+  margin-top: 10px; }
 
 .block__container.indicators__container {
   margin: 0;
