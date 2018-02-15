@@ -731,20 +731,13 @@ p {
       align-self: center; } }
 
 .header {
-  background: rgba(7, 13, 30, 0.15);
+  background: rgba(7, 13, 30, 0.8);
   position: fixed;
   width: 100%;
   z-index: 100; }
 
-.header__nav .nav__item:last-child {
-  background: #070d1e;
-  padding: 9px;
-  font-weight: bold;
-  border: 1px solid #fff; }
-
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px;
   position: relative;
@@ -752,18 +745,18 @@ p {
   @media all and (max-width: 979px) {
     .header__container {
       padding: 20px 12px; } }
-  @media all and (max-width: 669px) {
+  @media all and (max-width: 872px) {
     .header__container {
       padding: 20px 12px;
       display: inline-block; } }
 
-@media all and (max-width: 669px) {
+@media all and (max-width: 872px) {
   .header__nav {
     display: none; } }
 
 .header__nav__mobile {
   display: none; }
-  @media all and (max-width: 669px) {
+  @media all and (max-width: 872px) {
     .header__nav__mobile {
       display: inline-block;
       float: right;
@@ -794,25 +787,37 @@ p {
   display: inline-block;
   margin: 0 30px;
   font-size: 1em; }
-  @media all and (max-width: 919px) {
+  @media all and (max-width: 1165px) {
     .nav__item {
-      margin: 0 15px;
-      font-size: 0.87em; } }
+      margin: 0 14px;
+      font-size: 0.97em; } }
+  @media all and (max-width: 998px) {
+    .nav__item {
+      margin: 0 8px;
+      font-size: 0.9em; } }
 
 .nav__item a {
   text-decoration: none;
   color: #fff;
   height: 100%; }
 
+.header__nav .nav__item:last-child {
+  background: #070d1e;
+  padding: 9px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  margin: 0; }
+
 .header__item:last-child {
   padding-left: 25px;
-  border-left: 1px solid #fff; }
-  @media all and (max-width: 919px) {
+  border-left: 1px solid #fff;
+  position: absolute;
+  right: 5%; }
+  @media all and (max-width: 872px) {
     .header__item:last-child {
-      padding-left: 10px; } }
-  @media all and (max-width: 669px) {
-    .header__item:last-child {
-      border: none; } }
+      border: none;
+      position: relative;
+      margin-left: 12px; } }
 
 .header__image--small {
   height: 33px; }
