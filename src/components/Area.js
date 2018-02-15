@@ -7,7 +7,6 @@ class Area extends Component {
 		super(props);
 		this.state={
 			priceEvolutionMun: []
-
 		}
 	}
 
