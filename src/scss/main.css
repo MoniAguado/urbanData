@@ -33,6 +33,28 @@
   font-weight: normal;
   font-style: normal; }
 
+.awards__container {
+  height: 150px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.awards__container-img {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.awards__container img {
+  margin-right: 10px; }
+
+.awards-img {
+  width: 200px;
+  margin-right: 20%; }
+
 .button {
   background-color: #070d1e;
   color: #fff;
@@ -241,7 +263,7 @@
       border-right-style: none; }
 
 .cover__background {
-  background-image: url(../images/ny2.jpg);
+  background-image: url(../images/mad.jpg);
   background-position: center top;
   background-size: cover;
   height: 65vh;
@@ -338,7 +360,7 @@
   padding: 0; }
 
 .indicators__background {
-  background-image: url("../images/newpic.jpg");
+  background-image: url("../images/bcn.jpg");
   background-position: center top;
   background-size: cover;
   height: 100%;
@@ -644,20 +666,6 @@ p {
 .footer__item a {
   text-decoration: none;
   color: #b7bcc6; }
-
-.footer__image--logo {
-  width: 110px;
-  height: 45px; }
-
-.premios__container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.premios__container img {
-  width: 90px;
-  margin-right: 10px; }
 
 .reports__description {
   display: grid;
