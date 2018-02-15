@@ -58,7 +58,6 @@ class App extends Component {
 					<Steps />
 					<Demo />
 					<Faq />
-					<Test />
 					<Contact openCoupon={this.openCoupon}/>
 					<Awards />
 				</main>
