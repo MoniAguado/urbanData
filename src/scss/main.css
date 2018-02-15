@@ -788,6 +788,9 @@ p {
     font-size: 0.9em;
     background: #070d1e; }
 
+.change {
+  border: 1px solid #fff; }
+
 .fa-bars {
   color: #fff; }
 
