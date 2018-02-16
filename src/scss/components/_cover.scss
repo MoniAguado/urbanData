@@ -1,9 +1,9 @@
 
 .cover__background {
-	background-image: url(../images/sky.jpg);
-	background-position: center bottom;
+	background-image: url(../images/skyfull.jpg);
+	background-position: 0 center;
 	background-size: cover;
-	height: 65vh;
+	height: 80vh;
 	width: 100%;
 	@media all and (max-width: 619px){
 		height: 70vh;

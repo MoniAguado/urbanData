@@ -1,5 +1,5 @@
 import React from 'react';
-import mad from '../images/sky.jpg';
+import mad from '../images/skyfull.jpg';
 
 
 class Cover extends React.Component{
