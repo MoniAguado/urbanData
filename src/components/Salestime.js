@@ -3,6 +3,12 @@ import React, { Component } from 'react';
 import data from '../token.json';
 
 class Salestime extends Component {
+	constructor(props){
+		super(props);
+		this.state={
+			salesTime: ''
+		}
+	}
 
 	componentDidMount(){
 		let url = 'http://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=s_t&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.6938510999999608,40.4291744]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3';
@@ -16,13 +22,20 @@ class Salestime extends Component {
 	.then(response => response.json())
 	.then(json => console.log(json));
 
-	}
+const salestime =  json["2017Q3"]["72400013000280007900007000740007600000"]["renthog_06_13_M"]["0"];
+
+	this.setState({
+		salesTime: salestime
+	})
+
+}
 
 	render() {
 		return (
 			<div className="salestime__container">
 				<div className="salestime__description">
 					<h5 className="salestime__title">Tiempo de venta</h5><span>(sem)</span>
+					<span className="income_value">{this.state.salesTime.toLocaleString()}  €/año</span>
 					<p className="salestime__text">Semanas estimadas para la venta de un inmueble en un trimestre dado.</p>
 				</div>
 				<div className="salestime__all-data">
