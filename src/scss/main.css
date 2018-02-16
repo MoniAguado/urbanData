@@ -760,7 +760,7 @@ p {
       align-self: center; } }
 
 .header {
-  background: rgba(7, 13, 30, 0.8);
+  background-image: url("../images/skyfull.jpg");
   position: fixed;
   width: 100%;
   z-index: 100; }
