@@ -6,7 +6,7 @@ class Area extends Component {
 	constructor(props){
 		super(props);
 		this.state={
-			priceEvolutionMun: []
+			priceMun: []
 		}
 	}
 
@@ -27,7 +27,9 @@ class Area extends Component {
 				 let precio = json["2017Q" + i]["72400013000280007900000000000000000000"]["1"]["o_pu"];
 				 priceMun.push(precio);
 				}
-			console.log(priceMun);
+			this.setState({
+				priceMun : priceMun
+			})
 			}
 		)
 	}
@@ -36,7 +38,7 @@ class Area extends Component {
 
 		return (
 			<div className="testfetch">
-				<Test />
+				<Test getChart = {this.state.priceMun} />
 			</div>
 		);
 	}
