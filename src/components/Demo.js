@@ -8,11 +8,6 @@ import Income from './Income';
 
 
 class Demo extends Component{
-constructor(props){
-	super(props);
-
-}
-
 
 render(){
 	return(
