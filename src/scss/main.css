@@ -346,7 +346,7 @@
       margin-top: 10%; } }
 
 .faq__background {
-  background-image: url("../images/sky.jpg");
+  background-image: url("../images/bcndark.jpg");
   background-size: cover;
   height: 100%;
   width: 100%; }
@@ -388,8 +388,6 @@
 .last-question {
   grid-column: span 2;
   justify-self: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #070d1e;
   padding: 10px; }
   @media all and (max-width: 619px) {
     .last-question {
