@@ -4,23 +4,25 @@ import ReactHighcharts from 'react-highcharts'; // Expects that Highcharts was l
 
 class Test extends React.Component{
 
-
-render(){
-	const config = {
-	  xAxis: {
-	    categories: ['2017Q1', '2017Q2', '2017Q3']
-	  },
-	  series: [{
-		  data: this.props.getChart
-	  }]
-	};
-
+	render(){
+		const config = {
+		  xAxis: {
+		    categories: ['2017Q1', '2017Q2', '2017Q3']
+		  },
+		  series: [{
+				name: 'Municipio',
+	      data: this.props.getChartMun
+	    },{
+	      name: 'Barrio',
+	      data: this.props.getChartNeighborhood
+	    }]
+		}
 		return(
-    <div>
-			<ReactHighcharts config = {config}></ReactHighcharts>
-    </div>
-	);
-}
+	  	<div>
+				<ReactHighcharts config = {config}></ReactHighcharts>
+	    </div>
+		);
+	}
 }
 
 export default Test;
