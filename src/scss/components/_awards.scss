@@ -36,6 +36,9 @@
 .awards-img {
 	width: 200px;
 	margin-right: 20%;
+	@media all and (max-width: 619px){
+		margin-right: 0;
+	}
 }
 
 .awards{

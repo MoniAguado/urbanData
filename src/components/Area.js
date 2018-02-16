@@ -37,7 +37,7 @@ class Area extends Component {
 
 		return (
 			<div className="testfetch">
-				<Test />
+				<Test {this.promise}/>
 			</div>
 		);
 	}
