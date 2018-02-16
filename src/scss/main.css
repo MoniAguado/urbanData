@@ -134,6 +134,9 @@
   height: 50px;
   width: 250px; }
 
+.highcharts-root .highcharts-background {
+  background-color: #ca1c24; }
+
 .highcharts-plot-background {
   height: 100px;
   width: 100px; }
