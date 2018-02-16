@@ -1,5 +1,5 @@
 .faq__background{
-	background-image: url('../images/sky.jpg');
+	background-image: url('../images/bcndark.jpg');
 	// background-position: center;
 	background-size: cover;
 	height: 100%;
@@ -19,6 +19,7 @@
 
 .faq__list--question-title {
 	color: $color-red;
+	// font-weight: 10000;
 }
 
 .faq__list--answer-text-li {
@@ -47,8 +48,8 @@
 .last-question{
 	grid-column: span 2;
 	justify-self: center;
-	background-color: rgba(255, 255, 255, 0.9);
-	color: $color-darkBlue;
+	//background-color: rgba(255, 255, 255, 0.9);
+	//color: $color-darkBlue;
 	padding: 10px;
 	@media all and(max-width: 619px){
 		grid-column:auto;
