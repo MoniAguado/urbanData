@@ -505,7 +505,9 @@
       line-height: normal; } }
 
 .info__details--action {
-  text-align: center; }
+  text-align: center;
+  border-left: solid 2px #b7bcc6;
+  padding-left: 20px; }
   .info__details--action .button--contact {
     width: 230px;
     margin: 0 auto;
@@ -711,7 +713,7 @@ p {
   color: #b7bcc6; }
 
 .footer__image--logo {
-  width: 170px;
+  width: 156px;
   height: 52px; }
 
 .reports__description {
