@@ -12,20 +12,20 @@ class Steps extends React.Component {
 								<div className="step-circle">
 									<p className="step-number">1</p>
 								</div>
-								<h4 className="step__title">Solicitud de Token</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p></li>
+								<h4 className="step__title">Contacta con nosotros y solicita un token para identificar a tu negocio. </h4>
+							</li>
 							<li className="step step2">
 								<div className="step-circle">
 									<p className="step-number">2</p>
 								</div>
-								<h4 className="step__title">Identificación de indicadores</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. labore et dolore magna aliqua</p></li>
+								<h4 className="step__title">Selecciona los datos que quieres utilizar y define como mostrarlos a tu audiencia.</h4>
+							</li>
 							<li className="step step3">
 								<div className="step-circle">
 									<p className="step-number">3</p>
 								</div>
-								<h4 className="step__title">integración y producción</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+								<h4 className="step__title">Integra de manera sencilla los indicadores y comienza a sacarles valor.</h4>
+								</li>
 						</ul>
 					</div>
 				</div>

@@ -351,7 +351,7 @@
       margin-top: 10%; } }
 
 .faq__background {
-  background-image: url("../images/bcndark.jpg");
+  background-image: url("../images/bcn.png");
   background-size: cover;
   height: 100%;
   width: 100%; }
@@ -796,6 +796,7 @@ p {
   .header__nav__mobile .nav {
     position: absolute;
     right: 0;
+    top: 75px;
     display: none; }
   .header__nav__mobile .nav__item {
     display: block;
@@ -804,7 +805,7 @@ p {
     text-align: right;
     padding-right: 20px;
     font-size: 0.9em;
-    background: #070d1e; }
+    background: #232323; }
 
 .change {
   border: 1px solid #fff; }
