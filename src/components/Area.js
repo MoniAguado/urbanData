@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import data from '../token.json';
-import Test from './Test';
+// import Test from './Test';
 
 class Area extends Component {
 	constructor(props){
 		super(props);
-		this.state={
-			priceEvolutionMun: []
-
-		}
+		// this.state={
+		// 	priceEvolutionMun: []
+		//
+		// }
 	}
 
 	componentDidMount(){
@@ -28,6 +28,7 @@ class Area extends Component {
 				 let precio = json["2017Q" + i]["72400013000280007900000000000000000000"]["1"]["o_pu"];
 				 priceMun.push(precio);
 				}
+				
 			console.log(priceMun);
 			}
 		)
@@ -37,7 +38,7 @@ class Area extends Component {
 
 		return (
 			<div className="testfetch">
-				<Test />
+				{/* <Test /> */}
 			</div>
 		);
 	}
