@@ -53,6 +53,7 @@
 }
 
 .fa-bars{
+	font-size: 1.5em;
 	color: $color-white;
 }
 .nav{
@@ -83,7 +84,7 @@
   background: $color-red;
   padding: 9px;
   font-weight: bold;
-		border: 1px solid $color-white;
+	border: 1px solid $color-white;
 	margin: 0;
 }
 
@@ -103,7 +104,8 @@
 .header__image--small{
   height: 33px;
 	@media all and (max-width: 979px){
- 	 	height: 30px
+ 	 	height: 30px;
+		margin-left: 20px;
 	}
 }
 .header__image{
@@ -113,4 +115,9 @@
 		width: 104px;
     height: 29px;
 	}
+}
+.header__items-logos {
+	display: flex;
+
+	
 }

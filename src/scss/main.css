@@ -61,11 +61,16 @@
   margin-right: 40px; }
   @media all and (max-width: 690px) {
     .awards__container img {
-      margin-top: 30px; } }
+      margin-top: 30px;
+      margin-right: 0; } }
 
 .awards-img {
   width: 200px;
   margin-right: 20%; }
+  @media all and (max-width: 690px) {
+    .awards-img {
+      width: 150px;
+      margin-right: 0; } }
 
 .awards {
   background-image: url("../images/map_02_CO.jpg");
@@ -286,10 +291,10 @@
       border-right-style: none; }
 
 .cover__background {
-  background-image: url(../images/sky.jpg);
-  background-position: center bottom;
+  background-image: url(../images/skyfull.jpg);
+  background-position: 0 center;
   background-size: cover;
-  height: 65vh;
+  height: 80vh;
   width: 100%; }
   @media all and (max-width: 619px) {
     .cover__background {
@@ -815,6 +820,7 @@ p {
   border: 1px solid #fff; }
 
 .fa-bars {
+  font-size: 1.5em;
   color: #fff; }
 
 .nav {
@@ -863,7 +869,8 @@ p {
   height: 33px; }
   @media all and (max-width: 979px) {
     .header__image--small {
-      height: 30px; } }
+      height: 30px;
+      margin-left: 20px; } }
 
 .header__image {
   width: 120px;
@@ -872,6 +879,9 @@ p {
     .header__image {
       width: 104px;
       height: 29px; } }
+
+.header__items-logos {
+  display: flex; }
 
 * {
   box-sizing: border-box;
