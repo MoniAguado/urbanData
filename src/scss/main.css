@@ -417,6 +417,9 @@
 .faq__list--question-title {
   margin-top: 10px; }
 
+.income_container {
+  display: flex; }
+
 .block__container.indicators__container {
   margin: 0;
   padding: 0; }
