@@ -592,6 +592,16 @@
 .reports__img-preview {
   padding: 10px; }
 
+.salestime__all-data {
+  display: flex;
+  flex-direction: row; }
+
+.salestime__data {
+  background-color: #b7bcc6; }
+
+.salestime__data--numbers {
+  display: flex; }
+
 .steps__title {
   color: #fff;
   margin-bottom: 20px; }
