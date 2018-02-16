@@ -134,6 +134,26 @@
   height: 50px;
   width: 250px; }
 
+.highcharts-plot-background {
+  height: 100px;
+  width: 100px; }
+
+.element.style {
+  fill: #ca1c24;
+  color: #ca1c24; }
+
+.highcharts-axis-labels {
+  fill: #ca1c24; }
+
+.highcharts-point {
+  fill: #ca1c24; }
+
+.highcharts-point.highcharts-color-0 {
+  fill: #ca1c24; }
+
+.highcharts-graph {
+  color: #ca1c24; }
+
 .contact {
   background-color: #eff2f7; }
 
