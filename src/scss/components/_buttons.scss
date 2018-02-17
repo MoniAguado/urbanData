@@ -49,17 +49,19 @@
 }
 
 .button--report{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: $color-darkBlue;
 	color: $color-white;
 	font-size: 1em;
-	padding-top: 17.5px;
 	border: none;
 	outline: none;
 	border: 1px solid $color-white;
 	cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-align: center;
+	margin: 0 auto 15px;
 	height: 50px;
 	width: 250px;
 }
