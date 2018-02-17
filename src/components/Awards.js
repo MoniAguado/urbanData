@@ -21,7 +21,7 @@ class Awards extends React.Component {
 				</div>
 			</section>
 
-				)
+		)
 	}
 }
 

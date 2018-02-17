@@ -297,13 +297,23 @@
   height: 80vh; }
 
 .cover__background {
-  background-image: url("../images/skyfull.jpg");
-  background-position: 0 -200px;
+  background-image: url("../images/skyfull3.jpg");
+  background-position: center 0;
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
   width: 100%; }
-  @media all and (min-width: 620px) and (max-width: 1200px) {
+  @media all and (min-width: 1025px) and (max-width: 1200px) {
+    .cover__background {
+      background-position: 0 0;
+      background-size: 100%;
+      background-image: url("../images/skyfull2.jpg"); } }
+  @media all and (min-width: 801px) and (max-width: 1024px) {
+    .cover__background {
+      background-position: 0 -400px;
+      background-size: 100%;
+      background-image: url("../images/skyfull_mobile.jpg"); } }
+  @media all and (min-width: 620px) and (max-width: 800px) {
     .cover__background {
       background-position: 0 -200px;
       background-size: 100%;
@@ -320,11 +330,20 @@
 
 .title-block {
   position: absolute;
-  top: 160px;
+  top: 80px;
   left: 50%;
   width: 80%;
   transform: translate(-50%, 0);
   max-width: 1000px; }
+  @media all and (min-width: 801px) and (max-width: 1024px) {
+    .title-block {
+      top: 60px; } }
+  @media all and (min-width: 620px) and (max-width: 800px) {
+    .title-block {
+      top: 80px; } }
+  @media all and (max-width: 619px) {
+    .title-block {
+      top: 90px; } }
 
 .cover__title {
   width: 100%;
@@ -464,6 +483,10 @@
   width: 100%;
   text-align: center;
   line-height: 20px; }
+  @media all and (min-width: 620px) and (max-width: 850px) {
+    .indicators__list--item:last-child {
+      grid-column: span 2;
+      width: 320px; } }
   @media all and (max-width: 619px) {
     .indicators__list--item {
       width: 300px; } }
@@ -801,14 +824,24 @@ p {
       align-self: center; } }
 
 .header {
-  background-image: url("../images/skyfull.jpg");
-  background-position: 0 -200px;
-  background-size: cover;
+  background-image: url("../images/skyfull3.jpg");
+  background-size: 100%;
+  background-position: center 0;
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
   z-index: 100; }
-  @media all and (min-width: 620px) and (max-width: 1200px) {
+  @media all and (min-width: 1025px) and (max-width: 1200px) {
+    .header {
+      background-position: 0 0;
+      background-size: 100%;
+      background-image: url("../images/skyfull2.jpg"); } }
+  @media all and (min-width: 801px) and (max-width: 1024px) {
+    .header {
+      background-position: 0 -400px;
+      background-size: 100%;
+      background-image: url("../images/skyfull_mobile.jpg"); } }
+  @media all and (min-width: 620px) and (max-width: 800px) {
     .header {
       background-position: 0 -200px;
       background-size: 100%;

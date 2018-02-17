@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 
 class Indicators extends Component{
-	//constructor(props){
-	//	super(props);
-
-		//this.bind
-
-		//this.state
-
-
-	//}
 
 render(){
 

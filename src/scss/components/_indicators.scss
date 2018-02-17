@@ -39,9 +39,7 @@
 	grid-gap: 25px;
 	padding: 0 10px;
 	@media all and (min-width: 620px) and (max-width: 850px){
-
 		grid-template-columns: 1fr 1fr;
-
 	}
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
@@ -60,11 +58,15 @@
 	width: 100%;
 	text-align: center;
 	line-height: 20px;
-
+	&:last-child {
+		@media all and (min-width: 620px) and (max-width: 850px){
+		grid-column: span 2;
+		width: 320px;
+		}
+	}
 @media all and (max-width: 619px){
 	width: 300px;
-}
-
+	}
 }
 
 .indicators__list--item-element-title{
