@@ -3,6 +3,9 @@ import Rxjs from 'rxjs';
 import logouda from './../images/udaWhite.png';
 import logoapi from './../images/REDapi.png';
 
+import { Link, animateScroll as scroller } from 'react-scroll';
+
+
 class Header extends Component {
 	constructor(props) {
 		super(props);
@@ -10,6 +13,7 @@ class Header extends Component {
 			isMin: false
 		};
 		this.scrolls$ = null;
+
 	}
 
 	componentDidMount() {
@@ -23,12 +27,28 @@ class Header extends Component {
 				this.setState({
 					isMin: false
 				});
+				 document.querySelector('.nav').style.display = 'none';
+
 			}
 		});
 	}
 
+
+	scrollTo() {
+		scroller.scrollTo('scroll-to-element', {
+			duration: 800,
+			delay: 0,
+			smooth: 'easeInOutQuart',
+			offset:	-60
+		})
+	}
+
+
+
+
 	componentWillUnmount() {
 		if (this.scrolls$) this.scrolls$.unsubscribe();
+
 	}
 
 	menuToggle() {
@@ -41,18 +61,35 @@ class Header extends Component {
 	}
 
 
-  render() {
-    return (
-    	<header className={`header ${this.state.isMin ? 'small' : '' }`}>
+	render() {
+		return (
+			<header className={`header ${this.state.isMin ? 'small' : '' }`}>
 				<div className="header__container">
 					<nav className="header__nav__mobile">
 						<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>
 						<ul className="nav">
-							<li className="nav__item" onClick={this.menuToggle}><a href="#info">¿Qué es?</a></li>
-							<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
-							<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
-							<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Faq</a></li>
-							<li className="nav__item" onClick={this.menuToggle}><a href="#contact">Regístrate ahora</a></li>
+							<li className="nav__item" onClick={this.menuToggle} >
+								<a href="#initSection">¿Qué es?</a>
+							</li>
+							<li className="nav__item" onClick={this.menuToggle}>
+								<a href="#indicatorsSection">Indicadores</a>
+							</li>
+							<li className="nav__item" onClick={this.menuToggle}>
+								<a href="#reportsSection">Informes</a>
+							</li>
+							<li className="nav__item" onClick={this.menuToggle}>
+								<a href="#howDoesWorkItSection">¿Cómo funciona?</a>
+							</li>
+							<li className="nav__item" onClick={this.menuToggle}>
+								<a href="#demoSection">Demo</a>
+							</li>
+							<li className="nav__item" onClick={this.menuToggle}>
+								<a href="#faqSection">Faq</a>
+							</li>
+							<li className="nav__item" onClick={this.menuToggle}>
+								<a href="#contactSection" onClick={this.props.openCoupon}>Regístrate</a>
+
+							</li>
 						</ul>
 					</nav>
 					<div className="header__items-logos">
@@ -62,11 +99,29 @@ class Header extends Component {
 						<div className="header__item">
 							<nav className="header__nav">
 								<ul className="nav">
-									<li className="nav__item" onClick={this.menuToggle}><a href="#info">¿Qué es?</a></li>
-									<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
-									<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
-									<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Preguntas Frecuentes</a></li>
-									<li className="nav__item button--type" onClick={this.menuToggle}><a href="#contact" className="button--type">Regístrate ahora</a></li>
+
+								<li className="nav__item">
+									<Link activeClass="active" className="menu--item_desktop" to="initSection" spy={true} smooth={true} duration={500} offset={-60}>¿Qué es?</Link>
+								</li>
+									<li className="nav__item">
+										<Link activeClass="active" className="menu--item_desktop" to="indicatorsSection" spy={true} smooth={true} duration={500} offset={-60}>Indicadores</Link>
+									</li>
+
+									<li className="nav__item">
+										<Link activeClass="active" className="menu--item_desktop" to="reportsSection" spy={true} smooth={true} duration={500} offset={-60}>Informes</Link>
+									</li>
+									<li className="nav__item" >
+										<Link activeClass="active" className="menu--item_desktop" to="howDoesWorkItSection" spy={true} smooth={true} duration={500} offset={-60}>¿Cómo funciona?</Link>
+									</li>
+									<li className="nav__item" >
+										<Link activeClass="active" className="menu--item_desktop" to="demoSection" spy={true} smooth={true} duration={500} offset={-60}>Demo</Link>
+									</li>
+									<li className="nav__item">
+										<Link activeClass="active" className="menu--item_desktop" to="faqSection" spy={true} smooth={true} duration={500} offset={-60}>Preguntas Frecuentes</Link>
+									</li>
+									<li className="nav__item">
+										<button className="button button--register" onClick={this.props.openCoupon}>Regístrate ahora</button>
+									</li>
 								</ul>
 							</nav>
 						</div>
@@ -75,10 +130,10 @@ class Header extends Component {
 						</div>
 					</div>
 
-				</div>
+			</div>
 			</header>
-    );
-  }
+		);
+	}
 }
 
 export default Header;

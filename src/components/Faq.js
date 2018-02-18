@@ -6,7 +6,7 @@ class Faq extends Component{
 	render(){
 
 		return(
-			<section className="faq" id="faq">
+			<section  id="faqSection" className="faq">
 				<div className="faq__background">
 					<div className="block__container">
 						<h2 className="faq__title">Preguntas frecuentes</h2>

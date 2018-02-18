@@ -17,12 +17,14 @@
 	margin-bottom: 20px;
 	border: 1px solid $color-white;
 }
-// .button--contact{
-// 	width: 240px;
-//   padding: 7px 20px;
-// 	font-size: 1em;
-// 	margin:0 auto;
-//  }
+
+.button--register {
+	background-color: $color-red;
+	font-size: 14px;
+	padding: 10px;
+	font-family: 'Gotham Book';
+	margin-left: 15px;
+}
 .button--search{
 	background: $color-darkBlue;
   font-size: 16px;

@@ -13,7 +13,10 @@ import Info from './components/Info';
 import Reports from './components/Reports';
 import Steps from './components/Steps';
 // import Test from './components/Test';
+
 import '././scss/main.css';
+
+
 
 class App extends Component {
 
@@ -36,15 +39,11 @@ class App extends Component {
 			visible: false
 		});
 	}
-	
-
-
-
 
 	render() {
 		return (
 			<div className="App">
-				<Header />
+				<Header openCoupon={this.openCoupon}/>
 				<main>
 					<Cover />
 					<Info openCoupon={this.openCoupon}/>
@@ -58,9 +57,7 @@ class App extends Component {
 				</main>
 				<Footer />
 
-				<Coupon show={this.state.visible}
-					onRequestClose={this.closeCoupon}
-				/>
+				<Coupon show={this.state.visible} onRequestClose={this.closeCoupon} />
 			</div>
 		);
 	}

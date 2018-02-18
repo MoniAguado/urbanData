@@ -16,7 +16,7 @@ class Demo extends Component{
 
 render(){
 	return(
-		<section className="demo" id="demo">
+		<section className="demo" id="demoSection">
 			<div className="block__container">
 				<h2 className="demo__title">REDapi DEMO</h2>
 				<h3 className="demo__text">Introduce una dirección y prueba ejemplos de visualización de nuestras APIs.</h3>
