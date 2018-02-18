@@ -885,7 +885,7 @@ p {
   .header__nav__mobile .nav__item {
     display: block;
     padding: 15px 20px;
-    width: auto;
+    width: auton;
     text-align: right;
     font-size: 0.9em;
     background: rgba(53, 56, 56, 0.83);
