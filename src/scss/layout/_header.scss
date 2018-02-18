@@ -1,38 +1,54 @@
 .header{
-	background-image: url('../images/skyfull3.jpg');
-	background-size: 100%;
-	background-position: center 0;
-	background-repeat: no-repeat;
+	// background-image: url('../images/skyfull3.jpg');
+	// background-size: 100%;
+	// background-position: center 0;
+	// background-repeat: no-repeat;
 	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	z-index: 100;
+	background-color: rgba(0, 0, 0, 0);
+	transition:  all .4s ease-in-out;
+	height: 100px;
 
-
-	@media all and (min-width: 1025px) and (max-width: 1200px){
-		background-position: 0 0;
-		background-size: 100%;
-		background-image: url('../images/skyfull2.jpg');
-		}
-
-
-	@media all and (min-width: 801px) and (max-width: 1024px){
-		background-position: 0 -400px;
-		background-size: 100%;
-
-		background-image: url('../images/skyfull_mobile.jpg');
-		}
-
-	@media all and (min-width: 620px) and (max-width: 800px){
-		background-position: 0 -200px;
-		background-size: 100%;
-		background-image: url('../images/skyfull_mobile.jpg');
-		}
-	@media all and (max-width: 619px){
-		background-position: 0 0;
-		background-image: url('../images/skyfull_mobile.jpg');
-		background-size: cover;
+	// @media all and (min-width: 1025px) and (max-width: 1200px){
+	// 	background-position: 0 0;
+	// 	background-size: 100%;
+	// 	background-image: url('../images/skyfull2.jpg');
+	// 	}
+	//
+	//
+	// @media all and (min-width: 801px) and (max-width: 1024px){
+	// 	background-position: 0 -400px;
+	// 	background-size: 100%;
+	//
+	// 	background-image: url('../images/skyfull_mobile.jpg');
+	// 	}
+	//
+	// @media all and (min-width: 620px) and (max-width: 800px){
+	// 	background-position: 0 -200px;
+	// 	background-size: 100%;
+	// 	background-image: url('../images/skyfull_mobile.jpg');
+	// 	}
+	// @media all and (max-width: 619px){
+	// 	background-position: 0 0;
+	// 	background-image: url('../images/skyfull_mobile.jpg');
+	// 	background-size: cover;
+	// }
+	&.small{
+	  height: 60px;
+	  background:rgba(0, 0, 0, 1);
 	}
+	@media all and (max-width: 619px){
+	height: 60px;
+ 	}
 }
+
+
+
+
 .header__container{
 	display: flex;
 	align-items: center;
@@ -64,7 +80,7 @@
 	.nav{
 		position: absolute;
     right: 0;
-		top: 73px;
+		top: 60px;
 		display: none;
 	}
 	.nav__item{
@@ -73,7 +89,7 @@
     width: auton;
     text-align: right;
     font-size: 0.9em;
-		background: rgba(53,56,56,0.83);
+		background: rgba(0,0,0,1);
 		margin:0;
 	}
 }

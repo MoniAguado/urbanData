@@ -1,22 +1,49 @@
 import React, { Component } from 'react';
+import Rxjs from 'rxjs';
 import logouda from './../images/udaWhite.png';
 import logoapi from './../images/REDapi.png';
 
 class Header extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			isMin: false
+		};
+		this.scrolls$ = null;
+	}
+
+	componentDidMount() {
+		this.scrolls$ = Rxjs.Observable.fromEvent(window, 'scroll')
+		.subscribe(e => {
+			if (window.scrollY > 0) {
+				this.setState({
+					isMin: true
+				});
+			} else {
+				this.setState({
+					isMin: false
+				});
+			}
+		});
+	}
+
+	componentWillUnmount() {
+		if (this.scrolls$) this.scrolls$.unsubscribe();
+	}
 
 	menuToggle() {
-	let linksEl = document.querySelector('.nav');
-	if (linksEl.style.display === 'block') {
-		linksEl.style.display = 'none';
-	} else {
-		linksEl.style.display = 'block';
+		let linksEl = document.querySelector('.nav');
+		if (linksEl.style.display === 'block') {
+			linksEl.style.display = 'none';
+		} else {
+			linksEl.style.display = 'block';
+		}
 	}
-}
 
 
   render() {
     return (
-    	<header className="header">
+    	<header className={`header ${this.state.isMin ? 'small' : '' }`}>
 				<div className="header__container">
 					<nav className="header__nav__mobile">
 						<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>

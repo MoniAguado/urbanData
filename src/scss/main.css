@@ -824,33 +824,21 @@ p {
       align-self: center; } }
 
 .header {
-  background-image: url("../images/skyfull3.jpg");
-  background-size: 100%;
-  background-position: center 0;
-  background-repeat: no-repeat;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  z-index: 100; }
-  @media all and (min-width: 1025px) and (max-width: 1200px) {
-    .header {
-      background-position: 0 0;
-      background-size: 100%;
-      background-image: url("../images/skyfull2.jpg"); } }
-  @media all and (min-width: 801px) and (max-width: 1024px) {
-    .header {
-      background-position: 0 -400px;
-      background-size: 100%;
-      background-image: url("../images/skyfull_mobile.jpg"); } }
-  @media all and (min-width: 620px) and (max-width: 800px) {
-    .header {
-      background-position: 0 -200px;
-      background-size: 100%;
-      background-image: url("../images/skyfull_mobile.jpg"); } }
+  z-index: 100;
+  background-color: transparent;
+  transition: all .4s ease-in-out;
+  height: 100px; }
+  .header.small {
+    height: 60px;
+    background: black; }
   @media all and (max-width: 619px) {
     .header {
-      background-position: 0 0;
-      background-image: url("../images/skyfull_mobile.jpg");
-      background-size: cover; } }
+      height: 60px; } }
 
 .header__container {
   display: flex;
@@ -880,7 +868,7 @@ p {
   .header__nav__mobile .nav {
     position: absolute;
     right: 0;
-    top: 73px;
+    top: 60px;
     display: none; }
   .header__nav__mobile .nav__item {
     display: block;
@@ -888,7 +876,7 @@ p {
     width: auton;
     text-align: right;
     font-size: 0.9em;
-    background: rgba(53, 56, 56, 0.83);
+    background: black;
     margin: 0; }
 
 .change {
