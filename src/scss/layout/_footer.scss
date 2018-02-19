@@ -2,6 +2,7 @@
 	background:$color-darkGrey;
 	color: $color-lightGrey;
 	box-sizing: border-box;
+	border-top: 2px solid rgba(139, 142, 152, 0.29);
 }
 .footer__container{
 	padding: 15px 30px;
@@ -14,20 +15,22 @@ text-align: center;
 }
 
 .footer__item p{
-	padding-top: 10px;
 	font-size: 1em;
 	width: 100%;
 	@media all and (max-width: 619px){
 	font-size: 0.8em;
  	}
+	:last-child{
+		font-weight: bold;
+	}
 }
 
 .footer__item a{
 	text-decoration: none;
 	color: $color-lightGrey;
-
 }
 
 .footer__image--logo{
-	width: 156px;
+	width: 130px;
+		padding-bottom:  10px;
 }
