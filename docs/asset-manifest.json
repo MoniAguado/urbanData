@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.83b3655b.css",
-  "main.css.map": "static/css/main.83b3655b.css.map",
-  "main.js": "static/js/main.109790b7.js",
-  "main.js.map": "static/js/main.109790b7.js.map",
+  "main.css": "static/css/main.59076b43.css",
+  "main.css.map": "static/css/main.59076b43.css.map",
+  "main.js": "static/js/main.0287f8cc.js",
+  "main.js.map": "static/js/main.0287f8cc.js.map",
   "static/media/GothamBold.eot": "static/media/GothamBold.0ef4e118.eot",
   "static/media/GothamBold.svg": "static/media/GothamBold.71190f73.svg",
   "static/media/GothamBold.ttf": "static/media/GothamBold.cdecb667.ttf",
@@ -30,13 +30,18 @@
   "static/media/GothamLightItalic.woff2": "static/media/GothamLightItalic.c97bcc8c.woff2",
   "static/media/REDapi.png": "static/media/REDapi.9fe3096d.png",
   "static/media/aci-logo.png": "static/media/aci-logo.733f3f49.png",
+  "static/media/api-page.svg": "static/media/api-page.9b366bcb.svg",
   "static/media/bcn.jpg": "static/media/bcn.990e3a40.jpg",
+  "static/media/bcn.png": "static/media/bcn.fefab197.png",
+  "static/media/combo-chart.svg": "static/media/combo-chart.f29a58bb.svg",
   "static/media/excel.png": "static/media/excel.da7d3afa.png",
-  "static/media/mad.jpg": "static/media/mad.726d5521.jpg",
   "static/media/map_02_CO.jpg": "static/media/map_02_CO.398a6f5b.jpg",
   "static/media/mipim-logo.png": "static/media/mipim-logo.9db6cb9e.png",
   "static/media/odine-logo.png": "static/media/odine-logo.9c87a6fd.png",
   "static/media/report1.jpg": "static/media/report1.27cc2f51.jpg",
   "static/media/report2.jpg": "static/media/report2.496eaac4.jpg",
-  "static/media/sky.jpg": "static/media/sky.be2a448d.jpg"
+  "static/media/skyfull2.jpg": "static/media/skyfull2.14bda521.jpg",
+  "static/media/skyfull3.jpg": "static/media/skyfull3.439b3a7e.jpg",
+  "static/media/skyfull_mobile.jpg": "static/media/skyfull_mobile.a7293978.jpg",
+  "static/media/speech-bubble.svg": "static/media/speech-bubble.917d5544.svg"
 }
