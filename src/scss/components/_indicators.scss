@@ -91,11 +91,18 @@
 
 }
 .indicators__action{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.indicators__action--text{
 	color: $color-superlightGrey;
 	font-size: 1.5em;
-	text-align: center;
-	margin-top: 30px;
 }
 .indicators__arrow{
-	height: 5px;
+	padding: 5px 5px;
+	height: 40px;
+	width: 40px;
 }

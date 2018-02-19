@@ -151,6 +151,9 @@
   height: 50px;
   width: 250px; }
 
+.highcharts-root .highcharts-background {
+  background-color: #ca1c24; }
+
 .highcharts-plot-background {
   height: 100px;
   width: 100px; }
@@ -244,7 +247,7 @@
       .input__container label {
         font-size: 0.9em; } }
   .input__container input,
-  .input__container textarea {
+  .input__container textarea, .input__container select {
     border: 2px solid #070d1e;
     font-size: 0.9em;
     height: 40px;
@@ -253,7 +256,7 @@
     outline: none; }
     @media all and (max-width: 619px) {
       .input__container input,
-      .input__container textarea {
+      .input__container textarea, .input__container select {
         height: 30px;
         font-size: 0.75em; } }
   .input__container textarea {
@@ -613,13 +616,20 @@
   font-size: 1em; }
 
 .indicators__action {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.indicators__action--text {
   color: #eff2f7;
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 30px; }
+  font-size: 1.5em; }
 
 .indicators__arrow {
-  height: 5px; }
+  padding: 5px 5px;
+  height: 40px;
+  width: 40px; }
 
 .info {
   background-color: #eff2f7;
@@ -718,10 +728,14 @@
 .reports {
   background-color: #eff2f7; }
 
-.reports__img-excel {
+.reports__img-excel, .reports__img-pdf, .reports__img-api {
   width: 50px;
   height: 50px;
   margin: 20px; }
+  @media all and (max-width: 619px) {
+    .reports__img-excel, .reports__img-pdf, .reports__img-api {
+      width: 40px;
+      height: 40px; } }
 
 .reports__img-preview {
   padding: 10px;
@@ -925,13 +939,13 @@ p {
       display: flex;
       flex-direction: column; } }
 
-.reports__img-excel {
+.reports__icons {
   grid-row: 2;
   grid-column: 1;
   align-self: baseline;
   justify-self: center; }
   @media all and (max-width: 828px) {
-    .reports__img-excel {
+    .reports__icons {
       align-self: center; } }
 
 .button--report {
