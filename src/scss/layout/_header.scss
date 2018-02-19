@@ -1,8 +1,37 @@
 .header{
-	background: rgba($color-darkBlue, 0.8);
+	background-image: url('../images/skyfull3.jpg');
+	background-size: 100%;
+	background-position: center 0;
+	background-repeat: no-repeat;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
+
+
+	@media all and (min-width: 1025px) and (max-width: 1200px){
+		background-position: 0 0;
+		background-size: 100%;
+		background-image: url('../images/skyfull2.jpg');
+		}
+
+
+	@media all and (min-width: 801px) and (max-width: 1024px){
+		background-position: 0 -400px;
+		background-size: 100%;
+
+		background-image: url('../images/skyfull_mobile.jpg');
+		}
+
+	@media all and (min-width: 620px) and (max-width: 800px){
+		background-position: 0 -200px;
+		background-size: 100%;
+		background-image: url('../images/skyfull_mobile.jpg');
+		}
+	@media all and (max-width: 619px){
+		background-position: 0 0;
+		background-image: url('../images/skyfull_mobile.jpg');
+		background-size: cover;
+	}
 }
 .header__container{
 	display: flex;
@@ -35,16 +64,17 @@
 	.nav{
 		position: absolute;
     right: 0;
+		top: 73px;
 		display: none;
 	}
 	.nav__item{
 		display: block;
-    padding: 15px 0;
-    width: 150px;
+    padding: 15px 20px;
+    width: auto;
     text-align: right;
-    padding-right: 20px;
     font-size: 0.9em;
-		background: $color-darkBlue;
+		background: rgba(53,56,56,0.83);
+		margin:0;
 	}
 }
 
@@ -53,6 +83,7 @@
 }
 
 .fa-bars{
+	font-size: 1.5em;
 	color: $color-white;
 }
 .nav{
@@ -83,7 +114,7 @@
   background: $color-red;
   padding: 9px;
   font-weight: bold;
-		border: 1px solid $color-white;
+	border: 1px solid $color-white;
 	margin: 0;
 }
 
@@ -103,7 +134,8 @@
 .header__image--small{
   height: 33px;
 	@media all and (max-width: 979px){
- 	 	height: 30px
+ 	 	height: 30px;
+		margin-left: 20px;
 	}
 }
 .header__image{
@@ -113,4 +145,9 @@
 		width: 104px;
     height: 29px;
 	}
+}
+.header__items-logos {
+	display: flex;
+
+
 }

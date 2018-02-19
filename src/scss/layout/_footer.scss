@@ -9,15 +9,16 @@
 	justify-content: center;
 }
 .footer__item{
-margin: 10px 50px;
+margin: 10px 20px;
 text-align: center;
 }
 
 .footer__item p{
 	padding-top: 10px;
-	font-size: 1.2em;
+	font-size: 1em;
+	width: 100%;
 	@media all and (max-width: 619px){
-	font-size: 0.9em;
+	font-size: 0.8em;
  	}
 }
 
@@ -28,6 +29,5 @@ text-align: center;
 }
 
 .footer__image--logo{
-	width: 170px;
-	height: 52px;
+	width: 156px;
 }

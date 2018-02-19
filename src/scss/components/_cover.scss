@@ -1,14 +1,41 @@
 
+.cover{
+	height:80vh;
+}
+
 .cover__background {
-	background-image: url(../images/mad.jpg);
-	background-position: center top;
+	background-image: url('../images/skyfull3.jpg');
+	background-position: center 0;
 	background-size: cover;
-	height: 65vh;
+
+	background-repeat: no-repeat;
+	height: 80vh;
 	width: 100%;
+
+
+	@media all and (min-width: 1025px) and (max-width: 1200px){
+		background-position: 0 0;
+		background-size: 100%;
+		background-image: url('../images/skyfull2.jpg');
+		}
+
+
+	@media all and (min-width: 801px) and (max-width: 1024px){
+		background-position: 0 -400px;
+		background-size: 100%;
+		background-image: url('../images/skyfull_mobile.jpg');
+		}
+
+	@media all and (min-width: 620px) and (max-width: 800px){
+		background-position: 0 -200px;
+		background-size: 100%;
+		background-image: url('../images/skyfull_mobile.jpg');
+		}
 	@media all and (max-width: 619px){
-		height: 70vh;
-		background-position: 75%;
- 	}
+		background-position: 0 0;
+		background-image: url('../images/skyfull_mobile.jpg');
+		background-size: cover;
+	}
 }
 .cover__photo {
 	height: 0;
@@ -17,13 +44,21 @@
 
 .title-block {
 	position: absolute;
-	top: 40%;
+	top: 150px;
 	left: 50%;
-	width: 70%;
-	transform: translate(-50%, -50%);
-
+	width: 80%;
+	transform: translate(-50%, 0);
+	max-width: 1000px;
+	@media all and (min-width: 801px) and (max-width: 1024px){
+		top: 120px;
+		max-width: 800px;
+	}
+	@media all and (min-width: 620px) and (max-width: 800px){
+		top: 120px;
+		max-width: 500px;
+	}
 	@media all and (max-width: 619px){
-		top: 40%;
+		top: 90px;
 		}
 	}
 .cover__title {
@@ -32,29 +67,28 @@
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 45px;
-	margin-top: 7%;
 	@media all and (max-width: 1000px){
 		font-size: 1.8em;
-    margin-top: 6%;
 	}
 	@media all and (max-width: 619px){
-		font-size: 1.2em;
-		margin-top: 10%;
+		font-size: 1.5em;
+
+		line-height: 35px;
 	}
 }
 
 .cover__subtitle {
 	color: $color-white;
 	text-align: center;
-	line-height: 30px;
+	line-height: 25px;
 	font-size: 1.3em;
 	text-transform: none;
+	margin-top:20px;
 	@media all and (max-width: 1000px){
 		font-size: 1em;
-    margin-top: 6%;
+		line-height: 22px;
 	}
 	@media all and (max-width: 619px){
 		font-size: 0.8em;
-		margin-top: 10%;
 	}
 }

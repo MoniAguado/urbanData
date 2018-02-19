@@ -1,4 +1,7 @@
 import React from 'react';
+import bubble from '../images/speech-bubble.svg';
+import api from '../images/api-page.svg';
+import chart from '../images/combo-chart.svg';
 
 class Steps extends React.Component {
 	render(){
@@ -10,22 +13,40 @@ class Steps extends React.Component {
 						<ul className="icon-list">
 							<li className="step step1">
 								<div className="step-circle">
-									<p className="step-number">1</p>
+									<span className="step__icon"><img src={bubble} width="40px" alt="contacta"/></span>
 								</div>
-								<h4 className="step__title">Solicitud de Token</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p></li>
+								<div className="step__despcription">
+									<div className="step__paragraphs">
+										<h4 className="step__title">SOLICITA UN TOKEN </h4>
+										<p className="step__text">Contacta con nosotros y solicita un token para identificar a tu negocio. </p>
+									</div>
+
+								</div>
+							</li>
 							<li className="step step2">
 								<div className="step-circle">
-									<p className="step-number">2</p>
+									<span className="step__icon"><img src={api} width="40px" alt="selecciona datos"/></span>
 								</div>
-								<h4 className="step__title">Identificación de indicadores</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. labore et dolore magna aliqua</p></li>
+								<div className="step__despcription">
+									<div className="step__paragraphs">
+										<h4 className="step__title">
+										SELECCIONA LOS DATOS</h4>
+										<p className="step__text">
+										Selecciona los datos que quieres utilizar y define como mostrarlos a tu audiencia.</p>
+									</div>
+								</div>
+							</li>
 							<li className="step step3">
 								<div className="step-circle">
-									<p className="step-number">3</p>
+									<span className="step__icon"><img src={chart} width="40px" alt="indicadores"/></span>
 								</div>
-								<h4 className="step__title">integración y producción</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+								<div className="step__despcription">
+									<div className="step__paragraphs">
+										<h4 className="step__title">INTEGRA LOS INDICADORES</h4>
+										<p className="step__text">Integra de manera sencilla los indicadores y comienza a sacarles valor.</p>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>

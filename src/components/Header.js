@@ -12,8 +12,6 @@ class Header extends Component {
 		linksEl.style.display = 'block';
 	}
 }
-
-
   render() {
     return (
     	<header className="header">
@@ -28,24 +26,25 @@ class Header extends Component {
 							<li className="nav__item" onClick={this.menuToggle}><a href="#contact">Regístrate ahora</a></li>
 						</ul>
 					</nav>
-					<div className="header__item--big">
-						<img src={logoapi} alt="RED api logo" className="header__image" />
+					<div className="header__items-logos">
+						<div className="header__item--big">
+							<img src={logoapi} alt="RED api logo" className="header__image" />
+						</div>
+						<div className="header__item">
+							<nav className="header__nav">
+								<ul className="nav">
+									<li className="nav__item" onClick={this.menuToggle}><a href="#info">¿Qué es?</a></li>
+									<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
+									<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
+									<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Preguntas Frecuentes</a></li>
+									<li className="nav__item button--type" onClick={this.menuToggle}><a href="#contact" className="button--type">Regístrate ahora</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div className="header__item">
+							<img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" />
+						</div>
 					</div>
-					<div className="header__item">
-						<nav className="header__nav">
-							<ul className="nav">
-								<li className="nav__item" onClick={this.menuToggle}><a href="#info">¿Qué es?</a></li>
-								<li className="nav__item" onClick={this.menuToggle}><a href="#indicators">¿Cómo funciona?</a></li>
-								<li className="nav__item" onClick={this.menuToggle}><a href="#demo">Demo</a></li>
-								<li className="nav__item" onClick={this.menuToggle}><a href="#faq">Preguntas Frecuentes</a></li>
-								<li className="nav__item button--type" onClick={this.menuToggle}><a href="#contact" className="button--type">Regístrate ahora</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div className="header__item">
-						<img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" />
-					</div>
-
 				</div>
 			</header>
     );
