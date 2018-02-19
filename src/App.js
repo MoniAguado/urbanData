@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Accordion,AccordionTab} from 'primereact/components/accordion/Accordion';
 
 import Awards from './components/Awards';
-import Charts from './components/Charts';
+// import Charts from './components/Charts';
 import Contact from './components/Contact';
 import Coupon from './components/Coupon';
 import Cover from './components/Cover';
@@ -51,7 +51,7 @@ class App extends Component {
 					<Reports />
 					<Steps />
 					<Demo />
-					<Charts />
+					{/* <Charts /> */}
 					<Faq />
 					<Contact openCoupon={this.openCoupon}/>
 					<Awards />
