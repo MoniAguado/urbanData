@@ -168,6 +168,12 @@
 .asterisk {
   color: #ca1c24; }
 
+.coupon {
+  display: none; }
+
+.coupon--visible {
+  display: block; }
+
 .coupon__container {
   position: absolute;
   top: 50%;

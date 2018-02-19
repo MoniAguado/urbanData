@@ -3,11 +3,8 @@ import React from 'react';
 class Coupon extends React.Component {
 
 	render () {
-		if(!this.props.show) {
-			return null;
-		}
 		return (
-			<section className="coupon">
+			<section className={this.props.show? "coupon coupon--visible" : "coupon"}>
 				<div className="coupon__background">
 					<form className="coupon__container">
 						<div className="coupon__details">
@@ -44,7 +41,7 @@ class Coupon extends React.Component {
 							<div className="input__submit">
 								<button className="button button--submit">ENVIAR</button>
 							</div>
-							<button className="button button--close" onClick={this.props.closeCoupon}>X</button>
+							<button type="button" className="button button--close" onClick={this.props.onRequestClose}>X</button>
 						</div>
 					</form>
 				</div>
