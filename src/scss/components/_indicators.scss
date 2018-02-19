@@ -1,7 +1,3 @@
-.block__container.indicators__container{
-	margin: 0;
-	padding: 0;
-}
 
 .indicators__background{
 	background-image: url('../images/bcn.jpg');
@@ -42,9 +38,11 @@
 	justify-items: center;
 	grid-gap: 25px;
 	padding: 0 10px;
+	@media all and (min-width: 620px) and (max-width: 850px){
+		grid-template-columns: 1fr 1fr;
+	}
 	@media all and (max-width: 619px){
 		grid-template-columns: 1fr;
-		grid-gap: 25px;
 		margin-top: 20px;
 		text-align: center;
 	}
@@ -52,20 +50,22 @@
 .indicators__list--item{
 	background-color: rgba(255, 255, 255, 0.8);
 	color: $color-darkBlue;
-	padding: 10px;
+	padding: 30px 10px;
 	border: 1 solid $color-darkBlue;
 	border: solid 1px;
 	border-radius: 5px;
-	margin-top: 70px;
-	width: 250px;
+	margin-top: 50px;
+	width: 100%;
 	text-align: center;
-	@media all and (max-width: 828px){
-		width: 180px;
-		font-size: 0.9em;
+	line-height: 20px;
+	&:last-child {
+		@media all and (min-width: 620px) and (max-width: 850px){
+		grid-column: span 2;
+		width: 320px;
+		}
 	}
-	@media all and (max-width: 619px){
-		width: 280px;
-		font-size: 1em;
+@media all and (max-width: 619px){
+	width: 300px;
 	}
 }
 
@@ -82,11 +82,7 @@
 .indicators__list--item-element-list{
 	list-style-type: none;
 	font-size: 1em;
-	@media all and (max-width: 619px){
-		font-size: 0.9em;
-	  line-height: 30px;
 
-	}
 }
 .indicators_container--btndemo{
 	margin-top: 40px;

@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
 
 class Indicators extends Component{
-	//constructor(props){
-	//	super(props);
-
-		//this.bind
-
-		//this.state
-
-
-	//}
 
 render(){
 
 	return(
 		<section className="indicators" id="indicators">
-			<div className="block__container indicators__container">
-				<div className="indicators__background">
+			<div className="indicators__background">
+				<div className="block__container indicators__container">
 					<div className="indicators__description">
 						<h2 className="indicators__description--title">
 						INDICADORES INMOBILIARIOS	</h2>

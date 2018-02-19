@@ -65,8 +65,8 @@ class Faq extends Component{
 					</div>
 				</div>
 			</section>
-					);
-					}
-					}
+		);
+	}
+}
 
-					export default Faq;
+export default Faq;

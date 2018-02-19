@@ -1,0 +1,25 @@
+.salestime__container{
+	margin: 50px;
+}
+.salestime__title{
+	font-size: 20px;
+	text-align: center;
+}
+.salestime__text{
+	padding: 10px;
+	font-style: italic;
+}
+.salestime__all-data{
+	display: flex;
+	flex-direction: row;
+}
+.salestime__data{
+	background-color: $color-lightGrey;
+	padding: 20px;
+}
+.salestime__data--title{
+	margin-bottom: 5px;
+}
+.salestime__data--numbers{
+	display: flex;
+}

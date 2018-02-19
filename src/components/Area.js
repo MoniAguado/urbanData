@@ -24,22 +24,21 @@ class Area extends Component {
 		.then(response => response.json())
 		.then(json => {
 			let priceMun = [];
-				for (let i=1; i<= 3 ; i++){
-				 let precio = json["2017Q" + i]["72400013000280007900000000000000000000"]["1"]["o_pu"];
-				 priceMun.push(precio);
-				}
-
-			console.log(priceMun);
+			for (let i=1; i<= 3 ; i++){
+				let precio = json["2017Q" + i]["72400013000280007900000000000000000000"]["1"]["o_pu"];
+				priceMun.push(precio);
 			}
-		)
-	}
+			console.log(priceMun);
+		}
+	)
+}
 
 	render() {
 
-		return (
-			<div className="testfetch">
-				<Test />
-			</div>
+	return (
+		<div className="testfetch">
+			<Test />
+		</div>
 		);
 	}
 }

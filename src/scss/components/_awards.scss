@@ -10,9 +10,9 @@
 	}
 }
 
-
 .awards__text {
 	color: $color-white;
+	line-height: 1.4em;
 }
 
 .awards__container-img {
@@ -30,12 +30,17 @@
 	margin-right: 40px;
 	@media all and (max-width: 690px){
 		margin-top: 30px;
+		margin-right: 0;
 	}
 }
 
 .awards-img {
 	width: 200px;
 	margin-right: 20%;
+	@media all and (max-width: 690px){
+		width: 150px;
+		margin-right: 0;
+	}
 }
 
 .awards{
