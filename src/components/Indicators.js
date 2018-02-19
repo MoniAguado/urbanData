@@ -58,7 +58,9 @@ render(){
 						</li>
 					</ul>
 					<div className="indicators_container--btndemo">
-						<div className="indicators__action" href='#demo'>Haz una prueba <div className="indicators__arrow"><img src={down} /></div>
+						<div className="indicators__action" href='#demo'>
+							<p className="indicators__action--text"> Haz una prueba </p>
+							<span ><img className="indicators__arrow" src={down} /></span>
 						</div>
 					</div>
 				</div>
