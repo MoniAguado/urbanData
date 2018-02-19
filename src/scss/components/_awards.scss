@@ -28,6 +28,9 @@
 }
 .awards__container img{
 	margin-right: 40px;
+	.last-image{
+		margin-right: 0;
+	}
 	@media all and (max-width: 690px){
 		margin-top: 30px;
 		margin-right: 0;

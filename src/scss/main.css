@@ -60,6 +60,8 @@
 
 .awards__container img {
   margin-right: 40px; }
+  .awards__container img .last-image {
+    margin-right: 0; }
   @media all and (max-width: 690px) {
     .awards__container img {
       margin-top: 30px;
@@ -582,6 +584,9 @@
   @media all and (max-width: 619px) {
     .indicators__list--item {
       width: 300px; } }
+  @media all and (max-width: 360px) {
+    .indicators__list--item {
+      width: 200px; } }
 
 .indicators__list--item-element-title {
   padding-left: 0;
