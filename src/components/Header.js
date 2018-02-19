@@ -51,6 +51,7 @@ class Header extends Component {
 
 	}
 
+
 	menuToggle() {
 		let linksEl = document.querySelector('.nav');
 		if (linksEl.style.display === 'block') {
@@ -58,41 +59,46 @@ class Header extends Component {
 		} else {
 			linksEl.style.display = 'block';
 		}
+
 	}
 
 
-	render() {
-		return (
-			<header className={`header ${this.state.isMin ? 'small' : '' }`}>
-				<div className="header__container">
-					<nav className="header__nav__mobile">
-						<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>
-						<ul className="nav">
-							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#infoSection">¿Qué es?</a>
-							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#howDoesWorkItSection">¿Cómo funciona?</a>
-							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#demoSection">Demo</a>
-							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#faqSection">Faq</a>
-							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#contactSection" onClick={this.props.openCoupon}>Regístrate</a>
-							</li>
-						</ul>
-					</nav>
-					<div className="header__items-logos">
-						<div className="header__item--big">
-							<img src={logoapi} alt="RED api logo" className="header__image" />
-						</div>
-						<div className="header__item">
-							<nav className="header__nav">
-								<ul className="nav">
 
+
+				render() {
+					return (
+						<header className={`header ${this.state.isMin ? 'small' : '' }`}>
+
+							<div className="header__container">
+								<nav className="header__nav__mobile">
+									<i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
+									<ul className="nav">
+
+										<li className="nav__item" onClick={this.menuToggle}>
+											<a href="#infoSection">¿Qué es?</a>
+										</li>
+										<li className="nav__item" onClick={this.menuToggle}>
+											<a href="#howDoesWorkItSection">¿Cómo funciona?</a>
+										</li>
+										<li className="nav__item" onClick={this.menuToggle}>
+											<a href="#demoSection">Demo</a>
+										</li>
+										<li className="nav__item" onClick={this.menuToggle}>
+											<a href="#faqSection">Faq</a>
+										</li>
+										<li className="nav__item" onClick={this.menuToggle}>
+											<a href="#contactSection" onClick={this.props.openCoupon}>Regístrate</a>
+										</li>
+									</ul>
+								</nav>
+								<div className="header__items-logos">
+									<div className="header__item--big">
+										<img src={logoapi} alt="RED api logo" className="header__image" />
+									</div>
+									<div className="header__item">
+										<nav className="header__nav">
+											<ul className="nav">
+												
 									<li className="nav__item">
 										<Link activeClass="active" className="menu--item_desktop" to="infoSection" spy={true} smooth={true} duration={500} offset={-60}>¿Qué es?</Link>
 									</li>
@@ -105,15 +111,13 @@ class Header extends Component {
 									<li className="nav__item">
 										<Link activeClass="active" className="menu--item_desktop" to="faqSection" spy={true} smooth={true} duration={500} offset={-60}>Preguntas Frecuentes</Link>
 									</li>
-									<li className="nav__item">
-										<button className="button button--register" onClick={this.props.openCoupon}>Regístrate ahora</button>
-									</li>
+									<button className="button button--register" onClick={this.props.openCoupon}>Regístrate ahora</button>
 								</ul>
 							</nav>
 						</div>
 						<div className="header__item">
-							<img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" />
-						</div>
+							<a href="http://www.urbandataanalytics.com/" target="_blank" rel="noopener noreferrer"><img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" /></a>
+							</div>
 					</div>
 				</div>
 			</header>
