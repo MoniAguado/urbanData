@@ -60,7 +60,7 @@ render(){
 					<div className="indicators_container--btndemo">
 						<div className="indicators__action" href='#demo'>
 							<p className="indicators__action--text"> Haz una prueba </p>
-							<span ><img className="indicators__arrow" src={down} /></span>
+							<span ><img className="indicators__arrow" src={down} alt="arrow"/></span>
 						</div>
 					</div>
 				</div>

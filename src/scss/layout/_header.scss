@@ -1,32 +1,19 @@
 .header{
+
 	// background-image: url('../images/skyfull3.jpg');
 	// background-size: 100%;
 	// background-position: center 0;
 	// background-repeat: no-repeat;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	z-index: 100;
-	background-color: rgba(0, 0, 0, 0);
-	transition:  all .4s ease-in-out;
-	height: 100px;
-
 	// @media all and (min-width: 1025px) and (max-width: 1200px){
 	// 	background-position: 0 0;
 	// 	background-size: 100%;
 	// 	background-image: url('../images/skyfull2.jpg');
 	// 	}
-	//
-	//
 	// @media all and (min-width: 801px) and (max-width: 1024px){
 	// 	background-position: 0 -400px;
 	// 	background-size: 100%;
-	//
 	// 	background-image: url('../images/skyfull_mobile.jpg');
 	// 	}
-	//
 	// @media all and (min-width: 620px) and (max-width: 800px){
 	// 	background-position: 0 -200px;
 	// 	background-size: 100%;
@@ -37,159 +24,285 @@
 	// 	background-image: url('../images/skyfull_mobile.jpg');
 	// 	background-size: cover;
 	// }
-	&.small{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0);
+	transition:  all .4s ease-in-out;
+	height: 100px;
+	&.small {
 	  height: 60px;
 	  background:rgba(0, 0, 0, 1);
 	}
-	@media all and (max-width: 619px){
+	@media all and (max-width: 619px) {
 	height: 60px;
  	}
 }
-
-.header__container{
-	display: flex;
-	align-items: center;
-	padding: 13px 20px;
-	position: relative;
-	width: 100%;
-	@media all and (max-width: 1150px){
-
-		flex-direction: row-reverse;
-		justify-content: space-between;
-
-		.header__items-logos .header__item .header__nav{
-			display: none;
+.header__item-uda {
+	border-left: 1px solid $color-white;
+	margin-left: 20px;
+	padding-left: 25px;
+	flex-grow: 0;
+	@media all and (max-width: 1000px) {
+		border: none;
+		margin-left: 15px;
+		padding-left:0;
+		align-self: flex-start;
+		order: 1;
+	}
+	.header__image-uda {
+		width: 100px;
+		@media all and (max-width: 1000px) {
+			width: 70px;
 		}
-		.header__nav__mobile{
-			position: relative;
-			display: flex;
-			// align-items: center;
-		}
-		.header__item:last-child{
-			border:none;
-			position: relative;
-
-		}
-
-	}
-
-}
-
-.header__nav{
-	@media all and (max-width: 872px){
-	 display: none;
-	}
-	.nav{
-		margin: 15px;
-	}
-}
-
-.header__nav__mobile{
-	display: none;
-	@media all and (max-width: 872px){
-		display: flex;
-		position: relative;
- 	}
-	.nav{
-		position: absolute;
-    right: -20px;
-		top: 40px;
-		display: none;
-	}
-	.nav__item{
-		display: block;
-		width: auto;
-		padding:0;
-		background: rgba(0,0,0,1);
-		margin:0;
-		a{
+		.header__image-uda a {
 			display: block;
-			padding: 15px 20px;
-			line-height: 1em;
-			text-align: right;
 		}
 	}
 }
-
-
-
-.change {
-	border: 1px solid $color-white;
+.header__item-redapi {
+	flex-grow: 0;
 }
-
-.fa-bars{
+.header__image-redapi {
+	width: 90px;
+	@media all and (max-width: 1000px) {
+		width: 60px;
+	}
+}
+.fa-bars {
 	cursor: pointer;
 	font-size: 1.5em;
 	color: $color-white;
-}
-.nav{
-	padding: 0;
-	margin-left: 0;
-	list-style-type: none;
-	color: $color-white;
-}
-.nav__item{
-	display: inline-block;
-	// margin: 0 30px;
-	font-size: 1em;
-	@media all and (max-width: 1165px){
-		margin: 0 14px;
-	}
-	@media all and (max-width: 998px){
-		margin: 0 8px;
+	display: none;
+	@media all and (max-width: 1000px) {
+		display: flex;
+		order: 3;
 	}
 }
-.nav__item a{
-	font-size: 14px;
-	text-decoration: none;
-	transition:  background-color .8s ease;
- 	color: $color-white;
- 	height: 100%;
-	width: 160px;
-
-	padding: 10px 20px;
-	cursor: pointer;
-	&.menu--item_desktop.active{
-		background-color: $color-white;
-		color: #000;
-		font-family: 'Gotham Book';
-	}
-	&.menu--item_mobile{
-		font-family: 'Gotham Book';
-
-	}
-
-}
-.header__item:last-child{
-	padding-left: 15px;
-  border-left: 1px solid $color-white;
-	position: absolute;
-	right: 25px;
-
-	@media all and (max-width: 1150px){
-		border:none;
-		position: relative;
-		margin-left: 40px;
-
-	}
-}
-
-.header__image--small{
-  height: 33px;
-	@media all and (max-width: 979px){
- 	 	height: 30px;
-	}
-}
-.header__image{
-	width: 120px;
-	height: 33px;
-
-	@media all and (max-width: 919px){
-		width: 104px;
-    height: 29px;
-	}
-}
-.header__items-logos {
+.header__container {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
+	color: #fff;
+	width: 100%;
+	padding: 0 25px;
+	max-width: 1200px;
+	@media all and (max-width: 1000px) {
+		align-items: center;
+	}
 }
+
+.header__nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-self: flex-start;
+	flex-grow: 1;
+	@media all and (max-width: 1000px) {
+		order: 3;
+		align-self: center;
+		justify-content: center;
+		flex-grow: 0;
+	}
+}
+.header__container--button-register {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 0;
+	margin-right: 20px;
+	@media all and (max-width: 1000px) {
+	order: 2;
+	flex-grow: 1;
+	}
+}
+.nav {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	font-family: 'Gotham Book';
+	justify-content: flex-start;
+	font-size: 14px;
+	@media all and (max-width: 1000px) {
+		display: none;
+		position: absolute;
+		top: 60px;
+		background-color: #000;
+		text-align: right;
+		right: 0;
+	}
+}
+.nav__item {
+	padding: 20px;
+}
+
+
+// .header__item--big img{
+// 	width: 100px;
+// }
+// .header__image--small{
+//   height: 33px;
+// }
+// .fa-bars{
+// 	cursor: pointer;
+// 	font-size: 1.5em;
+// 	color: $color-white;
+// 	display: none;
+// }
+// .header__nav {
+// 	display: flex;
+// 	flex-direction: row;
+// 	width: 100%;
+//
+// }
+
+// .header__container{
+// 	display: flex;
+// 	align-items: center;
+// 	padding: 13px 20px;
+// 	position: relative;
+// 	width: 100%;
+// 	@media all and (max-width: 1150px){
+//
+// 		flex-direction: row-reverse;
+// 		justify-content: space-between;
+//
+// 		.header__items-logos .header__item .header__nav{
+// 			display: none;
+// 		}
+// 		.header__nav__mobile{
+// 			position: relative;
+// 			display: flex;
+// 			// align-items: center;
+// 		}
+// 		.header__item:last-child{
+// 			border:none;
+// 			position: relative;
+//
+// 		}
+//
+// 	}
+//
+// }
+//
+// .header__nav{
+// 	@media all and (max-width: 872px){
+// 	 display: none;
+// 	}
+// 	.nav{
+// 		margin: 15px;
+// 	}
+// }
+//
+// .header__nav__mobile{
+// 	display: none;
+// 	@media all and (max-width: 872px){
+// 		display: flex;
+// 		position: relative;
+//  	}
+// 	.nav{
+// 		position: absolute;
+//     right: -20px;
+// 		top: 40px;
+// 		display: none;
+// 	}
+// 	.nav__item{
+// 		display: block;
+// 		width: auto;
+// 		padding:0;
+// 		background: rgba(0,0,0,1);
+// 		margin:0;
+// 		a{
+// 			display: block;
+// 			padding: 15px 20px;
+// 			line-height: 1em;
+// 			text-align: right;
+// 		}
+// 	}
+// }
+//
+//
+//
+// .change {
+// 	border: 1px solid $color-white;
+// }
+//
+// .fa-bars{
+// 	cursor: pointer;
+// 	font-size: 1.5em;
+// 	color: $color-white;
+// }
+// .nav{
+// 	padding: 0;
+// 	margin-left: 0;
+// 	list-style-type: none;
+// 	color: $color-white;
+// }
+// .nav__item{
+// 	display: inline-block;
+// 	// margin: 0 30px;
+// 	font-size: 1em;
+// 	@media all and (max-width: 1165px){
+// 		margin: 0 14px;
+// 	}
+// 	@media all and (max-width: 998px){
+// 		margin: 0 8px;
+// 	}
+// }
+// .nav__item a{
+// 	font-size: 14px;
+// 	text-decoration: none;
+// 	transition:  background-color .8s ease;
+//  	color: $color-white;
+//  	height: 100%;
+// 	width: 160px;
+//
+// 	padding: 10px 20px;
+// 	cursor: pointer;
+// 	&.menu--item_desktop.active{
+// 		background-color: $color-white;
+// 		color: #000;
+// 		font-family: 'Gotham Book';
+// 	}
+// 	&.menu--item_mobile{
+// 		font-family: 'Gotham Book';
+//
+// 	}
+//
+// }
+// .header__item:last-child{
+// 	padding-left: 15px;
+//   border-left: 1px solid $color-white;
+// 	position: absolute;
+// 	right: 25px;
+//
+// 	@media all and (max-width: 1150px){
+// 		border:none;
+// 		position: relative;
+// 		margin-left: 40px;
+//
+// 	}
+// }
+//
+// .header__image--small{
+//   height: 33px;
+// 	@media all and (max-width: 979px){
+//  	 	height: 30px;
+// 	}
+// }
+// .header__image{
+// 	width: 120px;
+// 	height: 33px;
+//
+// 	@media all and (max-width: 919px){
+// 		width: 104px;
+//     height: 29px;
+// 	}
+// }
+// .header__items-logos {
+// 	display: flex;
+// 	align-items: center;
+// }
