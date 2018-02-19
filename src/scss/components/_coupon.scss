@@ -163,3 +163,13 @@
     }
   }
 }
+.input__prefix{
+	display: flex;
+
+}
+.input__prefix--tel-pref{
+	width: 40%;
+}
+.input__prefix--tel{
+	width: 60%;
+}

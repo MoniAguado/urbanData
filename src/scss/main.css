@@ -337,6 +337,15 @@
       border-top-style: none;
       border-right-style: none; }
 
+.input__prefix {
+  display: flex; }
+
+.input__prefix--tel-pref {
+  width: 40%; }
+
+.input__prefix--tel {
+  width: 60%; }
+
 .cover {
   height: 80vh; }
   @media all and (max-width: 619px) {
