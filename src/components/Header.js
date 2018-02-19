@@ -12,8 +12,6 @@ class Header extends Component {
 		linksEl.style.display = 'block';
 	}
 }
-
-
   render() {
     return (
     	<header className="header">
@@ -47,7 +45,6 @@ class Header extends Component {
 							<img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" />
 						</div>
 					</div>
-
 				</div>
 			</header>
     );
