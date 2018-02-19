@@ -1,10 +1,14 @@
 .reports{
 	background-color: $color-superlightGrey;
 }
-.reports__img-excel{
+.reports__img-excel, .reports__img-pdf, .reports__img-api {
 	 width:50px;
 	 height: 50px;
 	 margin: 20px;
+	 @media all and (max-width: 619px){
+		 width: 40px;
+		 height: 40px;
+	 }
 }
 .reports__img-preview{
 	padding: 10px;
