@@ -185,6 +185,12 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.7); }
 
+.coupon {
+  display: none; }
+
+.coupon--visible {
+  display: block; }
+
 .asterisk {
   color: #ca1c24; }
 
