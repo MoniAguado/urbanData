@@ -44,12 +44,6 @@ class Salestime extends Component {
 					</div>
 					<div className="salestime__all-data">
 						<div className="salestime__data">
-							<h6 className="salestime__data--title">Tipología/Barrio</h6>
-							<div className="salestime__data--numbers">
-								{/* <p className="salestime__data--number">4 sem <span>*</span></p> */}
-							</div>
-						</div>
-						<div className="salestime__data">
 							<h6 className="salestime__data--title">Barrio</h6>
 							<div className="salestime__data--numbers">
 								<p className="salestime__data--number">	<span className="salestime_value">{this.state.neighbourhood.toLocaleString()}  sem </span></p>

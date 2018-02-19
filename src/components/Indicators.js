@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import down from './../images/down.png';
+import Rxjs from 'rxjs';
+
+import { animateScroll as scroller } from 'react-scroll';
+
 class Indicators extends Component{
 
+	scrollTo() {
+		scroller.scrollTo('scroll-to-element', {
+			duration: 800,
+			delay: 0,
+			smooth: 'easeInOutQuart',
+			offset:	-60
+		})
+	}
+
 render(){
+
 
 	return(
 		<section id="indicatorsSection" className="indicators">
@@ -58,19 +72,18 @@ render(){
 						</li>
 					</ul>
 					<div className="indicators_container--btndemo">
-						<div className="indicators__action" href='#demo'>
-							<p className="indicators__action--text"> Haz una prueba </p>
+						<div className="indicators__action">
+							<a href='#demoSection' activeClass="active" to="demoSection" spy={true} smooth={true} duration={500} offset={-60}>
+								<p className="indicators__action--text"> Haz una prueba </p>
 							<span ><img className="indicators__arrow" src={down} /></span>
+						</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	);
-
-
 }
-
 }
 
 export default Indicators;

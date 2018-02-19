@@ -572,8 +572,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   color: #070d1e;
   padding: 30px 10px;
-  border: 1 solid #070d1e;
-  border: solid 1px;
+  border: 1px solid #070d1e;
   margin-top: 50px;
   width: 100%;
   text-align: center;
@@ -604,7 +603,8 @@
   list-style-type: none;
   font-size: 1em; }
 
-.indicators__action {
+.indicators__action a {
+  text-decoration: none;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
