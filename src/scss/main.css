@@ -142,6 +142,26 @@
   height: 50px;
   width: 250px; }
 
+.highcharts-plot-background {
+  height: 100px;
+  width: 100px; }
+
+.element.style {
+  fill: #ca1c24;
+  color: #ca1c24; }
+
+.highcharts-axis-labels {
+  fill: #ca1c24; }
+
+.highcharts-point {
+  fill: #ca1c24; }
+
+.highcharts-point.highcharts-color-0 {
+  fill: #ca1c24; }
+
+.highcharts-graph {
+  color: #ca1c24; }
+
 .contact {
   background-color: #eff2f7; }
 
@@ -427,6 +447,59 @@
 .faq__list--question-title {
   margin-top: 10px; }
 
+.homeIncome {
+  width: 45%; }
+
+.income_container {
+  display: flex;
+  background-color: #b7bcc6;
+  padding: 30px;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 8px; }
+
+.income_graphic_container {
+  display: flex; }
+
+.show_income_title {
+  padding-bottom: 10px; }
+
+.income_graphic_group {
+  position: relative;
+  margin-left: 5px;
+  margin-right: 30px; }
+
+.income_graphic_1 {
+  position: absolute;
+  height: 100%; }
+
+.income_graphic_text_bar {
+  width: 1.2em;
+  height: 0.15em;
+  background-color: #8e1c1c;
+  position: absolute;
+  bottom: 50%;
+  z-index: 0;
+  left: -0.35em; }
+
+.income_graphic {
+  background-color: #cecaca;
+  width: 0.5em;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1; }
+
+.income_subgraphic {
+  width: 0.5em;
+  height: 75%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #5bc9b6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
 .indicators__background {
   background-image: url("../images/bcn.jpg");
   background-position: center top;
@@ -616,16 +689,22 @@
   padding: 10px;
   align-self: center; }
 
+.salesTime {
+  margin-top: 20px;
+  width: 49%;
+  background-color: #b7bcc6;
+  padding: 19px; }
+
 .salestime__container {
-  margin: 50px; }
+  display: flex;
+  justify-content: space-around; }
 
 .salestime__title {
-  font-size: 20px;
-  text-align: center; }
+  padding-bottom: 10px; }
 
 .salestime__text {
   padding: 10px;
-  font-style: italic; }
+  font-size: 0.9em; }
 
 .salestime__all-data {
   display: flex;
@@ -633,10 +712,11 @@
 
 .salestime__data {
   background-color: #b7bcc6;
-  padding: 20px; }
+  margin-right: 20px; }
 
 .salestime__data--title {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-right: 20px; }
 
 .salestime__data--numbers {
   display: flex; }
@@ -750,6 +830,11 @@ p {
       width: 260px;
       margin-bottom: 10px;
       font-size: 1em; } }
+
+.graphics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .footer {
   background: #20232e;
