@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Accordion,AccordionTab} from 'primereact/components/accordion/Accordion';
+// import {Accordion,AccordionTab} from 'primereact/components/accordion/Accordion';
 
 import Awards from './components/Awards';
 // import Charts from './components/Charts';
@@ -16,6 +16,8 @@ import Reports from './components/Reports';
 import Steps from './components/Steps';
 
 import '././scss/main.css';
+
+
 
 class App extends Component {
 
@@ -39,11 +41,10 @@ class App extends Component {
 		});
 	}
 
-
 	render() {
 		return (
 			<div className="App">
-				<Header />
+				<Header openCoupon={this.openCoupon}/>
 				<main>
 					<Cover />
 					<Info openCoupon={this.openCoupon}/>
