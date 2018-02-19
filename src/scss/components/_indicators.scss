@@ -53,7 +53,7 @@
 	background-color: rgba(255, 255, 255, 0.7);
 	color: $color-darkBlue;
 	padding: 30px 10px;
-border: 1px solid $color-darkBlue;
+	border: 1px solid $color-darkBlue;
 	margin-top: 50px;
 	width: 100%;
 	text-align: center;
@@ -67,9 +67,6 @@ border: 1px solid $color-darkBlue;
 
 @media all and (max-width: 619px){
 	width: 300px;
-	}
-	@media all and (max-width: 360px){
-		width: 200px;
 	}
 }
 
