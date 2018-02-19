@@ -4,7 +4,7 @@ import logoapi from './../images/REDapi.png';
 class Info extends React.Component {
 	render () {
 		return (
-			<section id="info" className="info">
+			<section id="infoSection" className="info">
 				<div className="block__container">
 					<div className="info__container">
 						<div className="info__details--description">

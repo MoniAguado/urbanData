@@ -6,7 +6,7 @@ import report2 from '../images/report2.jpg';
 class Reports extends React.Component {
 	render(){
 		return(
-			<section className="reports">
+			<section id="reportsSection" className="reports">
 				<div className="block__container">
 					<div className="reports__container">
 						<h2 className="reports__title">Posibilidad de generación de informes</h2>

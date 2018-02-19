@@ -6,7 +6,7 @@ import chart from '../images/combo-chart.svg';
 class Steps extends React.Component {
 	render(){
 		return(
-			<section className="steps">
+			<section id="howDoesWorkItSection" className="steps">
 				<div className="block__container">
 					<div className="steps__container">
 						<h2 className="steps__title">Cómo funciona</h2>
@@ -20,7 +20,6 @@ class Steps extends React.Component {
 										<h4 className="step__title">SOLICITA UN TOKEN </h4>
 										<p className="step__text">Contacta con nosotros y solicita un token para identificar a tu negocio. </p>
 									</div>
-
 								</div>
 							</li>
 							<li className="step step2">
