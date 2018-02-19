@@ -111,15 +111,13 @@ class Header extends Component {
 									<li className="nav__item">
 										<Link activeClass="active" className="menu--item_desktop" to="faqSection" spy={true} smooth={true} duration={500} offset={-60}>Preguntas Frecuentes</Link>
 									</li>
-									<li className="nav__item">
-										<button className="button button--register" onClick={this.props.openCoupon}>Regístrate ahora</button>
-									</li>
+									<button className="button button--register" onClick={this.props.openCoupon}>Regístrate ahora</button>
 								</ul>
 							</nav>
 						</div>
 						<div className="header__item">
-							<img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" />
-						</div>
+							<a href="http://www.urbandataanalytics.com/" target="_blank" rel="noopener noreferrer"><img src={logouda} alt="Urban Data Analytics logo" className="header__image--small" /></a>
+							</div>
 					</div>
 				</div>
 			</header>
