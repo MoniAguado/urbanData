@@ -16,7 +16,6 @@ class Reports extends React.Component {
 							<a href="https://inversionesinmobiliarias.elmundo.es/common/docs/Ficha%20ejemplo.pdf" target="_blank" className="button--report" rel="noopener noreferrer">Descargar ejemplo</a>
 							<img className="reports__img-preview" src={report} alt="Foto informes" width="250px" height="350px"/>
 							<img className="reports__img-preview" src={report2} alt="Foto informes" width="250px" height="350px" />
-
 						</div>
 					</div>
 				</div>

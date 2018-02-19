@@ -1,13 +1,19 @@
+.salesTime{
+	margin-top: 20px;
+	width: 49%;
+	background-color: $color-lightGrey;
+	padding: 19px;
+}
 .salestime__container{
-	margin: 50px;
+display: flex;
+justify-content: space-around;
 }
 .salestime__title{
-	font-size: 20px;
-	text-align: center;
+	padding-bottom: 10px;
 }
 .salestime__text{
 	padding: 10px;
-	font-style: italic;
+	font-size: 0.9em
 }
 .salestime__all-data{
 	display: flex;
@@ -15,11 +21,14 @@
 }
 .salestime__data{
 	background-color: $color-lightGrey;
-	padding: 20px;
+	margin-right: 20px;
+
 }
 .salestime__data--title{
 	margin-bottom: 5px;
+	margin-right: 20px;
 }
 .salestime__data--numbers{
 	display: flex;
+
 }

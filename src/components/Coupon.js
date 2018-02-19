@@ -6,7 +6,7 @@ class Coupon extends React.Component {
 		return (
 			<section className={this.props.show? "coupon coupon--visible" : "coupon"}>
 				<div className="coupon__background">
-					<form className="coupon__container">
+					<form className="coupon__container" method="post">
 						<div className="coupon__details">
 							<h3 className="coupon__title">¡Envíanos un correo!</h3>
 							<div className="name-surname">
