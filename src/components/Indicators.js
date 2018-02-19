@@ -4,6 +4,12 @@ import { Link, animateScroll as scroller } from 'react-scroll';
 
 class Indicators extends Component{
 
+	scrollTo() {
+		scroller.scrollTo('scroll-to-element', {
+		duration: 800,
+		delay: 0,	smooth: 'easeInOutQuart',	offset:	-60})
+	}
+
 render(){
 
 	return(

@@ -112,7 +112,7 @@
   font-family: 'Gotham Book';
   min-width: 140px;
   font-size: 14px; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .button--register {
       font-size: 12px;
       min-width: auto;
@@ -598,9 +598,6 @@
   @media all and (max-width: 619px) {
     .indicators__list--item {
       width: 300px; } }
-  @media all and (max-width: 360px) {
-    .indicators__list--item {
-      width: 200px; } }
 
 .indicators__list--item-element-title {
   font-size: 1.5em;
@@ -629,6 +626,7 @@
   font-size: 1.5em; }
 
 .indicators__arrow {
+  cursor: pointer;
   padding: 5px 5px;
   height: 40px;
   width: 40px; }
@@ -993,7 +991,7 @@ p {
   margin-left: 20px;
   padding-left: 25px;
   flex-grow: 0; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .header__item-uda {
       border: none;
       margin-left: 15px;
@@ -1002,7 +1000,7 @@ p {
       order: 1; } }
   .header__item-uda .header__image-uda {
     width: 100px; }
-    @media all and (max-width: 1000px) {
+    @media all and (max-width: 1050px) {
       .header__item-uda .header__image-uda {
         width: 70px; } }
     .header__item-uda .header__image-uda .header__image-uda a {
@@ -1013,7 +1011,7 @@ p {
 
 .header__image-redapi {
   width: 90px; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .header__image-redapi {
       width: 60px; } }
 
@@ -1022,7 +1020,7 @@ p {
   font-size: 1.5em;
   color: #fff;
   display: none; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .fa-bars {
       display: flex;
       order: 3; } }
@@ -1035,7 +1033,7 @@ p {
   width: 100%;
   padding: 0 25px;
   max-width: 1200px; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .header__container {
       align-items: center; } }
 
@@ -1044,7 +1042,7 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   flex-grow: 1; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .header__nav {
       order: 3;
       align-self: center;
@@ -1056,7 +1054,7 @@ p {
   justify-content: flex-end;
   flex-grow: 0;
   margin-right: 5px; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .header__container--button-register {
       order: 2;
       flex-grow: 1; } }
@@ -1071,7 +1069,7 @@ p {
   justify-content: flex-start;
   font-size: 14px;
   margin-left: 10px; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .nav {
       display: none;
       flex-direction: column;
@@ -1085,7 +1083,7 @@ p {
 .nav__item {
   padding: 0;
   display: flex; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .nav__item {
       width: 100%; } }
 
@@ -1096,7 +1094,7 @@ p {
     background-color: #fff;
     color: #000;
     font-family: 'Gotham Book'; }
-  @media all and (max-width: 1000px) {
+  @media all and (max-width: 1050px) {
     .menu--item_desktop {
       width: 100%; } }
 

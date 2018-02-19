@@ -69,9 +69,7 @@
 @media all and (max-width: 619px){
 	width: 300px;
 	}
-	@media all and (max-width: 360px){
-		width: 200px;
-	}
+
 }
 
 .indicators__list--item-element-title{
@@ -102,6 +100,7 @@
 	font-size: 1.5em;
 }
 .indicators__arrow{
+	cursor: pointer;
 	padding: 5px 5px;
 	height: 40px;
 	width: 40px;
