@@ -28,12 +28,9 @@ class HeaderScroll extends Component {
 					isMin: false
 				});
 				 document.querySelector('.nav').style.display = 'none';
-
 			}
 		});
 	}
-
-
 	scrollTo() {
 		scroller.scrollTo('scroll-to-element', {
 			duration: 800,

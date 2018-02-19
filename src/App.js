@@ -18,8 +18,6 @@ import Steps from './components/Steps';
 
 import '././scss/main.css';
 
-
-
 class App extends Component {
 
 	constructor(props) {
