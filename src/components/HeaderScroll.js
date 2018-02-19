@@ -27,21 +27,9 @@ class HeaderScroll extends Component {
 				this.setState({
 					isMin: false
 				});
-				 document.querySelector('.nav').style.display = 'none';
 			}
 		});
 	}
-	scrollTo() {
-		scroller.scrollTo('scroll-to-element', {
-			duration: 800,
-			delay: 0,
-			smooth: 'easeInOutQuart',
-			offset:	-60
-		})
-	}
-
-
-
 
 	componentWillUnmount() {
 		if (this.scrolls$) this.scrolls$.unsubscribe();
@@ -50,10 +38,10 @@ class HeaderScroll extends Component {
 
 	menuToggle() {
 		let linksEl = document.querySelector('.nav');
-		if (linksEl.style.display === 'block') {
+		if ((linksEl.style.display === 'flex')&& (window.innerWidth<1000)) {
 			linksEl.style.display = 'none';
 		} else {
-			linksEl.style.display = 'block';
+			linksEl.style.display = 'flex';
 		}
 	}
 
@@ -67,23 +55,23 @@ class HeaderScroll extends Component {
 					<nav className="header__nav">
 						<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>
 						<ul className="nav">
-							<li className="nav__item" onClick={this.menuToggle}>
-								<Link activeClass="active" className="menu--item_desktop" to="infoSection" spy={true} smooth={true} duration={500} offset={-60}>¿Qué es?</Link>
+							<li className="nav__item" >
+								<Link activeClass="active" className="menu--item_desktop" to="infoSection" spy={true} smooth={true} duration={500} offset={-60} onClick={this.menuToggle}>¿Qué es?</Link>
 							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<Link activeClass="active" className="menu--item_desktop" to="howDoesWorkItSection" spy={true} smooth={true} duration={500} offset={-60}>¿Cómo funciona?</Link>
+							<li className="nav__item" >
+								<Link activeClass="active" className="menu--item_desktop" to="howDoesWorkItSection" spy={true} smooth={true} duration={500} offset={-60} onClick={this.menuToggle}>¿Cómo funciona?</Link>
 							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<Link activeClass="active" className="menu--item_desktop" to="demoSection" spy={true} smooth={true} duration={500} offset={-60}>Demo</Link>
+							<li className="nav__item" >
+								<Link activeClass="active" className="menu--item_desktop" to="demoSection" spy={true} smooth={true} duration={500} offset={-60} onClick={this.menuToggle}>Demo</Link>
 							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<Link activeClass="active" className="menu--item_desktop" to="faqSection" spy={true} smooth={true} duration={500} offset={-60}>Preguntas Frecuentes</Link>
+							<li className="nav__item" >
+								<Link activeClass="active" className="menu--item_desktop" to="faqSection" spy={true} smooth={true} duration={500} offset={-60} onClick={this.menuToggle}>Preguntas Frecuentes</Link>
 							</li>
 						</ul>
 
 					</nav>
 					<div className="header__container--button-register">
-						<button className="button button--register" onClick={this.props.openCoupon}>Regístrate ahora</button>
+						<button className="button button--register" onClick={this.props.openCoupon}>Regístrate</button>
 					</div>
 					<div className="header__item-uda">
 						<a href="http://www.urbandataanalytics.com/" target="_blank" rel="noopener noreferrer"><img src={logouda} alt="Urban Data Analytics logo" className="header__image-uda" /></a>

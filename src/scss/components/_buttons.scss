@@ -27,10 +27,10 @@
 	min-width: 140px;
 	font-size: 14px;
 	@media all and (max-width: 1000px) {
-		margin-left: 10px;
-		padding: 5px;
 		font-size: 12px;
-		min-width: 115px;
+		min-width: auto;
+		padding:5px 10px;
+		margin-right: 20px;
 	}
 }
 .button--search{

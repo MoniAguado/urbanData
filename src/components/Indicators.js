@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import down from './../images/down.png';
+import { Link, animateScroll as scroller } from 'react-scroll';
+
 class Indicators extends Component{
 
 render(){
@@ -60,7 +62,9 @@ render(){
 					<div className="indicators_container--btndemo">
 						<div className="indicators__action" href='#demo'>
 							<p className="indicators__action--text"> Haz una prueba </p>
-							<span ><img className="indicators__arrow" src={down} alt="arrow"/></span>
+							<span >
+								<Link activeClass="active" className="menu--item_desktop" to="demoSection" spy={true} smooth={true} duration={500} offset={-60} ><img className="indicators__arrow" src={down} alt="arrow"/></Link>
+							</span>
 						</div>
 					</div>
 				</div>
