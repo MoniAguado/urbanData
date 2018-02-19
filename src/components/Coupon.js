@@ -32,10 +32,21 @@ class Coupon extends React.Component {
 									<input type="tel" name="phone" id="phone"/>
 								</div>
 							</div>
-							<div className="input__container">
-								<label htmlFor="request">Consulta<span className="asterisk">*</span></label>
-								<textarea name="request" id="request">
-								</textarea>
+							<div className="reason">
+								<div className="input__container">
+									<label htmlFor="request">Motivo de consulta<span className="asterisk">*</span></label>
+									<select name="request" id="request">
+										<option>Registro de empresa</option>
+										<option>Petición de prueba</option>
+										<option>Solicitud de información</option>
+										<option>Otro tipo de consulta</option>
+									</select>
+								</div>
+							</div>
+									<div className="input__container">
+										<label htmlFor="request">Consulta<span className="asterisk">*</span></label>
+										<textarea name="request" id="request">
+										</textarea>
 							</div>
 							<div className="input__container input__checkbox">
 								<input type="checkbox" name="checkbox" id="checkbox"/>
