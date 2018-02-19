@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Phones from './Phones';
 class Coupon extends React.Component {
 
 	render () {
@@ -46,6 +46,7 @@ class Coupon extends React.Component {
 							</div>
 							<button className="button button--close" onClick={this.props.closeCoupon}>X</button>
 						</div>
+						<Phones />
 					</form>
 				</div>
 			</section>
