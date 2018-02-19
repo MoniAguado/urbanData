@@ -853,7 +853,7 @@ p {
   padding: 13px 20px;
   position: relative;
   width: 100%; }
-  @media all and (max-width: 1200px) {
+  @media all and (max-width: 1150px) {
     .header__container {
       flex-direction: row-reverse;
       justify-content: space-between; }
@@ -941,7 +941,7 @@ p {
   border-left: 1px solid #fff;
   position: absolute;
   right: 25px; }
-  @media all and (max-width: 1200px) {
+  @media all and (max-width: 1150px) {
     .header__item:last-child {
       border: none;
       position: relative;

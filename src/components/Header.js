@@ -68,14 +68,8 @@ class Header extends Component {
 					<nav className="header__nav__mobile">
 						<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>
 						<ul className="nav">
-							<li className="nav__item" onClick={this.menuToggle} >
-								<a href="#initSection">¿Qué es?</a>
-							</li>
 							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#indicatorsSection">Indicadores</a>
-							</li>
-							<li className="nav__item" onClick={this.menuToggle}>
-								<a href="#reportsSection">Informes</a>
+								<a href="#infoSection">¿Qué es?</a>
 							</li>
 							<li className="nav__item" onClick={this.menuToggle}>
 								<a href="#howDoesWorkItSection">¿Cómo funciona?</a>
@@ -88,7 +82,6 @@ class Header extends Component {
 							</li>
 							<li className="nav__item" onClick={this.menuToggle}>
 								<a href="#contactSection" onClick={this.props.openCoupon}>Regístrate</a>
-
 							</li>
 						</ul>
 					</nav>
@@ -100,15 +93,8 @@ class Header extends Component {
 							<nav className="header__nav">
 								<ul className="nav">
 
-								<li className="nav__item">
-									<Link activeClass="active" className="menu--item_desktop" to="initSection" spy={true} smooth={true} duration={500} offset={-60}>¿Qué es?</Link>
-								</li>
 									<li className="nav__item">
-										<Link activeClass="active" className="menu--item_desktop" to="indicatorsSection" spy={true} smooth={true} duration={500} offset={-60}>Indicadores</Link>
-									</li>
-
-									<li className="nav__item">
-										<Link activeClass="active" className="menu--item_desktop" to="reportsSection" spy={true} smooth={true} duration={500} offset={-60}>Informes</Link>
+										<Link activeClass="active" className="menu--item_desktop" to="infoSection" spy={true} smooth={true} duration={500} offset={-60}>¿Qué es?</Link>
 									</li>
 									<li className="nav__item" >
 										<Link activeClass="active" className="menu--item_desktop" to="howDoesWorkItSection" spy={true} smooth={true} duration={500} offset={-60}>¿Cómo funciona?</Link>

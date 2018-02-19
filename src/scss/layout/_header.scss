@@ -52,7 +52,7 @@
 	padding: 13px 20px;
 	position: relative;
 	width: 100%;
-	@media all and (max-width: 1200px){
+	@media all and (max-width: 1150px){
 
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -166,7 +166,7 @@
 	position: absolute;
 	right: 25px;
 
-	@media all and (max-width: 1200px){
+	@media all and (max-width: 1150px){
 		border:none;
 		position: relative;
 		margin-left: 40px;
