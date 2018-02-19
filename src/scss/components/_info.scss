@@ -20,6 +20,9 @@
   text-align: center;
 	border-left: solid 2px $color-lightGrey;
 	padding-left: 20px;
+	@media all and (max-width: 619px){
+		border-left: 0;
+	}
 	.button--contact{
 		width: 230px;
 		margin: 0 auto;

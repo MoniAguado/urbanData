@@ -17,12 +17,14 @@
 	margin-bottom: 20px;
 	border: 1px solid $color-white;
 }
-// .button--contact{
-// 	width: 240px;
-//   padding: 7px 20px;
-// 	font-size: 1em;
-// 	margin:0 auto;
-//  }
+
+.button--register {
+	background-color: $color-red;
+	font-size: 14px;
+	padding: 10px;
+	font-family: 'Gotham Book';
+	margin-left: 15px;
+}
 .button--search{
 	background: $color-darkBlue;
   font-size: 16px;
@@ -49,17 +51,19 @@
 }
 
 .button--report{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: $color-darkBlue;
 	color: $color-white;
 	font-size: 1em;
-	padding-top: 17.5px;
 	border: none;
 	outline: none;
 	border: 1px solid $color-white;
 	cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-align: center;
+	margin: 0 auto 15px;
 	height: 50px;
 	width: 250px;
 }

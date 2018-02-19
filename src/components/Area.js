@@ -5,6 +5,7 @@ import Test from './Test';
 class Area extends Component {
 	constructor(props){
 		super(props);
+
 		this.state={
 			priceMun: [],
 			priceNeighborhood :[]
@@ -23,25 +24,23 @@ class Area extends Component {
 		.then(response => response.json())
 		.then(json => {
 			let priceMun = [];
-				for (let i=1; i<= 3 ; i++){
+			for (let i=1; i<= 3 ; i++){
 				 let priceM = json["2017Q" + i]["72400013000280007900000000000000000000"]["1"]["o_pu"];
-				 priceMun.push(priceM);
+			 	priceMun.push(priceM);
+			}
+			let priceNeighborhood = [];
+				for (let i=1; i<= 3 ; i++){
+			 		let priceN = json["2017Q" + i]["72400013000280007900007000000000000000"]["1"]["o_pu"];
+					priceNeighborhood.push(priceN);
 				}
-				let priceNeighborhood = [];
-					for (let i=1; i<= 3 ; i++){
-					 let priceN = json["2017Q" + i]["72400013000280007900007000000000000000"]["1"]["o_pu"];
-					 priceNeighborhood.push(priceN);
-					}
-				this.setState({
-					priceNeighborhood : priceNeighborhood,
-					priceMun : priceMun
-				})
-
+			this.setState({
+				priceNeighborhood : priceNeighborhood,
+				priceMun : priceMun
+			})
 		})
 	}
 
 	render() {
-
 		return (
 			<div className="testfetch">
 				<Test

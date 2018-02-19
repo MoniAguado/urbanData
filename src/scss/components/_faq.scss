@@ -1,6 +1,5 @@
 .faq__background{
-	background-image: url('../images/sky.jpg');
-	// background-position: center;
+	background-image: url('../images/bcn.png');
 	background-size: cover;
 	height: 100%;
 	width: 100%;
@@ -47,8 +46,8 @@
 .last-question{
 	grid-column: span 2;
 	justify-self: center;
-	background-color: rgba(255, 255, 255, 0.9);
-	color: $color-darkBlue;
+	//background-color: rgba(255, 255, 255, 0.9);
+	//color: $color-darkBlue;
 	padding: 10px;
 	@media all and(max-width: 619px){
 		grid-column:auto;

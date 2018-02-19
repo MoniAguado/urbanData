@@ -3,7 +3,7 @@ import React from 'react';
 class Contact extends React.Component {
 	render(){
 		return(
-			<section className="contact" id="contact">
+			<section id="contactSection" className="contact">
 				<div className="block__container">
 					<div className="contact__container">
 						<h2 className="contact__title">Contacto</h2>
@@ -14,7 +14,7 @@ class Contact extends React.Component {
 					</div>
 				</div>
 			</section>
-			)
-		}
+		)
 	}
-	export default Contact;
+}
+export default Contact;
