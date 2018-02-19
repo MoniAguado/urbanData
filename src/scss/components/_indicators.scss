@@ -64,8 +64,12 @@
 		width: 320px;
 		}
 	}
+
 @media all and (max-width: 619px){
 	width: 300px;
+	}
+	@media all and (max-width: 360px){
+		width: 200px;
 	}
 }
 
