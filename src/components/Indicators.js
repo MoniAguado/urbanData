@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import down from './../images/down.png';
 class Indicators extends Component{
 
 render(){
@@ -58,7 +58,10 @@ render(){
 						</li>
 					</ul>
 					<div className="indicators_container--btndemo">
-						<button className="button button--demo" href='#demo'>DEMO</button>
+						<div className="indicators__action" href='#demo'>
+							<p className="indicators__action--text"> Haz una prueba </p>
+							<span ><img className="indicators__arrow" src={down} /></span>
+						</div>
 					</div>
 				</div>
 			</div>
