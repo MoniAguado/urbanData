@@ -5,6 +5,8 @@ import Income from './Income';
 import Salestime from './Salestime';
 // import Services from './Services';
 
+import logoapi from './../images/REDapi.png';
+
 class Demo extends Component{
 	// constructor(props){
 	// 	super(props);
@@ -41,7 +43,7 @@ class Demo extends Component{
 		return(
 			<section className="demo" id="demoSection">
 				<div className="block__container">
-					<h2 className="demo__title">REDapi DEMO</h2>
+					<h2 className="demo__title"><span className="demo__span--logo"><img src={logoapi} alt="RED api logo" className="header__image" padding-right="20px" width="150px"/> DEMO</span></h2>
 					<h3 className="demo__text">Introduce una dirección y prueba ejemplos de visualización de nuestras APIs.</h3>
 					<div className="demo__form">
 						<input className="demo__input" type="text" placeholder="Calle Sagasta, 5 Madrid" required="required"></input>
