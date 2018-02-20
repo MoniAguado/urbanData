@@ -160,11 +160,11 @@
   width: 250px; }
 
 .highcharts-point.highcharts-color-0 {
-  width: 60px; }
+  width: 48px; }
 
 .highcharts-point.highcharts-color-1 {
   fill: #070d1e;
-  width: 60px; }
+  width: 48px; }
 
 .highcharts-text-outline {
   color: white;
@@ -820,13 +820,22 @@
   display: flex;
   justify-content: space-around;
   background: #fff; }
+  @media all and (max-width: 835px) {
+    .services_container {
+      flex-direction: column; } }
 
 .transport_graphic {
   width: 40%;
   margin-right: 10px; }
+  @media all and (max-width: 835px) {
+    .transport_graphic {
+      width: 100%; } }
 
 .education_graphic {
   width: 40%; }
+  @media all and (max-width: 835px) {
+    .education_graphic {
+      width: 100%; } }
 
 .services_title {
   text-align: center; }
