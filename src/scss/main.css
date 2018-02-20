@@ -387,7 +387,7 @@
   @media all and (max-width: 619px) {
     .cover__background {
       background-position: right top 24%;
-      background-image: url(/static/media/skyfull_mobile.a7293978.jpg);
+      background-image: url("../images/skyfull_mobile.jpg");
       background-size: cover;
       height: 50vh; } }
 
