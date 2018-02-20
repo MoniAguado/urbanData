@@ -253,10 +253,11 @@ class Coupon extends React.Component {
 								<div className="input__container">
 									<label htmlFor="request">Motivo de consulta<span className="asterisk">*</span></label>
 									<select name="request" id="request">
-										<option>Registro de empresa</option>
-										<option>Petición de prueba</option>
-										<option>Solicitud de información</option>
-										<option>Otro tipo de consulta</option>
+										<option value=""></option>
+										<option value="Registro">Registro de empresa</option>
+										<option value="Prueba">Petición de prueba</option>
+										<option value="Informacion">Solicitud de información</option>
+										<option value="otro">Otro tipo de consulta</option>
 									</select>
 								</div>
 							</div>
