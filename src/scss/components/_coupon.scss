@@ -4,11 +4,14 @@
 	height: 100%;
 	top: 0;
 	left: 0;
+	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .coupon{
 	display: none;
+	overscroll-behaviour: contain;
 }
 
 .coupon--visible{
@@ -59,7 +62,7 @@
 		}
 	}
 	input,
-	textarea {
+	textarea, select {
 		border: 2px solid $color-darkBlue;
 		font-size: 0.9em;
 		height: 40px;
@@ -162,4 +165,14 @@
       }
     }
   }
+}
+.input__prefix{
+	display: flex;
+
+}
+.input__prefix--tel-pref{
+	width: 40%;
+}
+.input__prefix--tel{
+	width: 60%;
 }
