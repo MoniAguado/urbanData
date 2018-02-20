@@ -436,6 +436,17 @@
       margin-top: 0;
       margin-top: 6px; } }
 
+.demo__span--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.demo__title {
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
+  padding-left: 10px; }
+
 .faq__background {
   background-image: url("../images/bcn.png");
   background-size: cover;
@@ -645,6 +656,7 @@
 .indicators__arrow {
   cursor: pointer;
   padding: 5px 5px;
+  padding-top: 0;
   height: 40px;
   width: 40px; }
 
@@ -704,8 +716,7 @@
 
 .info__text {
   margin-bottom: 10px;
-  font-size: 1.15em;
-  text-align: justify; }
+  font-size: 1.15em; }
   @media all and (max-width: 828px) {
     .info__text {
       font-size: 1em; } }
