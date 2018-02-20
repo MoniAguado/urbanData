@@ -10,13 +10,9 @@ class Coupon extends React.Component {
 						<div className="coupon__details">
 							<h3 className="coupon__title">¡Envíanos un correo!</h3>
 							<div className="name-surname">
-								<div className="input__container input__modifier-left">
+								<div className="input__container">
 									<label htmlFor="name">Nombre<span className="asterisk">*</span></label>
 									<input type="text" className="name" id="name" name="name"/>
-								</div>
-								<div className="input__container input__modifier-right">
-									<label htmlFor="surname">Apellidos<span className="asterisk">*</span></label>
-									<input type="text" className="surname" id="surname" name="surname"/>
 								</div>
 							</div>
 							<div className="input__container">
@@ -249,9 +245,13 @@ class Coupon extends React.Component {
 									<input className="input__prefix--tel" type="tel" name="phone" id="phone"/>
 								</div>
 							</div>
+							<div className="input__container">
+								<label htmlFor="company">Empresa<span className="asterisk">*</span></label>
+								<input type="text" className="company" id="company" name="company"/>
+							</div>
 							<div className="reason">
 								<div className="input__container">
-									<label htmlFor="request">Motivo de consulta<span className="asterisk">*</span></label>
+									<label htmlFor="request">Motivo de contacto<span className="asterisk">*</span></label>
 									<select name="request" id="request">
 										<option value=""></option>
 										<option value="Registro">Registro de empresa</option>
@@ -262,13 +262,24 @@ class Coupon extends React.Component {
 								</div>
 							</div>
 							<div className="input__container">
-								<label htmlFor="request">Consulta<span className="asterisk">*</span></label>
-								<textarea name="request" id="request">
+								<label htmlFor="request">Comentario (opcional)</label>
+								<textarea name="request" id="request" placeholder="Utiliza este campo para dar detalles de tu consulta y para ampliar información si fuera necesario">
 								</textarea>
 							</div>
-							<div className="input__container input__checkbox">
-								<input type="checkbox" name="checkbox" id="checkbox"/>
-								<label htmlFor="checkbox">Tu privacidad nos importa. Acepta con tranquilidad nuestra política de privacidad y condiciones del servicio.</label>
+							<p className="text__conditions">Al hacer click en el botón estás aceptando nuestras <a href="#">Condiciones legales</a> y la <a href="#">Política de Privacidad</a></p>
+							<div className="checkboxes">
+								<div className="input__container input__checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox1"/>
+									<label htmlFor="checkbox1" >Trataremos sus datos para informarle sobre noticias relativas a nuestra empresa y a nuestros servicios, salvo que se oponga marcando esta casilla.</label>
+								</div>
+								<div className="input__container input__checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox2"/>
+									<label htmlFor="checkbox2" >Le remitiremos información que le pueda ayudar a tomar decisiones relativas a la compraventa, reforma, alquiler o financiación de bienes inmuebles incluidos datos de mercado, estimaciones, informes, noticias, consejos y promociones de interés en nombre de terceros, salvo que se oponga marcando esta casilla.</label>
+								</div>
+								<div className="input__container input__checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox3"/>
+									<label htmlFor="checkbox3" >Le pondremos en contacto con entidades que puedan asesorarle en la toma de decisiones inmobiliarias, salvo que se oponga marcando esta casilla.</label>
+								</div>
 							</div>
 							<div className="input__submit">
 								<button className="button button--submit">ENVIAR</button>
