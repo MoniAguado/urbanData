@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import data from '../token.json';
-import Test from './Test';
+import ReactHighcharts from 'react-highcharts';
 
 class Area extends Component {
 	constructor(props){
@@ -41,12 +41,27 @@ class Area extends Component {
 	}
 
 	render() {
+		const config = {
+		  xAxis: {
+		    categories: ['2017Q1', '2017Q2', '2017Q3']
+		  },
+		  series: [{
+				name: 'Municipio',
+	      data: this.state.priceMun
+	    },{
+	      name: 'Barrio',
+	      data: this.state.priceNeighborhood
+	    }]
+		}
+
+
 		return (
 			<div className="testfetch">
-				<Test
+				<ReactHighcharts config = {config}></ReactHighcharts>
+				{/* <Test
 					getChartMun = {this.state.priceMun}
 					getChartNeighborhood = {this.state.priceNeighborhood}
-				/>
+				/> */}
 			</div>
 		);
 	}

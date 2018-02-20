@@ -159,28 +159,17 @@
   height: 50px;
   width: 250px; }
 
-.highcharts-root .highcharts-background {
-  background-color: #ca1c24; }
-
-.highcharts-plot-background {
-  height: 100px;
-  width: 100px; }
-
-.element.style {
-  fill: #ca1c24;
-  color: #ca1c24; }
-
-.highcharts-axis-labels {
-  fill: #ca1c24; }
-
-.highcharts-point {
-  fill: #ca1c24; }
-
 .highcharts-point.highcharts-color-0 {
-  fill: #ca1c24; }
+  width: 60px; }
 
-.highcharts-graph {
-  color: #ca1c24; }
+.highcharts-point.highcharts-color-1 {
+  fill: #070d1e;
+  width: 60px; }
+
+.highcharts-text-outline {
+  color: white;
+  fill: white;
+  stroke: none; }
 
 .contact {
   background-color: #eff2f7; }
@@ -820,6 +809,27 @@
 
 .salestime__data--numbers {
   display: flex; }
+
+.services {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  margin-top: 20px; }
+
+.services_container {
+  display: flex;
+  justify-content: space-around;
+  background: #fff; }
+
+.transport_graphic {
+  width: 40%;
+  margin-right: 10px; }
+
+.education_graphic {
+  width: 40%; }
+
+.services_title {
+  text-align: center; }
 
 .steps__container {
   display: flex;

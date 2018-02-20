@@ -1,0 +1,26 @@
+.services{
+	background: $color-white;
+	padding:30px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.services_container{
+	display: flex;
+	justify-content: space-around;
+	background: $color-white;
+}
+
+.transport_graphic{
+	width: 40%;
+	margin-right: 10px;
+}
+
+.education_graphic{
+	width: 40%;
+}
+
+.services_title{
+	text-align: center;
+
+}
