@@ -161,28 +161,17 @@
   height: 50px;
   width: 250px; }
 
-.highcharts-root .highcharts-background {
-  background-color: #ca1c24; }
-
-.highcharts-plot-background {
-  height: 100px;
-  width: 100px; }
-
-.element.style {
-  fill: #ca1c24;
-  color: #ca1c24; }
-
-.highcharts-axis-labels {
-  fill: #ca1c24; }
-
-.highcharts-point {
-  fill: #ca1c24; }
-
 .highcharts-point.highcharts-color-0 {
-  fill: #ca1c24; }
+  width: 60px; }
 
-.highcharts-graph {
-  color: #ca1c24; }
+.highcharts-point.highcharts-color-1 {
+  fill: #070d1e;
+  width: 60px; }
+
+.highcharts-text-outline {
+  color: white;
+  fill: white;
+  stroke: none; }
 
 .contact {
   background-color: #eff2f7; }
@@ -443,6 +432,17 @@ textarea {
       margin-top: 0;
       margin-top: 6px; } }
 
+.demo__span--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.demo__title {
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
+  padding-left: 10px; }
+
 .faq__background {
   background-image: url("../images/bcn.png");
   background-size: cover;
@@ -508,7 +508,8 @@ textarea {
   padding: 30px;
   margin-top: 20px;
   justify-content: space-between;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  margin-right: 10px; }
 
 .income_graphic_container {
   display: flex; }
@@ -528,14 +529,14 @@ textarea {
 .income_graphic_text_bar {
   width: 1.2em;
   height: 0.15em;
-  background-color: #8e1c1c;
+  background-color: #ca1c24;
   position: absolute;
   bottom: 50%;
   z-index: 0;
   left: -0.35em; }
 
 .income_graphic {
-  background-color: #cecaca;
+  background-color: #fff;
   width: 0.5em;
   height: 100%;
   border-radius: 5px;
@@ -651,6 +652,7 @@ textarea {
 .indicators__arrow {
   cursor: pointer;
   padding: 5px 5px;
+  padding-top: 0;
   height: 40px;
   width: 40px; }
 
@@ -710,8 +712,7 @@ textarea {
 
 .info__text {
   margin-bottom: 10px;
-  font-size: 1.15em;
-  text-align: justify; }
+  font-size: 1.15em; }
   @media all and (max-width: 828px) {
     .info__text {
       font-size: 1em; } }
@@ -767,7 +768,7 @@ textarea {
 
 .salesTime {
   margin-top: 20px;
-  background-color: #b7bcc6;
+  background-color: #eff2f7;
   padding: 19px;
   width: 50%;
   box-sizing: border-box;
@@ -778,21 +779,24 @@ textarea {
 
 .salestime__container {
   display: flex;
-  justify-content: space-around; }
+  flex-direction: column;
+  text-align: center; }
 
 .salestime__title {
   padding-bottom: 10px; }
 
 .salestime__text {
-  padding: 10px;
   font-size: 0.9em; }
 
 .salestime__all-data {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #eff2f7; }
 
 .salestime__data {
-  background-color: #b7bcc6;
+  background-color: inherit;
   margin-right: 20px; }
 
 .salestime__data--title {
@@ -801,6 +805,27 @@ textarea {
 
 .salestime__data--numbers {
   display: flex; }
+
+.services {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  margin-top: 20px; }
+
+.services_container {
+  display: flex;
+  justify-content: space-around;
+  background: #fff; }
+
+.transport_graphic {
+  width: 40%;
+  margin-right: 10px; }
+
+.education_graphic {
+  width: 40%; }
+
+.services_title {
+  text-align: center; }
 
 .steps__container {
   display: flex;

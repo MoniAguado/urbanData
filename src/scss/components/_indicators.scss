@@ -9,7 +9,7 @@
 	@media all and (max-width: 619px){
 		height: 100%;
 		background-position: 75%;
- 	}
+	}
 }
 
 .indicators__description {
@@ -61,13 +61,12 @@
 	line-height: 20px;
 	&:last-child {
 		@media all and (min-width: 620px) and (max-width: 850px){
-		grid-column: span 2;
-		width: 320px;
+			grid-column: span 2;
+			width: 320px;
 		}
 	}
-
-@media all and (max-width: 619px){
-	width: 300px;
+	@media all and (max-width: 619px){
+		width: 300px;
 	}
 
 }
@@ -108,6 +107,7 @@
 .indicators__arrow{
 	cursor: pointer;
 	padding: 5px 5px;
+	padding-top: 0;
 	height: 40px;
 	width: 40px;
 }

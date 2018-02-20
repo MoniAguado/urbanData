@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import data from '../token.json';
-import Test from './Test';
+import ReactHighcharts from 'react-highcharts';
 
 class Area extends Component {
 	constructor(props){
@@ -13,7 +13,7 @@ class Area extends Component {
 	}
 
 	componentDidMount(){
-		let url = 'http://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=o_pu&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.6938510999999608,40.4291744]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3,2017Q2,2017Q1';
+		let url = 'https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=o_pu&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.6938510999999608,40.4291744]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3,2017Q2,2017Q1';
 
 		let headers = new Headers();
 		headers.append('Authorization', 'Token ' + data.token);
@@ -41,12 +41,27 @@ class Area extends Component {
 	}
 
 	render() {
+		const config = {
+		  xAxis: {
+		    categories: ['2017Q1', '2017Q2', '2017Q3']
+		  },
+		  series: [{
+				name: 'Municipio',
+	      data: this.state.priceMun
+	    },{
+	      name: 'Barrio',
+	      data: this.state.priceNeighborhood
+	    }]
+		}
+
+
 		return (
 			<div className="testfetch">
-				<Test
+				<ReactHighcharts config = {config}></ReactHighcharts>
+				{/* <Test
 					getChartMun = {this.state.priceMun}
 					getChartNeighborhood = {this.state.priceNeighborhood}
-				/>
+				/> */}
 			</div>
 		);
 	}

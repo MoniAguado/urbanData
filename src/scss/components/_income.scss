@@ -16,6 +16,7 @@
 	margin-top: 20px;
 	justify-content: space-between;
 	margin-bottom: 8px;
+	margin-right: 10px;
 
 }
 
@@ -37,7 +38,7 @@
 .income_graphic_text_bar{
 	width: 1.2em;
 	height: 0.15em;
-	background-color: rgb(142, 28, 28);
+	background-color: $color-red;
 	position: absolute;
 	bottom: 50%;
 	z-index: 0;
@@ -45,7 +46,7 @@
 }
 
 .income_graphic{
-	background-color: rgb(206, 202, 202);
+	background-color: $color-white;
 	width: 0.5em;
 	height: 100%;
 	border-radius: 5px;
