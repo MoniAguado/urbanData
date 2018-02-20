@@ -716,8 +716,7 @@
 
 .info__text {
   margin-bottom: 10px;
-  font-size: 1.15em;
-  text-align: justify; }
+  font-size: 1.15em; }
   @media all and (max-width: 828px) {
     .info__text {
       font-size: 1em; } }
