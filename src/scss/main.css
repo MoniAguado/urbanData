@@ -128,19 +128,21 @@
   border: 1px solid #fff; }
 
 .button--submit {
-  width: 150px;
-  padding: 7px 20px; }
+  width: 100px;
+  padding: 7px 10px;
+  font-size: 14px; }
 
 .button--close {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 20px;
+  top: 15px;
   right: 30px;
   font-weight: bold;
-  width: 20px;
-  padding: 3px 15px; }
+  width: 5px;
+  padding: 5px 10px;
+  font-size: 14px; }
 
 .button--report {
   display: flex;
@@ -207,8 +209,7 @@
   background-color: rgba(0, 0, 0, 0.7); }
 
 .coupon {
-  display: none;
-  overscroll-behaviour: contain; }
+  display: none; }
 
 .coupon--visible {
   display: block; }
@@ -228,9 +229,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 20px 30px;
+  padding: 15px 30px;
   width: 85%;
-  max-width: 450px; }
+  max-width: 500px; }
 
 .coupon__details {
   display: flex;
@@ -239,12 +240,12 @@
 .coupon__title {
   text-align: center;
   color: #ca1c24;
-  font-size: 1.4em;
-  margin-bottom: 25px; }
+  font-size: 1.3em;
+  margin-bottom: 15px; }
   @media all and (max-width: 619px) {
     .coupon__title {
       margin-bottom: 15px;
-      font-size: 1.2em; } }
+      font-size: 1.1em; } }
 
 .input__container {
   display: flex;
@@ -252,53 +253,32 @@
   width: 100%;
   margin-bottom: 12px; }
   .input__container label {
+    font-size: 14px;
     margin-bottom: 6px; }
-    @media all and (max-width: 619px) {
-      .input__container label {
-        font-size: 0.9em; } }
-  .input__container input,
-  .input__container textarea, .input__container select {
-    border: 2px solid #070d1e;
-    font-size: 0.9em;
-    height: 40px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    outline: none; }
-    @media all and (max-width: 619px) {
-      .input__container input,
-      .input__container textarea, .input__container select {
-        height: 30px;
-        font-size: 0.75em; } }
-  .input__container textarea {
-    height: 80px;
-    resize: none; }
-    @media all and (max-width: 619px) {
-      .input__container textarea {
-        height: 60px; } }
-
-.name-surname,
-.mail-phone {
-  display: flex;
-  width: 100%;
-  justify-content: space-between; }
   @media all and (max-width: 619px) {
-    .name-surname,
-    .mail-phone {
-      flex-direction: column; } }
+    .input__container {
+      font-size: 0.9em; } }
 
-.input__modifier-left {
-  width: 48%;
-  margin-right: 4%; }
+input,
+textarea, select {
+  border: 2px solid #070d1e;
+  font-size: 0.8em;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  outline: none; }
   @media all and (max-width: 619px) {
-    .input__modifier-left {
-      width: 100%;
-      margin-right: 0; } }
+    input,
+    textarea, select {
+      height: 30px;
+      font-size: 0.75em; } }
 
-.input__modifier-right {
-  width: 48%; }
+textarea {
+  height: 60px;
+  resize: none; }
   @media all and (max-width: 619px) {
-    .input__modifier-right {
-      width: 100%; } }
+    textarea {
+      height: 40px; } }
 
 .input__submit {
   display: flex;
@@ -317,10 +297,10 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 5px; }
+      top: 3px; }
     .input__checkbox label:before {
-      width: 18px;
-      height: 18px;
+      width: 13px;
+      height: 13px;
       background: #fff;
       border: 2px solid #070d1e;
       border-radius: 2px;
@@ -330,19 +310,19 @@
   .input__checkbox input[type="checkbox"] {
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 3px;
     outline: 0;
     opacity: 0; }
     .input__checkbox input[type="checkbox"]:checked + label:before {
       background: #ca1c24;
       border: none;
-      top: 5px; }
+      top: 3px; }
     .input__checkbox input[type="checkbox"]:checked + label:after {
       transform: rotate(-45deg);
-      top: 8px;
-      left: 3px;
-      width: 11px;
-      height: 6px;
+      top: 5px;
+      left: 2px;
+      width: 7px;
+      height: 5px;
       border: 2px solid #fff;
       border-top-style: none;
       border-right-style: none; }
@@ -351,10 +331,26 @@
   display: flex; }
 
 .input__prefix--tel-pref {
-  width: 40%; }
+  width: 39%;
+  margin-right: 1%; }
 
 .input__prefix--tel {
   width: 60%; }
+
+.text__conditions {
+  font-size: 0.8em; }
+
+.checkboxes {
+  min-width: 250px;
+  height: 100px;
+  overflow-y: scroll;
+  font-size: 12px;
+  margin: 8px 0; }
+
+.input__checkbox {
+  margin-bottom: 3px; }
+  .input__checkbox label {
+    font-size: 12px; }
 
 .cover {
   height: 80vh; }

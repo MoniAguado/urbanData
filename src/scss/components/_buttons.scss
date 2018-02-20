@@ -42,8 +42,9 @@
 	border: 1px solid $color-white;
 }
 .button--submit{
-	width: 150px;
-	padding: 7px 20px;
+	width: 100px;
+	padding: 7px 10px;
+	font-size: 14px;
 }
 
 .button--close {
@@ -51,11 +52,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 20px;
+	top: 15px;
 	right: 30px;
 	font-weight: bold;
-	width: 20px;
-	padding: 3px 15px;
+	width: 5px;
+	padding: 5px 10px;
+	font-size: 14px;
 }
 
 .button--report{

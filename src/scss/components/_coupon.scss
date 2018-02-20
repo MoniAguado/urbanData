@@ -6,12 +6,10 @@
 	left: 0;
 	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.7);
-
 }
 
 .coupon{
 	display: none;
-	overscroll-behaviour: contain;
 }
 
 .coupon--visible{
@@ -32,9 +30,9 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: $color-white;
-	padding: 20px 30px;
+	padding: 15px 30px;
 	width: 85%;
-	max-width: 450px;
+	max-width: 500px;
 }
 .coupon__details {
 	display: flex;
@@ -43,11 +41,11 @@
 .coupon__title {
 	text-align: center;
 	color: $color-red;
-	font-size: 1.4em;
-	margin-bottom: 25px;
+	font-size: 1.3em;
+	margin-bottom: 15px;
 	@media all and (max-width: 619px) {
 		margin-bottom: 15px;
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 }
 .input__container {
@@ -56,7 +54,9 @@
 	width: 100%;
 	margin-bottom: 12px;
 	label {
+		font-size: 14px;
 		margin-bottom: 6px;
+	}
 		@media all and (max-width: 619px) {
 			font-size: 0.9em;
 		}
@@ -64,8 +64,8 @@
 	input,
 	textarea, select {
 		border: 2px solid $color-darkBlue;
-		font-size: 0.9em;
-		height: 40px;
+		font-size: 0.8em;
+		height: 30px;
 		padding: 5px 10px;
 		border-radius: 3px;
 		outline: none;
@@ -75,36 +75,13 @@
 		}
 	}
 	textarea {
-		height: 80px;
+		height: 60px;
 		resize: none;
 		@media all and (max-width: 619px) {
-			height: 60px;
+			height: 40px;
 		}
 	}
-}
-.name-surname,
-.mail-phone {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	@media all and (max-width: 619px) {
-		flex-direction: column;
-	}
-}
-.input__modifier-left {
-	width: 48%;
-	margin-right: 4%;
-	@media all and (max-width: 619px) {
-		width: 100%;
-		margin-right: 0;
-	}
-}
-.input__modifier-right {
-	width: 48%;
-	@media all and (max-width: 619px) {
-		width: 100%;
-	}
-}
+
 .input__submit {
 	display: flex;
 	align-items: center;
@@ -127,11 +104,11 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 5px;
+      top: 3px;
     }
     &:before {
-      width:  18px;
-      height: 18px;
+      width:  13px;
+      height: 13px;
       background: $color-white;
       border: 2px solid $color-darkBlue;
       border-radius: 2px;
@@ -144,21 +121,21 @@
   input[type="checkbox"] {
 		position: absolute;
 		left:0;
-		top: 5px;
+		top: 3px;
     outline: 0;
 		opacity:0;
     &:checked {
       +label:before {
         background: $color-red;
         border: none;
-				top:5px;
+				top:3px;
       }
       +label:after {
         transform: rotate(-45deg);
-        top: 8px;
-        left: 3px;
-        width: 11px;
-        height: 6px;
+        top: 5px;
+        left: 2px;
+        width: 7px;
+        height: 5px;
         border: 2px solid $color-white;
         border-top-style: none;
         border-right-style: none;
@@ -171,8 +148,27 @@
 
 }
 .input__prefix--tel-pref{
-	width: 40%;
+	width: 39%;
+	margin-right: 1%;
 }
 .input__prefix--tel{
 	width: 60%;
+}
+.text__conditions {
+	font-size: 0.8em;
+}
+
+.checkboxes {
+	min-width: 250px;
+  height: 100px;
+	overflow-y: scroll;
+	font-size: 12px;
+	margin: 8px 0;
+}
+
+.input__checkbox {
+	margin-bottom: 3px;
+	label {
+		font-size: 12px;
+	}
 }
