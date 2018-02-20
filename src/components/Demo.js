@@ -3,7 +3,7 @@ import Area from './Area';
 // import Carto from './Carto';
 import Income from './Income';
 import Salestime from './Salestime';
-// import Services from './Services';
+import Services from './Services';
 
 class Demo extends Component{
 
@@ -22,7 +22,7 @@ class Demo extends Component{
 							<Income />
 							<Salestime />
 						</div>
-							{/*<Services /> */}
+						<Services />
 						</div>
 				</div>
 			</section>
