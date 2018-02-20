@@ -9,15 +9,24 @@
 	display: flex;
 	justify-content: space-around;
 	background: $color-white;
+	@media all and (max-width: 835px) {
+	flex-direction: column;
+	}
 }
 
 .transport_graphic{
 	width: 40%;
 	margin-right: 10px;
+	@media all and (max-width: 835px) {
+	width: 100%;
+	}
 }
 
 .education_graphic{
 	width: 40%;
+	@media all and (max-width: 835px) {
+	width: 100%;
+	}
 }
 
 .services_title{
