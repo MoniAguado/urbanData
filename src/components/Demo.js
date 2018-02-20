@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Area from './Area';
-// import Carto from './Carto';
+import Carto from './Carto';
 import Income from './Income';
 import Salestime from './Salestime';
 // import Services from './Services';
@@ -8,6 +8,8 @@ import Salestime from './Salestime';
 import logoapi from './../images/REDapi.png';
 
 class Demo extends Component{
+
+
 	// constructor(props){
 	// 	super(props);
 	// 	this.state = {
@@ -49,7 +51,7 @@ class Demo extends Component{
 						<input className="demo__input" type="text" placeholder="Calle Sagasta, 5 Madrid" required="required"></input>
 						<button className="button button--search">BUSCAR</button>
 						<Area />
-						{/* <Carto /> */}
+						<Carto />
 						<div className="graphics">
 							<Income />
 							<Salestime />
