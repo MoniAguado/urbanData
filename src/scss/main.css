@@ -512,7 +512,8 @@
   padding: 30px;
   margin-top: 20px;
   justify-content: space-between;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  margin-right: 10px; }
 
 .income_graphic_container {
   display: flex; }
