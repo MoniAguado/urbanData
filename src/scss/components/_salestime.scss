@@ -1,8 +1,14 @@
 .salesTime{
 	margin-top: 20px;
-	width: 49%;
 	background-color: $color-lightGrey;
 	padding: 19px;
+	width: 50%;
+	box-sizing: border-box;
+	overflow:hidden;
+
+		@media all and (max-width: 1000px) {
+			width: 100%;
+		}
 }
 .salestime__container{
 display: flex;

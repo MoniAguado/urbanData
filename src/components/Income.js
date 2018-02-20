@@ -57,7 +57,6 @@ class Income extends Component {
 				</div>
 			</div>
 		);
-
 	}
 }
 

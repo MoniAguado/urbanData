@@ -1,14 +1,22 @@
 .homeIncome{
-	width: 45%;
+	// width: 45%;
+	min-width: 50%;
+	box-sizing: border-box;
+	overflow:hidden;
+		@media all and (max-width: 1000px) {
+			width: 100%;
+
+		}
 }
 
 .income_container{
 	display: flex;
-background-color: $color-lightGrey;
+	background-color: $color-lightGrey;
 	padding: 30px;
 	margin-top: 20px;
 	justify-content: space-between;
 	margin-bottom: 8px;
+	margin-right: 10px;
 
 }
 
@@ -30,7 +38,7 @@ background-color: $color-lightGrey;
 .income_graphic_text_bar{
 	width: 1.2em;
 	height: 0.15em;
-	background-color: rgb(142, 28, 28);
+	background-color: $color-red;
 	position: absolute;
 	bottom: 50%;
 	z-index: 0;
@@ -38,7 +46,7 @@ background-color: $color-lightGrey;
 }
 
 .income_graphic{
-	background-color: rgb(206, 202, 202);
+	background-color: $color-white;
 	width: 0.5em;
 	height: 100%;
 	border-radius: 5px;
