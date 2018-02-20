@@ -36,8 +36,6 @@ class Demo extends Component{
   //     document.getElementById(addressType).value = val;
   //   }
   // }
-}
-	}
 
 	render(){
 		return(
