@@ -783,7 +783,7 @@
 
 .salesTime {
   margin-top: 20px;
-  background-color: #b7bcc6;
+  background-color: #eff2f7;
   padding: 19px;
   width: 50%;
   box-sizing: border-box;
@@ -794,21 +794,24 @@
 
 .salestime__container {
   display: flex;
-  justify-content: space-around; }
+  flex-direction: column;
+  text-align: center; }
 
 .salestime__title {
   padding-bottom: 10px; }
 
 .salestime__text {
-  padding: 10px;
   font-size: 0.9em; }
 
 .salestime__all-data {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #eff2f7; }
 
 .salestime__data {
-  background-color: #b7bcc6;
+  background-color: inherit;
   margin-right: 20px; }
 
 .salestime__data--title {
