@@ -19,11 +19,19 @@
 }
 
 .button--register {
+	box-sizing: border-box;
 	background-color: $color-red;
 	font-size: 14px;
 	padding: 10px;
 	font-family: 'Gotham Book';
-	margin-left: 15px;
+	min-width: 140px;
+	font-size: 14px;
+	@media all and (max-width: 1050px) {
+		font-size: 12px;
+		min-width: auto;
+		padding:5px 10px;
+		margin-right: 20px;
+	}
 }
 .button--search{
 	background: $color-darkBlue;
