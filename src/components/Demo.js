@@ -55,8 +55,8 @@ class Demo extends Component{
 				<div className="block__container">
 
 					<span className="demo__span--logo">
-						<img src={logoapi} alt="RED api logo" className="header__image" padding-right="20px" width="150px" height="50px"/>
-						<h2 className="demo__title">DEMO</h2>
+						{/* <img src={logoapi} alt="RED api logo" className="header__image" padding-right="20px" width="150px" height="50px"/> */}
+						<h2 className="demo__title">HAZ UNA PRUEBA</h2>
 					</span>
 
 					<h3 className="demo__text">Introduce una dirección y prueba ejemplos de visualización de nuestras APIs.</h3>

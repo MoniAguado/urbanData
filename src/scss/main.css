@@ -460,7 +460,8 @@ textarea {
   color: #fff; }
 
 .faq__list--question-title {
-  color: #ca1c24; }
+  color: #ca1c24;
+  font-weight: 600; }
 
 .faq__list--answer-text-li {
   line-height: 1.3; }
