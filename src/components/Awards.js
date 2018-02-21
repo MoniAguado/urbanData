@@ -10,7 +10,7 @@ class Awards extends React.Component {
 				<div className="block__container">
 					<div className="awards__background">
 						<div className="awards__container">
-							<h2 className="awards__text">Estás en buena compañía:</h2>
+							<h2 className="awards__text">Estás en buena compañía</h2>
 							<div className="awards__container-img">
 
 								<a href="https://www.mipim.com/startup-competition/" className="awards__link" alt="Mipim Awards" target="_blank" rel="noopener noreferrer" ><img src={premio2} alt="premio 1" className="awards-img"  /></a>

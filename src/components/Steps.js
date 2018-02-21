@@ -17,7 +17,7 @@ class Steps extends React.Component {
 								</div>
 								<div className="step__despcription">
 									<div className="step__paragraphs">
-										<h4 className="step__title">SOLICITA UN TOKEN </h4>
+										<h4 className="step__title">SOLICITA TU TOKEN </h4>
 										<p className="step__text">Contacta con nosotros y solicita un token para identificar a tu negocio. </p>
 									</div>
 								</div>
@@ -29,7 +29,7 @@ class Steps extends React.Component {
 								<div className="step__despcription">
 									<div className="step__paragraphs">
 										<h4 className="step__title">
-										SELECCIONA LOS DATOS</h4>
+										SELECCIONA LOS INDICADORES PARA TU NEGOCIO</h4>
 										<p className="step__text">
 										Selecciona los datos que quieres utilizar y define como mostrarlos a tu audiencia.</p>
 									</div>
