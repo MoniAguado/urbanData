@@ -1151,12 +1151,12 @@ p {
       width: 100%; } }
 
 .menu--item_desktop {
+  font-family: 'Gotham book';
   cursor: pointer;
   padding: 15px 25px; }
   .menu--item_desktop.active {
-    background-color: #fff;
-    color: #000;
-    font-family: 'Gotham Book'; }
+    color: #fff;
+    font-family: 'Gotham bold'; }
   @media all and (max-width: 1050px) {
     .menu--item_desktop {
       width: 100%; } }
