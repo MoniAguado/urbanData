@@ -1,32 +1,31 @@
 .services{
 	background: $color-white;
-	padding:30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	width: 100%;
 	margin-top: 20px;
 }
 
 .services_container{
 	display: flex;
+	flex-direction: column;;
 	justify-content: space-around;
 	background: $color-white;
+	margin-left: 20px;
 	@media all and (max-width: 835px) {
-	flex-direction: column;
+	// flex-direction: column;
 	}
 }
 
 .transport_graphic{
-	width: 40%;
-	margin-right: 10px;
-	@media all and (max-width: 835px) {
 	width: 100%;
-	}
+	margin-right: 10px;
+	
 }
 
 .education_graphic{
-	width: 40%;
-	@media all and (max-width: 835px) {
 	width: 100%;
-	}
+
 }
 
 .services_title{
