@@ -33,8 +33,8 @@ render(){
 									<li className="indicators__list--item-element-list-item">
 									Precio estimado</li>
 									<li className="indicators__list--item-element-list-item">Precios máximos y mínimos</li>
-									<li className="indicators__list--item-element-list-item">Precio tipología inmueble</li>
-									<li className="indicators__list--item-element-list-item">Precio por estado conservación inmueble</li>
+									<li className="indicators__list--item-element-list-item">Precio por estado de conservación</li>
+									<li className="indicators__list--item-element-list-item">Rentabilidad</li>
 									<li className="indicators__list--item-element-list-item">Operaciones similares cerradas</li>
 									<li>...</li>
 								</ul>
@@ -45,10 +45,10 @@ render(){
 								<h4 className="indicators__list--item-element-title">Mercado</h4>
 								<ul className="indicators__list--item-element-list">
 									<li className="indicators__list--item-element-list-item">
-									Precio medio inmuebles</li>
-									<li className="indicators__list--item-element-list-item">Tiempo para alquiler / compra </li>
+									Precio Medio</li>
+									<li className="indicators__list--item-element-list-item">Oferta y Demanda de inmuebles</li>
 									<li className="indicators__list--item-element-list-item">Margen de negociación</li>
-									<li className="indicators__list--item-element-list-item">Rentabilidad</li>
+									<li className="indicators__list--item-element-list-item">Semanas para vender / alquilar</li>
 									<li className="indicators__list--item-element-list-item">Rating inversión</li>
 									<li>...</li>
 								</ul>
