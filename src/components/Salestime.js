@@ -39,24 +39,26 @@ class Salestime extends Component {
 		return (
 			<div className="salesTime">
 				<div className="salestime__container">
-					<div className="salestime__description">
-						<h4 className="salestime__title">Tiempo de venta</h4>
-						<p className="salestime__text">Semanas estimadas para la venta de un inmueble en un trimestre dado.</p>
-					</div>
+					{/* <div className="salestime__description"> */}
+					<h4 className="salestime__title">Tiempo de venta</h4>
+
 					<div className="salestime__all-data">
 						<div className="salestime__data">
 							<h6 className="salestime__data--title">Barrio</h6>
-							<div className="salestime__data--numbers">
-								<p className="salestime__data--number">	<span className="salestime_value">{this.state.neighbourhood.toLocaleString()}  sem </span></p>
-							</div>
+							{/* <div className="salestime__data--numbers"> */}
+							<p className="salestime__data--number">	<span className="salestime_value">{this.state.neighbourhood.toLocaleString()}  sem </span></p>
+							{/* </div> */}
 						</div>
 						<div className="salestime__data">
 							<h6 className="salestime__data--title">Ciudad</h6>
-							<div className="salestime__data--numbers">
-								<p className="salestime__data--number">	<span className="salestime_value">{this.state.district.toLocaleString()}  sem </span></p>
-							</div>
+							{/* <div className="salestime__data--numbers"> */}
+							<p className="salestime__data--number">	<span className="salestime_value">{this.state.district.toLocaleString()}  sem </span></p>
+							{/* </div> */}
 						</div>
 					</div>
+
+					<p className="salestime__text">*Semanas estimadas para la venta de un inmueble en un trimestre dado.</p>
+					{/* </div> */}
 				</div>
 
 			</div>
