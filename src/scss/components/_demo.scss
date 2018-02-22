@@ -79,6 +79,10 @@
 
 .carto-graphics{
 	margin-top: 10px;
+	@media all and(max-width: 828px){
+			width: 100%;
+}
+
 }
 
 // .graphics{
