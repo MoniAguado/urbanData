@@ -43,17 +43,17 @@ class Income extends Component {
 						<h4 className="show_income_title">Renta media por hogar</h4>
 						<span className="income_value">{this.state.homeIncomeNeignborhood.toLocaleString()}  €/año</span>
 					</div>
-					<div className="income_graphic_container">
+					{/* <div className="income_graphic_container">
 						<div className="income_graphic_group">
 							<div className="income_graphic_1">
-								<div className="income_graphic_text_bar"></div>
-								<div className="income_graphic">
-									<div className="income_subgraphic"></div>
-								</div>
+						<div className="income_graphic_text_bar"></div>
+						<div className="income_graphic">
+						<div className="income_subgraphic"></div>
+						</div>
 							</div>
 						</div>
 						<span>Media ciudad</span>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		);

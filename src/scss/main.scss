@@ -3,8 +3,10 @@
 @import 'core/mixins';
 @import 'core/variables';
 
+@import 'components/area';
 @import 'components/awards';
 @import 'components/buttons';
+@import 'components/carto';
 @import 'components/charts';
 @import 'components/contact';
 @import 'components/coupon';
@@ -24,7 +26,7 @@
 @import 'components/typography';
 
 
-@import 'layout/demo';
+
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';

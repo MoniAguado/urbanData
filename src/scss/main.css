@@ -162,12 +162,17 @@
   height: 50px;
   width: 250px; }
 
+.carto {
+  margin-top: 20px;
+  width: 45%;
+  height: 400px; }
+
 .highcharts-point.highcharts-color-0 {
   width: 48px; }
 
 .highcharts-point.highcharts-color-1 {
   fill: #070d1e;
-  width: 48px; }
+  width: 30px; }
 
 .highcharts-text-outline {
   color: white;
@@ -444,6 +449,69 @@ textarea {
   align-self: flex-end;
   padding-left: 10px; }
 
+.demo {
+  background-color: lavender; }
+
+.demo__container {
+  margin: 30px;
+  padding-top: 40px; }
+
+.demo__text {
+  font-size: 15px;
+  margin-top: 20px; }
+
+.demo__form {
+  margin-top: 10px; }
+
+.demo__input {
+  font-size: 20px;
+  width: 280px;
+  margin: 20px 20px 20px 0;
+  border: 1px solid #070d1f;
+  padding: 2px 9px; }
+  @media all and (max-width: 619px) {
+    .demo__input {
+      width: 260px;
+      margin-bottom: 10px;
+      font-size: 1em; } }
+
+.demo {
+  background-color: lavender; }
+
+.demo__container {
+  margin: 30px;
+  padding-top: 40px; }
+
+.demo__text {
+  font-size: 15px;
+  margin-top: 20px; }
+
+.demo__form {
+  margin-top: 10px; }
+
+.demo__input {
+  font-size: 20px;
+  width: 280px;
+  margin: 20px 20px 20px 0;
+  border: 1px solid #070d1f;
+  padding: 2px 9px; }
+  @media all and (max-width: 619px) {
+    .demo__input {
+      width: 260px;
+      margin-bottom: 10px;
+      font-size: 1em; } }
+
+.carto-graphics {
+  display: flex; }
+
+.graphics {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column; }
+
+.graphics_1 {
+  display: flex; }
+
 .faq__background {
   background-image: url("../images/bcn.png");
   background-size: cover;
@@ -497,9 +565,9 @@ textarea {
   margin-top: 10px; }
 
 .homeIncome {
-  min-width: 50%;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 42%; }
   @media all and (max-width: 1000px) {
     .homeIncome {
       width: 100%; } }
@@ -507,11 +575,12 @@ textarea {
 .income_container {
   display: flex;
   background-color: #b7bcc6;
-  padding: 30px;
+  padding: 20px;
   margin-top: 20px;
   justify-content: space-between;
   margin-bottom: 8px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  text-align: left; }
 
 .income_graphic_container {
   display: flex; }
@@ -772,9 +841,10 @@ textarea {
   margin-top: 20px;
   background-color: #eff2f7;
   padding: 19px;
-  width: 50%;
+  width: 68%;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: left; }
   @media all and (max-width: 1000px) {
     .salesTime {
       width: 100%; } }
@@ -785,21 +855,24 @@ textarea {
   text-align: center; }
 
 .salestime__title {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  text-align: left; }
 
 .salestime__text {
-  font-size: 0.9em; }
+  font-size: 11px;
+  text-align: left; }
 
 .salestime__all-data {
+  text-align: left;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #eff2f7; }
 
 .salestime__data {
   background-color: inherit;
-  margin-right: 20px; }
+  margin-right: 20px;
+  width: 50%; }
 
 .salestime__data--title {
   margin-bottom: 5px;
@@ -810,30 +883,24 @@ textarea {
 
 .services {
   background: #fff;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   margin-top: 20px; }
 
 .services_container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  background: #fff; }
-  @media all and (max-width: 835px) {
-    .services_container {
-      flex-direction: column; } }
+  background: #fff;
+  margin-left: 20px; }
 
 .transport_graphic {
-  width: 40%;
+  width: 100%;
   margin-right: 10px; }
-  @media all and (max-width: 835px) {
-    .transport_graphic {
-      width: 100%; } }
 
 .education_graphic {
-  width: 40%; }
-  @media all and (max-width: 835px) {
-    .education_graphic {
-      width: 100%; } }
+  width: 100%; }
 
 .services_title {
   text-align: center; }
@@ -921,37 +988,6 @@ p {
 
 * {
   font-family: 'Gotham Light'; }
-
-.demo {
-  background-color: lavender; }
-
-.demo__container {
-  margin: 30px;
-  padding-top: 40px; }
-
-.demo__text {
-  font-size: 15px;
-  margin-top: 20px; }
-
-.demo__form {
-  margin-top: 10px; }
-
-.demo__input {
-  font-size: 20px;
-  width: 280px;
-  margin: 20px 20px 20px 0;
-  border: 1px solid #070d1f;
-  padding: 2px 9px; }
-  @media all and (max-width: 619px) {
-    .demo__input {
-      width: 260px;
-      margin-bottom: 10px;
-      font-size: 1em; } }
-
-.graphics {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
 
 .footer {
   color: #b7bcc6;
