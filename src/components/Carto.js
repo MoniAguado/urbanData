@@ -17,11 +17,50 @@ class Carto extends Component {
 		.then(json => console.log(json));
 	}
 
+// 	cartoMap(lat, lon) {
+//   // create leaflet map
+//   var map = L.map('map', {
+//     zoomControl: false,
+//     scrollWheelZoom: false,
+//     center: [0, 0],
+//     zoomControl: true,
+//     zoom: 3
+//    });
+//
+//   // add a base layer
+//   L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+//     attribution: ''
+//   }).addTo(map);
+//
+//   // add CARTO layer with one sublayer
+//   cartodb.createLayer(map, {
+//     user_name: 'udasaas',
+//     type: 'namedmap',
+//     named_map: {
+//       name: "adalab_view",
+//       layers: [{
+//         layer_name: "t",
+//         interactivity: "municipio,distrito,barrio,precio_m2"
+//        }]
+//      }
+//     })
+//     .addTo(map)
+//     .done(function(layer) {
+//       layer.getSubLayer(0).setInteraction(true);
+//
+//       // show infowindows on click
+//       cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0), ['municipio','distrito','barrio','precio_m2']);
+//
+//       map.setView([lat, lon],14,true);
+//     });
+// }
+
 	render() {
 		return (
-			<div className="carto">
-				<iframe width="100%" height="520" frameBorder="0" src="https://uda-maps.carto.com/u/udasaas/builder/608abb17-ee1f-4550-a7a4-490e5fe6f4e6/embed" allowFullScreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
+			<div className="carto__container">
+				{/* <div className="carto"> */}
+				<iframe width="100%" height="100%" frameBorder="0" src="https://uda-maps.carto.com/u/udasaas/builder/608abb17-ee1f-4550-a7a4-490e5fe6f4e6/embed" allowFullScreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				{/* </div> */}
 			</div>
 		);
 	}

@@ -42,26 +42,44 @@ class Area extends Component {
 
 	render() {
 		const config = {
+			chart: { type: 'spline', height: "300"},
+	    title: { text: '' },
+			credits: {enabled: false},
 		  xAxis: {
-		    categories: ['2017Q1', '2017Q2', '2017Q3']
+		    categories: ['2017Q1', '2017Q2', '2017Q3'],
+				gridLineWidth: 1,
+				gridLineColor: "#eff2f7"
 		  },
+			legend: {
+				 align: 'right',
+				 verticalAlign: 'top',
+				 layout: 'horizontal',
+				 x: 0,
+		 },
 		  series: [{
 				name: 'Municipio',
-	      data: this.state.priceMun
+	      data: this.state.priceMun,
+				color: "#ca1c24",
+				marker: { symbol: 'circle' }
 	    },{
 	      name: 'Barrio',
-	      data: this.state.priceNeighborhood
+	      data: this.state.priceNeighborhood,
+				color: "#2d303b",
+				marker: { symbol: 'circle' }
 	    }]
 		}
 
 
+
 		return (
-			<div className="testfetch">
-				<ReactHighcharts config = {config}></ReactHighcharts>
-				{/* <Test
-					getChartMun = {this.state.priceMun}
-					getChartNeighborhood = {this.state.priceNeighborhood}
-				/> */}
+			<div className="area">
+				<div className="area_container">
+					<ReactHighcharts config = {config}></ReactHighcharts>
+					{/* <Test
+						getChartMun = {this.state.priceMun}
+						getChartNeighborhood = {this.state.priceNeighborhood}
+					/> */}
+				</div>
 			</div>
 		);
 	}

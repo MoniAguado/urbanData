@@ -66,12 +66,20 @@ class Demo extends Component{
 						<button className="button button--search">BUSCAR</button>
 
 						<Area />
-						<Carto />
-						<div className="graphics">
-							<Income />
-							<Salestime />
+						<div className="carto-graphics">
+							<Carto />
+							{/* <div className="graphics"> */}
+							{/* <div className="graphics_1"> */}
+							<div className="income-sales">
+
+								<Income />
+								<Salestime />
+							</div>
+							{/* </div> */}
+							<Services />
+							{/* </div> */}
 						</div>
-						<Services />
+
 						</div>
 				</div>
 			</section>
