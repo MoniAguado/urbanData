@@ -70,17 +70,26 @@
  	}
 }
 
+.incomes-sales{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	background: white;
+}
 
 .carto-graphics{
-	display: flex;
-
+	margin-top: 10px;
+	@media all and(max-width: 828px){
+			width: 100%;
 }
 
-.graphics{
-	display: flex;
-	margin-left: 10px;
-	flex-direction: column;
 }
-.graphics_1{
-	display: flex;
-}
+
+// .graphics{
+// 	display: flex;
+// 	margin-left: 10px;
+// 	flex-direction: column;
+// }
+// .graphics_1{
+// 	display: flex;
+// }

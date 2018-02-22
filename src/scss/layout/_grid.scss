@@ -42,3 +42,51 @@
 		align-self: center;
 	}
 }
+
+
+//Sección Demo
+.carto-graphics{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	@media all and(max-width: 828px){
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+}
+}
+.carto__container{
+	grid-column: 1 / 3;
+	grid-row: 1 / 4;
+	@media all and(max-width: 828px){
+		height: 500px;
+}
+}
+.income-sales{
+	grid-column: 3 / 6;
+	grid-row: 1 /2 ;
+	background: white;
+}
+// .homeIncome{
+// 	grid-column: 3 / 4;
+// 	grid-row: 1 / 2;
+// }
+//
+// .salesTime{
+// 	grid-column: 4 / 6;
+// 	grid-row: 1/ 2;
+// }
+.services{
+	grid-column: 3 / 6;
+	grid-row: 2 / 4;
+}
+
+// .transport_graphic{
+// 	grid-column: 3 / 6;
+// 	grid-row: 2 / 4;
+// }
+// .education_graphic{
+// 	grid-column: 3 / 6;
+// 	grid-row: 4 / 6;
+// }

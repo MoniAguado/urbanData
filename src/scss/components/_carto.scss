@@ -1,6 +1,13 @@
 
 .carto {
+  position: relative;
 	margin-top: 20px;
 	width: 45%;
-	height: 400px;
+  overflow: hidden;
+}
+
+
+.CDB-Size-large {
+    font-size: 10px!important;
+    line-height: 22px!important;
 }

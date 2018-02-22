@@ -68,13 +68,16 @@ class Demo extends Component{
 						<Area />
 						<div className="carto-graphics">
 							<Carto />
-							<div className="graphics">
-								<div className="graphics_1">
-									<Income />
-									<Salestime />
-								</div>
-								<Services />
+							{/* <div className="graphics"> */}
+							{/* <div className="graphics_1"> */}
+							<div className="income-sales">
+
+								<Income />
+								<Salestime />
 							</div>
+							{/* </div> */}
+							<Services />
+							{/* </div> */}
 						</div>
 
 						</div>
