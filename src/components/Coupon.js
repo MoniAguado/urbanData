@@ -267,6 +267,9 @@ class Coupon extends React.Component {
 								</textarea>
 							</div>
 							<p className="text__conditions">Al hacer click en el botón estás aceptando nuestras <a href="#">Condiciones legales</a> y la <a href="#">Política de Privacidad</a></p>
+							<div className="input__submit">
+								<button className="button button--submit">ENVIAR</button>
+							</div>
 							<div className="checkboxes">
 								<div className="input__container input__checkbox">
 									<input type="checkbox" name="checkbox" id="checkbox1"/>
@@ -280,9 +283,6 @@ class Coupon extends React.Component {
 									<input type="checkbox" name="checkbox" id="checkbox3"/>
 									<label htmlFor="checkbox3" >Le pondremos en contacto con entidades que puedan asesorarle en la toma de decisiones inmobiliarias, salvo que se oponga marcando esta casilla.</label>
 								</div>
-							</div>
-							<div className="input__submit">
-								<button className="button button--submit">ENVIAR</button>
 							</div>
 							<button type="button" className="button button--close" onClick={this.props.onRequestClose}>X</button>
 						</div>

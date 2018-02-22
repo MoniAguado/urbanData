@@ -1,17 +1,14 @@
 .salesTime{
 	margin-top: 20px;
-background-color: $color-superlightGrey;
+  //background-color: $color-superlightGrey;
 	padding: 19px;
-	width: 68%;
 	box-sizing: border-box;
-	overflow:hidden;
-	text-align: left;
+
 		@media all and (max-width: 1000px) {
-			width: 100%;
+			// width: 100%;
 		}
 }
 .salestime__container{
-display: flex;
 flex-direction: column;
 text-align: center;
 }
@@ -20,7 +17,6 @@ text-align: center;
 	text-align: left;
 }
 .salestime__text{
-	// padding: 10px;
 	font-size: 11px;
 	text-align: left;
 }
@@ -29,7 +25,6 @@ text-align: center;
 	display: flex;
 	flex-direction: row;
 	padding:10px 0;
-	background-color: $color-superlightGrey;
 }
 .salestime__data{
 	background-color: inherit;
@@ -39,8 +34,4 @@ text-align: center;
 .salestime__data--title{
 	margin-bottom: 5px;
 	margin-right: 20px;
-}
-.salestime__data--numbers{
-	display: flex;
-
 }

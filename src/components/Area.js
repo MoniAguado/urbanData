@@ -73,11 +73,13 @@ class Area extends Component {
 
 		return (
 			<div className="area">
-				<ReactHighcharts config = {config}></ReactHighcharts>
-				{/* <Test
-					getChartMun = {this.state.priceMun}
-					getChartNeighborhood = {this.state.priceNeighborhood}
-				/> */}
+				<div className="area_container">
+					<ReactHighcharts config = {config}></ReactHighcharts>
+					{/* <Test
+						getChartMun = {this.state.priceMun}
+						getChartNeighborhood = {this.state.priceNeighborhood}
+					/> */}
+				</div>
 			</div>
 		);
 	}
