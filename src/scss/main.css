@@ -1065,7 +1065,8 @@ p {
 
 .income-sales {
   grid-column: 3 / 6;
-  grid-row: 1 /2; }
+  grid-row: 1 /2;
+  background: white; }
 
 .services {
   grid-column: 3 / 6;
