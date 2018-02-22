@@ -5,7 +5,7 @@ import Income from './Income';
 import Salestime from './Salestime';
 import Services from './Services';
 
-import logoapi from './../images/REDapi.png';
+// import logoapi from './../images/REDapi.png';
 
 class Demo extends Component{
 

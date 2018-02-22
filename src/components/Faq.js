@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bullet from './../images/check.png';
+// import bullet from './../images/check.png';
 class Faq extends Component{
 
 
@@ -46,7 +46,7 @@ class Faq extends Component{
 									<p className="faq__list--answer-text">Con una ubicación es suficiente. Sin embargo, cuanto más información envíes más precisa y exahustiva será la repuesta. Por ejemplo, si incluyes la superficie de las viviendas por las que preguntas te damos más grado de detalle.</p>
 								</div>
 							</li>
-							
+
 						</ul>
 					</div>
 				</div>

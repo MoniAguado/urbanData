@@ -13,7 +13,6 @@ class Header extends Component {
 			isMin: false
 		};
 		this.scrolls$ = null;
-
 	}
 
 	componentDidMount() {
