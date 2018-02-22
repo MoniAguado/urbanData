@@ -1,7 +1,6 @@
 .homeIncome{
 	box-sizing: border-box;
 	overflow:hidden;
-	width: 42%;
 		@media all and (max-width: 1000px) {
 			width: 100%;
 		}
@@ -9,7 +8,7 @@
 
 .income_container{
 	display: flex;
-	background-color: $color-lightGrey;
+	//background-color: $color-lightGrey;
 	padding: 20px;
 	margin-top: 20px;
 	justify-content: space-between;
