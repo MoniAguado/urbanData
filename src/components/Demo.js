@@ -70,8 +70,11 @@ class Demo extends Component{
 							<Carto />
 							{/* <div className="graphics"> */}
 							{/* <div className="graphics_1"> */}
-							<Income />
-							<Salestime />
+							<div className="income-sales">
+
+								<Income />
+								<Salestime />
+							</div>
 							{/* </div> */}
 							<Services />
 							{/* </div> */}
