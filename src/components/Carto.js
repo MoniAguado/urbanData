@@ -17,7 +17,7 @@ class Carto extends Component {
 		.then(json => console.log(json));
 	}
 
-// 	cartoMap(lat, lon) {
+// 	function mapa(lat, lon) {
 //   // create leaflet map
 //   var map = L.map('map', {
 //     zoomControl: false,
