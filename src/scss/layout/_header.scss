@@ -1,29 +1,4 @@
 .header{
-
-	// background-image: url('../images/skyfull3.jpg');
-	// background-size: 100%;
-	// background-position: center 0;
-	// background-repeat: no-repeat;
-	// @media all and (min-width: 1025px) and (max-width: 1200px){
-	// 	background-position: 0 0;
-	// 	background-size: 100%;
-	// 	background-image: url('../images/skyfull2.jpg');
-	// 	}
-	// @media all and (min-width: 801px) and (max-width: 1024px){
-	// 	background-position: 0 -400px;
-	// 	background-size: 100%;
-	// 	background-image: url('../images/skyfull_mobile.jpg');
-	// 	}
-	// @media all and (min-width: 620px) and (max-width: 800px){
-	// 	background-position: 0 -200px;
-	// 	background-size: 100%;
-	// 	background-image: url('../images/skyfull_mobile.jpg');
-	// 	}
-	// @media all and (max-width: 619px){
-	// 	background-position: 0 0;
-	// 	background-image: url('../images/skyfull_mobile.jpg');
-	// 	background-size: cover;
-	// }
 	position: fixed;
 	display: flex;
 	align-items: center;
@@ -137,7 +112,6 @@
 		background-color: #000;
 		text-align: right;
 		right: 0;
-
 	}
 }
 .nav__item {
@@ -148,14 +122,12 @@
 	}
 }
 .menu--item_desktop {
-	font-family: 'Gotham book';
+	font-family: 'Gotham bold';
 	cursor: pointer;
 	padding: 15px 25px;
 	&.active{
-		color: $color-white;
-		font-family: 'Gotham bold';
+		color: $color-red;
 	}
-
 	@media all and (max-width: 1050px) {
 		width: 100%;
 	}

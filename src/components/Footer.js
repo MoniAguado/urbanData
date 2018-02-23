@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logouda from './../images/udaWhite.png';
 
 class Footer extends Component {
-  render() {
-    return (
+	render() {
+		return (
 			<footer className="footer">
 				<div className="footer__container">
 					<div className="footer__item">
@@ -13,8 +13,8 @@ class Footer extends Component {
 					</div>
 				</div>
 			</footer>
-    );
-  }
+		);
+	}
 }
 
 export default Footer;

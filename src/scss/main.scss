@@ -1,9 +1,6 @@
 @import 'core/fonts';
-@import 'core/functions';
-@import 'core/mixins';
 @import 'core/variables';
 
-@import 'components/area';
 @import 'components/awards';
 @import 'components/buttons';
 @import 'components/carto';
@@ -13,19 +10,15 @@
 @import 'components/cover';
 @import 'components/demo';
 @import 'components/faq';
-@import 'components/forms';
 @import 'components/income';
 @import 'components/indicators';
 @import 'components/info';
-@import 'components/links';
 @import 'components/reports';
 @import 'components/salestime';
 @import 'components/services';
 @import 'components/steps';
 @import 'components/titles';
 @import 'components/typography';
-
-
 
 @import 'layout/footer';
 @import 'layout/grid';

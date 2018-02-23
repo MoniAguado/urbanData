@@ -11,11 +11,9 @@
 		background-position: 75%;
 	}
 }
-
 .indicators__description {
 	padding-top: 60px;
 }
-
 .indicators__description--text{
 	text-align: center;
 	color: $color-red;
@@ -30,7 +28,6 @@
 		font-size: 0.9em;
 	}
 }
-
 .indicators__description--title {
 	color: $color-white;
 }
@@ -68,9 +65,7 @@
 	@media all and (max-width: 619px){
 		width: 300px;
 	}
-
 }
-
 .indicators__list--item-element-title{
 	font-size: 1.5em;
 	padding-left: 0;
@@ -85,7 +80,6 @@
 .indicators__list--item-element-list{
 	list-style-type: none;
 	font-size: 1em;
-
 }
 .indicators__action a{
 	text-decoration: none;
@@ -102,7 +96,6 @@
 	font-family: 'Gotham Bold';
 	text-align: center;
 	font-size: 1.5em;
-
 }
 .indicators__arrow{
 	cursor: pointer;
