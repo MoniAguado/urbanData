@@ -32,7 +32,7 @@ class Area extends React.Component {
 		}
 	return (
 			<div className="area">
-				<div className="area_container">
+				<div className="area__container">
 					<ReactHighcharts config = {config}></ReactHighcharts>
 				</div>
 			</div>
