@@ -128,7 +128,7 @@ class Demo extends Component{
 							<button type="button" className="button button--search" onClick={this.getinputValue}>BUSCAR</button>
 						</div>
 
-						<Area municipe={this.state.priceMun} neighborhood={this.state.priceNeighborhood}/>
+						<Area city={this.state.priceMun} neighborhood={this.state.priceNeighborhood}/>
 						<div className="carto-graphics">
 							<Carto />
 							<div className="income-sales">

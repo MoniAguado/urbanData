@@ -20,7 +20,7 @@ class Area extends React.Component {
 		 },
 		  series: [{
 				name: 'Municipio',
-	      data: this.props.municipe,
+	      data: this.props.city,
 				color: "#ca1c24",
 				marker: { symbol: 'circle' }
 	    },{
