@@ -1,4 +1,4 @@
-//Sección informes
+//Reports section
 .reports__description{
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr ;
@@ -44,7 +44,7 @@
 }
 
 
-//Sección Demo
+//Demo section
 .carto-graphics{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -68,25 +68,7 @@
 	grid-row: 1 /2 ;
 	background: white;
 }
-// .homeIncome{
-// 	grid-column: 3 / 4;
-// 	grid-row: 1 / 2;
-// }
-//
-// .salesTime{
-// 	grid-column: 4 / 6;
-// 	grid-row: 1/ 2;
-// }
 .services{
 	grid-column: 3 / 6;
 	grid-row: 2 / 4;
 }
-
-// .transport_graphic{
-// 	grid-column: 3 / 6;
-// 	grid-row: 2 / 4;
-// }
-// .education_graphic{
-// 	grid-column: 3 / 6;
-// 	grid-row: 4 / 6;
-// }
