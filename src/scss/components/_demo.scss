@@ -10,34 +10,9 @@
 	padding-left: 10px;
 }
 
-.demo{
-	background-color: lavender;
-}
-.demo__container {
-	margin: 30px;
-	padding-top: 40px;
-}
-
 .demo__text {
 	font-size: 15px;
 	margin-top: 20px;
-}
-
-.demo__form {
-  margin-top: 10px;
-}
-
-.demo__input{
-	font-size: 20px;
-	width: 280px;
-	margin: 20px 20px 20px 0;
-	border: 1px solid #070d1f;
-	padding: 2px 9px;
-	@media all and (max-width: 619px){
-			width: 260px;
-			margin-bottom: 10px;
-			font-size: 1em
- 	}
 }
 
 .demo{
@@ -48,14 +23,6 @@
 	padding-top: 40px;
 }
 
-.demo__text {
-	font-size: 15px;
-	margin-top: 20px;
-}
-
-.demo__form {
-  margin-top: 10px;
-}
 
 .demo__input{
 	font-size: 20px;
@@ -66,8 +33,13 @@
 	@media all and (max-width: 619px){
 			width: 260px;
 			margin-bottom: 10px;
-			font-size: 1em
+			font-size: 1em;
  	}
+}
+.demo__search {
+	display: flex;
+	width: 100%;
+	margin-bottom: 30px;
 }
 
 .incomes-sales{
@@ -81,15 +53,12 @@
 	margin-top: 10px;
 	@media all and(max-width: 828px){
 			width: 100%;
+	}
 }
-
+.fa.fa-map-marker {
+  color: #e53935;
+	padding-right: 15px;
 }
-
-// .graphics{
-// 	display: flex;
-// 	margin-left: 10px;
-// 	flex-direction: column;
-// }
-// .graphics_1{
-// 	display: flex;
-// }
+#addressInput {
+	width: 100%;
+}

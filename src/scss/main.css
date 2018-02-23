@@ -454,19 +454,16 @@ textarea {
   align-self: flex-end;
   padding-left: 10px; }
 
+.demo__text {
+  font-size: 15px;
+  margin-top: 20px; }
+
 .demo {
   background-color: lavender; }
 
 .demo__container {
   margin: 30px;
   padding-top: 40px; }
-
-.demo__text {
-  font-size: 15px;
-  margin-top: 20px; }
-
-.demo__form {
-  margin-top: 10px; }
 
 .demo__input {
   font-size: 20px;
@@ -480,31 +477,10 @@ textarea {
       margin-bottom: 10px;
       font-size: 1em; } }
 
-.demo {
-  background-color: lavender; }
-
-.demo__container {
-  margin: 30px;
-  padding-top: 40px; }
-
-.demo__text {
-  font-size: 15px;
-  margin-top: 20px; }
-
-.demo__form {
-  margin-top: 10px; }
-
-.demo__input {
-  font-size: 20px;
-  width: 280px;
-  margin: 20px 20px 20px 0;
-  border: 1px solid #070d1f;
-  padding: 2px 9px; }
-  @media all and (max-width: 619px) {
-    .demo__input {
-      width: 260px;
-      margin-bottom: 10px;
-      font-size: 1em; } }
+.demo__search {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px; }
 
 .incomes-sales {
   display: flex;
@@ -517,6 +493,13 @@ textarea {
   @media all and (max-width: 828px) {
     .carto-graphics {
       width: 100%; } }
+
+.fa.fa-map-marker {
+  color: #e53935;
+  padding-right: 15px; }
+
+#addressInput {
+  width: 100%; }
 
 .faq__background {
   background-image: url("../images/bcn.png");
@@ -1202,12 +1185,11 @@ p {
       width: 100%; } }
 
 .menu--item_desktop {
-  font-family: 'Gotham book';
+  font-family: 'Gotham bold';
   cursor: pointer;
   padding: 15px 25px; }
   .menu--item_desktop.active {
-    color: #fff;
-    font-family: 'Gotham bold'; }
+    color: #ca1c24; }
   @media all and (max-width: 1050px) {
     .menu--item_desktop {
       width: 100%; } }
