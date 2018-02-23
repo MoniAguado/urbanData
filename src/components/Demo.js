@@ -37,8 +37,9 @@ class Demo extends Component{
 			priceMun: [],
 			priceNeighborhood :[],
 			homeIncomeNeignborhood: '',
-			homeIncomeMun: ''
-
+			homeIncomeMun: '',
+			timeNeighbourhood: '',
+			timeDistrict: ''
     }
     this.handleSelect = this.handleSelect.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -56,7 +57,8 @@ class Demo extends Component{
 	      .then(({lng, lat}) => {
 	        console.log('Geocode Success', { lng, lat })
 	        this.getResultsArea(lng, lat),
-					this.getResultsIncome(lng,lat)
+					this.getResultsIncome(lng,lat),
+					this.getResultsSalesTime(lng, lat)
 	      })
 			}
 
@@ -123,6 +125,30 @@ class Demo extends Component{
 			})
 		}
 
+		getResultsSalesTime(lng, lat){
+			let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=s_t&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3`;
+
+			let headers = new Headers();
+
+			headers.append('Authorization', 'Token ' + data.token);
+
+		fetch(url, {method:'GET',
+			headers: headers
+		})
+			.then(response => response.json())
+			.then(json => {
+				const districtC =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["1"]["s_t"];
+				const neighbourhoodC =
+				json["2017Q3"][this.getKeyNumber(json["2017Q3"],1)]["1"]["s_t"];
+				this.setState({
+					timeNeighbourhood: neighbourhoodC,
+					timeDistrict: districtC
+				})
+				console.log(json);
+				})
+			}
+
+
 	render(){
 		const inputProps = {
       type: 'text',
@@ -161,7 +187,7 @@ class Demo extends Component{
 							<Carto />
 							<div className="income-sales">
 								<Income incomeNeighborhood={this.state.homeIncomeNeignborhood} />
-								<Salestime />
+								<Salestime salesTimeDistrict={this.state.timeDistrict} salesTimeNeighbourhood={this.state.timeNeighbourhood} />
 							</div>
 							<Services />
 						</div>
