@@ -31,9 +31,13 @@ class Demo extends Component{
     super(props);
     this.state = {
       address: '',
+			lng: -3.7009775999999874,
+			lat: 40.4289499,
       geocodeResults: null,
 			priceMun: [],
-			priceNeighborhood :[]
+			priceNeighborhood :[],
+			homeIncomeNeignborhood: '',
+			homeIncomeMun: ''
 
     }
     this.handleSelect = this.handleSelect.bind(this);
@@ -51,7 +55,8 @@ class Demo extends Component{
 	      .then(results => getLatLng(results[0]))
 	      .then(({lng, lat}) => {
 	        console.log('Geocode Success', { lng, lat })
-	        this.getResultsArea(lng, lat)
+	        this.getResultsArea(lng, lat),
+					this.getResultsIncome(lng,lat)
 	      })
 			}
 
@@ -95,6 +100,29 @@ class Demo extends Component{
 			})
 		}
 
+		getResultsIncome(lng, lat) {
+			let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=renthog_06_13_M&operations=null&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,6]}}]}&period_codes=2017Q3`;
+
+			let headers = new Headers();
+			headers.append('Authorization', 'Token ' + data.token);
+
+		fetch(url, {method:'GET',
+			headers: headers
+		})
+		.then(response => response.json())
+		.then(json => {
+			console.log(json);
+			const income =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["renthog_06_13_M"]["0"];
+			// const incomeMun =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],1)]["renthog_06_13_M"]["0"];
+			this.setState({
+				homeIncomeNeignborhood: income,
+				// homeIncomeMun: incomeMun
+			})
+			console.log(this.state.homeIncomeNeignborhood);
+			// console.log(this.state.homeIncomeMun);
+			})
+		}
+
 	render(){
 		const inputProps = {
       type: 'text',
@@ -132,7 +160,7 @@ class Demo extends Component{
 						<div className="carto-graphics">
 							<Carto />
 							<div className="income-sales">
-								<Income />
+								<Income incomeNeighborhood={this.state.homeIncomeNeignborhood} />
 								<Salestime />
 							</div>
 							<Services />
