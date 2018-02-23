@@ -5,10 +5,8 @@
 			width: 100%;
 		}
 }
-
-.income_container{
+.income__container{
 	display: flex;
-	//background-color: $color-lightGrey;
 	padding: 20px;
 	margin-top: 20px;
 	justify-content: space-between;
@@ -16,7 +14,6 @@
 	margin-right: 10px;
 	text-align: left;
 	}
-
 .income_graphic_container{
 	display: flex;
 }
@@ -41,7 +38,6 @@
 	z-index: 0;
 	left: -0.35em;
 }
-
 .income_graphic{
 	background-color: $color-white;
 	width: 0.5em;
@@ -50,7 +46,6 @@
 	position: relative;
 	z-index: 1;
 }
-
 .income_subgraphic{
 	width: 0.5em;
 height: 75%;
@@ -60,5 +55,4 @@ left: 0px;
 background-color: rgb(91, 201, 182);
 border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
-
 }

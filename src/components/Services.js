@@ -167,10 +167,10 @@ render() {
 
 	return (
 		<div className="services">
-			<div className="services_title">
+			<div className="services__title">
 				<h3>Servicios</h3>
 			</div>
-			<div className="services_container">
+			<div className="services__container">
 				<div className="transport_graphic">
 					<ReactHighcharts config = {config} ></ReactHighcharts>
 				</div>
