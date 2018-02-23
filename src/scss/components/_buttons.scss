@@ -80,3 +80,14 @@
 	height: 50px;
 	width: 250px;
 }
+
+.button--share{
+	background: $color-darkBlue;
+	font-size: 14px;
+	padding: 0;
+	padding: 8px 17px;
+	outline: none;
+	color: $color-white;
+	border: 1px solid $color-white;
+	float: right;
+}

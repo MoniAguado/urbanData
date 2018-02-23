@@ -162,6 +162,16 @@
   height: 50px;
   width: 250px; }
 
+.button--share {
+  background: #070d1e;
+  font-size: 14px;
+  padding: 0;
+  padding: 8px 17px;
+  outline: none;
+  color: #fff;
+  border: 1px solid #fff;
+  float: right; }
+
 .carto {
   position: relative;
   margin-top: 20px;
@@ -174,7 +184,7 @@
 
 .share_map {
   width: 100%;
-  background: red;
+  background: #fff;
   padding: 11px;
   position: absolute;
   bottom: -1px; }
