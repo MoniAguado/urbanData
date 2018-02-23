@@ -39,7 +39,11 @@ class Demo extends Component{
 			homeIncomeNeignborhood: '',
 			homeIncomeMun: '',
 			timeNeighbourhood: '',
-			timeDistrict: ''
+			timeDistrict: '',
+			key_schools: '',
+			key_daycare: '',
+			key_parking: '',
+			key_transport: ''
     }
     this.handleSelect = this.handleSelect.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -58,7 +62,8 @@ class Demo extends Component{
 	        console.log('Geocode Success', { lng, lat })
 	        this.getResultsArea(lng, lat),
 					this.getResultsIncome(lng,lat),
-					this.getResultsSalesTime(lng, lat)
+					this.getResultsSalesTime(lng, lat),
+					this.getResultsServices(lng, lat)
 	      })
 			}
 
@@ -148,6 +153,35 @@ class Demo extends Component{
 				})
 			}
 
+			getResultsServices(lng, lat){
+				let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=PA_EDU_C,PA_EDU_G,PA_P,PA_TP&operations=null&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,6]}}]}&period_codes=2017Q3`;
+
+				let headers = new Headers();
+				headers.append('Authorization', 'Token ' + data.token);
+				fetch(url, {method:'GET',
+				headers: headers
+			})
+			.then(response => response.json())
+			.then(json => {
+				console.log(json);
+				const schools =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_EDU_C"];
+				const daycare =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_EDU_G"];
+				const parkings =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_P"];
+				const transport =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_TP"];
+
+				this.setState({
+					key_schools: schools,
+					key_daycare: daycare,
+					key_parking: parkings,
+					key_transport: transport
+				})
+				console.log(`colegios ${this.state.key_schools}`);
+				console.log(`guarderias ${this.state.key_daycare}`);
+				console.log(`parkings ${this.state.key_parking}`);
+				console.log(`transporte ${this.state.key_transport}`);
+			})
+		}
+
 
 	render(){
 		const inputProps = {
@@ -189,7 +223,7 @@ class Demo extends Component{
 								<Income incomeNeighborhood={this.state.homeIncomeNeignborhood} />
 								<Salestime salesTimeDistrict={this.state.timeDistrict} salesTimeNeighbourhood={this.state.timeNeighbourhood} />
 							</div>
-							<Services />
+							<Services servicesSchools={this.state.key_schools} servicesDaycare={this.state.key_daycare} servicesParkings={this.state.key_parking} servicesTransport={this.state.key_transport}/>
 						</div>
 					</div>
 				</div>
