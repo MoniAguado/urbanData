@@ -456,7 +456,8 @@ textarea {
 
 .demo__text {
   font-size: 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .demo {
   background-color: lavender; }
@@ -500,6 +501,18 @@ textarea {
 
 #addressInput {
   width: 100%; }
+
+#PlacesAutocomplete__autocomplete-container {
+  z-index: 1000;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #555555;
+  width: 100%; }
+
+#PlacesAutocomplete__root {
+  width: 500px;
+  margin-right: 10px; }
 
 .faq__background {
   background-image: url("../images/bcn.png");
