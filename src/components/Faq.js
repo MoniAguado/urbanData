@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import bullet from './../images/check.png';
 class Faq extends Component{
 
 
