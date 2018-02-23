@@ -40,20 +40,9 @@ class Income extends Component {
 				<div className="homeIncome">
 					<div className="income__container">
 						<div className="show_income">
-							<h4 className="show_income_title">Renta media por hogar</h4>
+							<h3 className="graphic__title">Renta media por hogar</h3>
 							<span className="income_value">{this.props.incomeNeighborhood.toLocaleString()}  €/año</span>
 						</div>
-						{/* <div className="income_graphic_container">
-							<div className="income_graphic_group">
-							<div className="income_graphic_1">
-							<div className="income_graphic_text_bar"></div>
-							<div className="income_graphic">
-							<div className="income_subgraphic"></div>
-							</div>
-							</div>
-							</div>
-							<span>Media ciudad</span>
-						</div> */}
 					</div>
 				</div>
 		);

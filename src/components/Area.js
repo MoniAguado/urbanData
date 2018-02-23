@@ -12,6 +12,12 @@ class Area extends React.Component {
 				gridLineWidth: 1,
 				gridLineColor: "#eff2f7"
 		  },
+			yAxis: {
+			 title: {
+					 text: '€/m²'
+			 }
+	 },
+
 			legend: {
 				 align: 'right',
 				 verticalAlign: 'top',
@@ -33,11 +39,16 @@ class Area extends React.Component {
 	return (
 			<div className="area">
 				<div className="area__container">
+					<h3 className="graphic__title area_title">Precios medios de la zona (€/m²)</h3>
 					<ReactHighcharts config = {config}></ReactHighcharts>
 				</div>
 			</div>
 		);
 	}
 }
+
+// Area.defaultProps ={
+//
+// }
 
 export default Area;

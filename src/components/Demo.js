@@ -63,7 +63,7 @@ class Demo extends Component{
 	        this.getResultsArea(lng, lat),
 					this.getResultsIncome(lng,lat),
 					this.getResultsSalesTime(lng, lat),
-					this.getResultsServices(lng, lat)
+					this.getResultsServices(lng,lat)
 	      })
 			}
 
@@ -182,14 +182,13 @@ class Demo extends Component{
 			})
 		}
 
-
 	render(){
 		const inputProps = {
       type: 'text',
       value: this.state.address,
       onChange: this.handleChange,
-      autoFocus: true,
-      placeholder: 'Calle Sagasta 5, Madrid',
+      autoFocus: false,
+      placeholder: 'Calle Almagro, 22  Madrid',
       name: 'Demo__input',
       id: 'addressInput',
 			className: 'demo__input controls',
@@ -202,7 +201,7 @@ class Demo extends Component{
 					<span className="demo__span--logo">
 						<h2 className="demo__title">HAZ UNA PRUEBA</h2>
 					</span>
-					<h3 className="demo__text">Introduce una dirección y prueba ejemplos de visualización de nuestras APIs.</h3>
+					<p className="demo__text">Introduce una dirección y prueba ejemplos de visualización de nuestras APIs.</p>
 					<div className="demo__form">
 						<div className="demo__search">
 							<PlacesAutocomplete

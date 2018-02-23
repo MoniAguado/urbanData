@@ -51,7 +51,7 @@ render() {
 		xAxis: {
 			gridLineWidth: 1,
       gridLineColor: "#eff2f7",
-			categories: ['transporte'],
+			categories: ['Transporte'],
 			title: {
 				text: null
 			}
@@ -63,7 +63,7 @@ render() {
           align: 'high',
 					text: '%',
           offset: 0,
-          text: 'Evolución',
+          text: '',
           rotation: 0,
           y: -20
         },
@@ -114,17 +114,26 @@ render() {
 		credits: {enabled: false},
 
 		xAxis: {
+			gridLineWidth: 1,
+      gridLineColor: "#eff2f7",
 			categories: ['Educación'],
 			title: {
 				text: null
 			}
 		},
 		yAxis: {
+			gridLineWidth: 1,
+      gridLineColor: "#eff2f7",
+      title: {
+          align: 'high',
+					text: '%',
+          offset: 0,
+          text: '',
+          rotation: 90,
+          y: -20
+        },
 			min: 0,
-			title: {
-				text: '%',
-				align: 'high'
-			},
+			max:100,
 			labels: {
 				overflow: 'justify'
 			}
@@ -143,7 +152,7 @@ render() {
 			layout: 'vertical',
 			align: 'right',
 			verticalAlign: 'top',
-			x: -40,
+			x: -80,
 			y: -10,
 			floating: true,
 			borderWidth: 1,
@@ -168,7 +177,7 @@ render() {
 	return (
 		<div className="services">
 			<div className="services__title">
-				<h3>Servicios</h3>
+				<h3 className="graphic__title service_title">Accesibilidad a servicios de la zona</h3>
 			</div>
 			<div className="services__container">
 				<div className="transport_graphic">

@@ -8,14 +8,16 @@
 	margin: 0;
 	align-self: flex-end;
 	padding-left: 10px;
+	margin-bottom: 20px;
 }
 .demo__text {
 	font-size: 15px;
 	margin-top: 20px;
-	margin-bottom:20px;
+	margin-bottom:10px;
+	font-family: "Gotham Book";
 }
 .demo{
-	background-color: lavender;
+	background-color: $color-superlightGrey;
 }
 .demo__container {
 	margin: 30px;
@@ -72,4 +74,67 @@ width: 100%;
 #PlacesAutocomplete__root {
   width: 500px;
   margin-right: 10px;
+}
+
+.area__container {
+    background: white;
+}
+
+h3.graphic__title {
+    padding: 18px 0px;
+    text-align: left;
+}
+h3.area_title, h3.service_title{
+	padding-left: 20px;
+}
+
+.CDB-Size-large {
+    font-size: 16px;
+    padding: 18px 0px;
+    text-align: left;
+}
+
+.CDB-Embed-header h1 {
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    padding: 18px 0px;
+    text-align: left;
+    font-weight: bold;
+}
+
+rect.highcharts-legend-box {
+    width: 150px!important;
+}
+
+
+
+.CDB-Dashboard-menuActions {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    position: absolute;
+    top: 80px;
+    right: 18px;
+    left: 72px;
+    width: 304px;
+    opacity: 0;
+		display: none!important;
+	@media (max-width: 759px){
+	  opacity: 1;
+    filter: alpha(opacity=100);
+    position: static;
+    width: auto;
+		display: none!important;
+	}
 }
