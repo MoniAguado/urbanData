@@ -1,10 +1,10 @@
-
 .cover{
 	height:80vh;
 	@media all and (max-width: 619px){
 		height: 50vh;
 	}
 }
+
 .cover__background {
 	background-image: url('../images/skyfull3.jpg');
 	background-position: center 0;
@@ -34,10 +34,12 @@
     height: 50vh;
 	}
 }
+
 .cover__photo {
 	height: 0;
 	width: 0;
 }
+
 .title-block {
 	position: absolute;
 	top: 140px;
@@ -57,6 +59,7 @@
 		top: 90px;
 		}
 	}
+
 .cover__title {
 	width: 100%;
 	color: $color-white;
@@ -72,6 +75,7 @@
 	margin-bottom: 0;
 	}
 }
+
 .cover__subtitle {
 	color: $color-white;
 	text-align: center;

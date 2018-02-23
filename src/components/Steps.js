@@ -50,8 +50,8 @@ class Steps extends React.Component {
 					</div>
 				</div>
 			</section>
-		)
-	}
-}
+				)
+			}
+		}
 
-export default Steps;
+		export default Steps;

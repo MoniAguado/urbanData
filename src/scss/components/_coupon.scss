@@ -34,10 +34,12 @@
 	width: 85%;
 	max-width: 500px;
 }
+
 .coupon__details {
 	display: flex;
 	flex-direction: column;
 }
+
 .coupon__title {
 	text-align: center;
 	color: $color-red;
@@ -48,6 +50,7 @@
 		font-size: 1.1em;
 	}
 }
+
 .input__container {
 	display: flex;
 	flex-direction: column;
@@ -144,7 +147,6 @@
 }
 .input__prefix{
 	display: flex;
-
 }
 .input__prefix--tel-pref{
 	width: 39%;
