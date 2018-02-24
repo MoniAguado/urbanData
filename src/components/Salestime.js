@@ -35,8 +35,4 @@ class Salestime extends Component {
 	}
 }
 
-// Salestime.defaulProps = {
-// 	salesTimeNeighbourhood: 13,98
-// 	salesTimeDistrict: 16,34
-// }
 export default Salestime;

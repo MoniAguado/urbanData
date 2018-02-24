@@ -12,12 +12,12 @@ class Coupon extends React.Component {
 							<div className="name-surname">
 								<div className="input__container">
 									<label htmlFor="name">Nombre<span className="asterisk">*</span></label>
-									<input type="text" className="name" id="name" name="name"/>
+									<input type="text" className="name" id="name" name="name" required/>
 								</div>
 							</div>
 							<div className="input__container">
 								<label htmlFor="mail">E-mail<span className="asterisk">*</span></label>
-								<input type="email" name="mail" id="mail"/>
+								<input type="email" name="mail" id="mail" required/>
 							</div>
 							<div className="input__container">
 								<label htmlFor="phone">Teléfono<span className="asterisk">*</span></label>
@@ -242,12 +242,12 @@ class Coupon extends React.Component {
 											<option data-countrycode="ZW" value="263">Zimbabwe (+263)</option>
 										</optgroup>
 									</select>
-									<input className="input__prefix--tel" type="tel" name="phone" id="phone"/>
+									<input className="input__prefix--tel" type="tel" name="phone" id="phone" required/>
 								</div>
 							</div>
 							<div className="input__container">
 								<label htmlFor="company">Empresa<span className="asterisk">*</span></label>
-								<input type="text" className="company" id="company" name="company"/>
+								<input type="text" className="company" id="company" name="company" required/>
 							</div>
 							<div className="reason">
 								<div className="input__container">

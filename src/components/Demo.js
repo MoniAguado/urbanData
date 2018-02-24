@@ -9,11 +9,7 @@ import data from '../token.json';
 
 const renderSuggestion = ({ formattedSuggestion }) => (
 	<div className="Demo__suggestion-item">
-
-
 		<i class="fas fa-map-marker-alt Demo__suggestion-icon"></i>
-
-
 		<strong>{formattedSuggestion.mainText}</strong>{' '}
 		<small className="text-muted">{formattedSuggestion.secondaryText}</small>
 	</div>
@@ -48,9 +44,11 @@ class Demo extends Component{
 		this.handleChange = this.handleChange.bind(this);
 		this.getinputValue = this.getinputValue.bind(this);
 	}
+
 	getinputValue() {
 	  this.handleSelect(document.querySelector('#addressInput').value);
   }
+
 	handleSelect(address) {
   	this.setState({
 	    address: address
@@ -66,65 +64,65 @@ class Demo extends Component{
 	     })
 		}
 
-	  handleChange(address) {
-	    this.setState({
-	      address
-	    })
-	  }
+  handleChange(address) {
+    this.setState({
+      address
+    })
+  }
 
-		getKeyNumber(Obj,index) {
-			const item = Object.keys(Obj);
-			return item[index];
-		}
+	getKeyNumber(Obj,index) {
+		const item = Object.keys(Obj);
+		return item[index];
+	}
 
-		getResultsArea(lng, lat) {
-			let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=o_pu&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3,2017Q2,2017Q1,2016Q3,2016Q2,2016Q1,2015Q3,2015Q2,2015Q1`;
+	getResultsArea(lng, lat) {
+		let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=o_pu&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3,2017Q2,2017Q1,2016Q3,2016Q2,2016Q1,2015Q3,2015Q2,2015Q1`;
 
-			let headers = new Headers();
-			headers.append('Authorization', 'Token ' + data.token);
-			fetch(url, { method:'GET',
-			headers: headers
-			})
-			.then(response => response.json())
-			.then(json => {
-				let priceMun = [];
-				let priceNeighborhood = [];
+		let headers = new Headers();
+		headers.append('Authorization', 'Token ' + data.token);
+		fetch(url, { method:'GET',
+		headers: headers
+		})
+		.then(response => response.json())
+		.then(json => {
+			let priceMun = [];
+			let priceNeighborhood = [];
+
+			for (let i=1; i<= 3 ; i++) {
+				 const priceM = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],0)]["1"]["o_pu"];
+				 console.log(priceM);
+				 priceMun.push(priceM);
+				 const priceN = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],1)]["1"]["o_pu"];
+				 console.log(priceN);
+				 priceNeighborhood.push(priceN);
+				};
 
 				for (let i=1; i<= 3 ; i++) {
-					 const priceM = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],0)]["1"]["o_pu"];
+					 const priceM = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],0)]["1"]["o_pu"];
 					 console.log(priceM);
 					 priceMun.push(priceM);
-					 const priceN = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],1)]["1"]["o_pu"];
+					 const priceN = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],1)]["1"]["o_pu"];
 					 console.log(priceN);
 					 priceNeighborhood.push(priceN);
 					};
 
 					for (let i=1; i<= 3 ; i++) {
-						 const priceM = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],0)]["1"]["o_pu"];
+						 const priceM = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],0)]["1"]["o_pu"];
 						 console.log(priceM);
 						 priceMun.push(priceM);
-						 const priceN = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],1)]["1"]["o_pu"];
+						 const priceN = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],1)]["1"]["o_pu"];
 						 console.log(priceN);
 						 priceNeighborhood.push(priceN);
 						};
 
-						for (let i=1; i<= 3 ; i++) {
-							 const priceM = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],0)]["1"]["o_pu"];
-							 console.log(priceM);
-							 priceMun.push(priceM);
-							 const priceN = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],1)]["1"]["o_pu"];
-							 console.log(priceN);
-							 priceNeighborhood.push(priceN);
-							};
-
-					console.log(priceMun);
-					console.log(priceNeighborhood);
-					this.setState({
-					priceNeighborhood : priceNeighborhood,
-					priceMun : priceMun
-				})
+				console.log(priceMun);
+				console.log(priceNeighborhood);
+				this.setState({
+				priceNeighborhood : priceNeighborhood,
+				priceMun : priceMun
 			})
-		}
+		})
+	}
 
 
 
@@ -141,13 +139,10 @@ class Demo extends Component{
 		.then(json => {
 			console.log(json);
 			const income =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["renthog_06_13_M"]["0"];
-
 			this.setState({
 				homeIncomeNeignborhood: income
-
 			})
 			console.log(this.state.homeIncomeNeignborhood);
-
 		})
 	}
 
