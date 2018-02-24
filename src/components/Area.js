@@ -56,8 +56,4 @@ class Area extends React.Component {
 	}
 }
 
-// Area.defaultProps ={
-//
-// }
-
 export default Area;
