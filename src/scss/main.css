@@ -213,11 +213,8 @@
   position: relative;
   margin-top: 20px;
   width: 45%;
-  overflow: hidden; }
-
-.CDB-Size-large {
-  font-size: 10px !important;
-  line-height: 22px !important; }
+  overflow: hidden;
+  background: white; }
 
 .share_map {
   width: 100%;
@@ -647,7 +644,7 @@ rect.highcharts-legend-box {
   top: 80px;
   right: 18px;
   left: 72px;
-  width: 304px;
+  width: 100% !important;
   opacity: 0;
   display: none !important; }
   @media (max-width: 759px) {

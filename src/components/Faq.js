@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
+
 class Faq extends Component{
-
-
 	render(){
-
 		return(
 			<section  id="faqSection" className="faq">
 				<div className="faq__background">

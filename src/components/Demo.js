@@ -54,20 +54,20 @@ class Demo extends Component{
 	    address: address
 	  })
 	  geocodeByAddress(address)
-	    .then(results => getLatLng(results[0]))
-	    .then(({lng, lat}) => {
-	      console.log('Geocode Success', { lng, lat })
-	      this.getResultsArea(lng, lat);
-				this.getResultsIncome(lng,lat);
-				this.getResultsSalesTime(lng, lat);
-				this.getResultsServices(lng,lat);
-	     })
-		}
+	  .then(results => getLatLng(results[0]))
+	  .then(({lng, lat}) => {
+	   	console.log('Geocode Success', { lng, lat })
+	   	this.getResultsArea(lng, lat);
+			this.getResultsIncome(lng,lat);
+			this.getResultsSalesTime(lng, lat);
+			this.getResultsServices(lng,lat);
+	  })
+	}
 
-  handleChange(address) {
-    this.setState({
-      address
-    })
+	handleChange(address) {
+  	this.setState({
+    	address
+  	})
   }
 
 	getKeyNumber(Obj,index) {
@@ -89,42 +89,40 @@ class Demo extends Component{
 			let priceNeighborhood = [];
 
 			for (let i=1; i<= 3 ; i++) {
-				 const priceM = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],0)]["1"]["o_pu"];
-				 console.log(priceM);
-				 priceMun.push(priceM);
-				 const priceN = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],1)]["1"]["o_pu"];
-				 console.log(priceN);
-				 priceNeighborhood.push(priceN);
-				};
+		 		const priceM = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],0)]["1"]["o_pu"];
+				console.log(priceM);
+				priceMun.push(priceM);
+				const priceN = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],1)]["1"]["o_pu"];
+				console.log(priceN);
+				priceNeighborhood.push(priceN);
+			};
 
-				for (let i=1; i<= 3 ; i++) {
-					 const priceM = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],0)]["1"]["o_pu"];
-					 console.log(priceM);
-					 priceMun.push(priceM);
-					 const priceN = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],1)]["1"]["o_pu"];
-					 console.log(priceN);
-					 priceNeighborhood.push(priceN);
-					};
+			for (let i=1; i<= 3 ; i++) {
+			 	const priceM = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],0)]["1"]["o_pu"];
+				console.log(priceM);
+				priceMun.push(priceM);
+				const priceN = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],1)]["1"]["o_pu"];
+				console.log(priceN);
+				priceNeighborhood.push(priceN);
+			};
 
-					for (let i=1; i<= 3 ; i++) {
-						 const priceM = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],0)]["1"]["o_pu"];
-						 console.log(priceM);
-						 priceMun.push(priceM);
-						 const priceN = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],1)]["1"]["o_pu"];
-						 console.log(priceN);
-						 priceNeighborhood.push(priceN);
-						};
+			for (let i=1; i<= 3 ; i++) {
+			 	const priceM = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],0)]["1"]["o_pu"];
+				console.log(priceM);
+				priceMun.push(priceM);
+				const priceN = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],1)]["1"]["o_pu"];
+				console.log(priceN);
+				priceNeighborhood.push(priceN);
+			};
 
-				console.log(priceMun);
-				console.log(priceNeighborhood);
-				this.setState({
+			console.log(priceMun);
+			console.log(priceNeighborhood);
+			this.setState({
 				priceNeighborhood : priceNeighborhood,
 				priceMun : priceMun
 			})
 		})
 	}
-
-
 
 	getResultsIncome(lng, lat) {
 		let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=renthog_06_13_M&operations=null&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,6]}}]}&period_codes=2017Q3`;
@@ -150,7 +148,6 @@ class Demo extends Component{
 		let url = `https://reds.urbandataanalytics.com/urban/api/v1.0/indicators?keys=s_t&operations=1&geo_json={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[${lng},${lat}]},"properties":{"admin_levels":[3,4]}}]}&period_codes=2017Q3`;
 
 		let headers = new Headers();
-
 		headers.append('Authorization', 'Token ' + data.token);
 
 		fetch(url, {method:'GET',
@@ -228,6 +225,7 @@ class Demo extends Component{
 						</div>
 
 						<Area city={this.state.priceMun} neighborhood={this.state.priceNeighborhood}/>
+
 						<div className="carto-graphics">
 							<Carto />
 							<div className="income-sales">
@@ -236,12 +234,12 @@ class Demo extends Component{
 							</div>
 							<Services servicesSchools={this.state.key_schools} servicesDaycare={this.state.key_daycare} servicesParkings={this.state.key_parking} servicesTransport={this.state.key_transport}/>
 						</div>
+
 					</div>
 				</div>
 			</section>
 		);
 	}
 }
-
 
 export default Demo;

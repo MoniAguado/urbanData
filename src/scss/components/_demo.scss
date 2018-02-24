@@ -3,7 +3,6 @@
 	flex-direction: row;
 	justify-content: center;
 }
-
 .demo__title{
 	padding: 0;
 	margin: 0;
@@ -11,23 +10,19 @@
 	padding-left: 10px;
 	margin-bottom: 20px;
 }
-
 .demo__text {
 	font-size: 15px;
 	margin-top: 20px;
 	margin-bottom:10px;
 	font-family: "Gotham Book";
 }
-
 .demo{
 	background-color: $color-superlightGrey;
 }
-
 .demo__container {
 	margin: 30px;
 	padding-top: 40px;
 }
-
 .demo__input{
 	font-size: 20px;
 	width: 280px;
@@ -35,25 +30,22 @@
 	border: 1px solid #070d1f;
 	padding: 2px 9px;
 	@media all and (max-width: 619px){
-			width: 260px;
-			margin-bottom: 10px;
-			font-size: 1em;
+		width: 260px;
+		margin-bottom: 10px;
+		font-size: 1em;
  	}
 }
-
 .demo__search {
 	display: flex;
 	width: 100%;
 	margin-bottom: 30px;
 }
-
 .incomes-sales{
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 	background: white;
 }
-
 .carto-graphics{
 	margin-top: 10px;
 	@media all and(max-width: 828px){
@@ -69,75 +61,66 @@
 	height: 40px;
 	line-height: 40px;
 }
-
 #PlacesAutocomplete__autocomplete-container{
 	z-index: 1000;
 	position: absolute;
-top: 100%;
-background-color: white;
-border: 1px solid rgb(85, 85, 85);
-width: 100%;
+	top: 100%;
+	background-color: white;
+	border: 1px solid rgb(85, 85, 85);
+	width: 100%;
 }
-
 #PlacesAutocomplete__root {
   width: 500px;
   margin-right: 10px;
 }
-
 .area__container {
-    background: white;
+  background: white;
 }
-
 h3.graphic__title {
-    padding: 18px 0px;
-    text-align: left;
+  padding: 18px 0px;
+  text-align: left;
 }
 h3.area_title, h3.service_title{
 	padding-left: 20px;
 }
-
 .CDB-Size-large {
-    font-size: 16px;
-    padding: 18px 0px;
-    text-align: left;
+  font-size: 16px;
+  padding: 18px 0px;
+  text-align: left;
 }
-
 .CDB-Embed-header h1 {
-    max-width: 100%;
-    margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    padding: 18px 0px;
-    text-align: left;
-    font-weight: bold;
+  max-width: 100%;
+  margin: 0;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 18px 0px;
+  text-align: left;
+  font-weight: bold;
 }
 
 rect.highcharts-legend-box {
-    width: 150px!important;
+  width: 150px!important;
 }
-
-
-
 .CDB-Dashboard-menuActions {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    position: absolute;
-    top: 80px;
-    right: 18px;
-    left: 72px;
-    width: 304px;
-    opacity: 0;
-		display: none!important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  position: absolute;
+  top: 80px;
+  right: 18px;
+  left: 72px;
+  width: 100%!important;
+  opacity: 0;
+	display: none!important;
 	@media (max-width: 759px){
 	  opacity: 1;
     filter: alpha(opacity=100);

@@ -3,7 +3,6 @@ import ReactHighcharts from 'react-highcharts';
 
 class Services extends Component {
 	render() {
-
 		const defaultServicesParkings = 75.44;
 		const defaultServicesTransport = 100;
 		const defaultServicesDaycare = 36.77;

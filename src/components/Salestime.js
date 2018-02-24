@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Salestime extends Component {
-
 	render() {
 		const defaultSalesTimeNeighbourhood = 13.98;
 		const defaultSalesTimeDistrict = 16.34;

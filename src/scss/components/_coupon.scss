@@ -7,11 +7,9 @@
 	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.7);
 }
-
 .coupon{
 	display: none;
 }
-
 .coupon--visible{
 	display: block;
 }
@@ -34,12 +32,10 @@
 	width: 85%;
 	max-width: 500px;
 }
-
 .coupon__details {
 	display: flex;
 	flex-direction: column;
 }
-
 .coupon__title {
 	text-align: center;
 	color: $color-red;
@@ -50,7 +46,6 @@
 		font-size: 1.1em;
 	}
 }
-
 .input__container {
 	display: flex;
 	flex-direction: column;
@@ -60,47 +55,45 @@
 		font-size: 14px;
 		margin-bottom: 6px;
 	}
-		@media all and (max-width: 619px) {
-			font-size: 0.9em;
-		}
+	@media all and (max-width: 619px) {
+		font-size: 0.9em;
 	}
-	input,
-	textarea{
-		border: 2px solid $color-darkBlue;
-		font-size: 1em;
-		padding: 5px 10px;
+}
+
+input,
+textarea{
+	border: 2px solid $color-darkBlue;
+	font-size: 1em;
+	padding: 5px 10px;
+	outline: none;
+	@media all and (max-width: 619px) {
+		height: 30px;
+		font-size: 0.75em;
+	}
+}
+select {
+	border: 2px solid $color-darkBlue;
+	font-size: 1em;
+	outline: none;
+	border-radius:inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 5px 10px;
+	position: relative;
+	background: url("../images/arrow_down.svg") no-repeat;
+	background-size: 30px;
+	background-position: 100%, 50%;
+	&:focus {
 		outline: none;
-		@media all and (max-width: 619px) {
-			height: 30px;
-			font-size: 0.75em;
-		}
 	}
-	select {
-		border: 2px solid $color-darkBlue;
-		font-size: 1em;
-		outline: none;
-			border-radius:inherit;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			padding: 5px 10px;
-			position: relative;
-			background: url("../images/arrow_down.svg") no-repeat;
-			background-size: 30px;
-			background-position: 100%, 50%;
-		&:focus {
-			outline: none;
-		}
-
-
-
+}
+textarea {
+	height: 60px;
+	resize: none;
+	@media all and (max-width: 619px) {
+		height: 40px;
 	}
-	textarea {
-		height: 60px;
-		resize: none;
-		@media all and (max-width: 619px) {
-			height: 40px;
-		}
-	}
+}
 
 .input__submit {
 	display: flex;
@@ -115,7 +108,6 @@
 	flex-direction: row;
   position: relative;
 	padding-left: 30px;
-
   label {
     cursor: pointer;
     &:before,
@@ -135,7 +127,6 @@
 			box-sizing: border-box;
     }
   }
-
   input[type="checkbox"] {
 		position: absolute;
 		left:0;
@@ -175,7 +166,6 @@
 	font-size: 0.8em;
 	margin-bottom: 10px;
 }
-
 .checkboxes {
 	min-width: 250px;
   height: 70px;
@@ -183,7 +173,6 @@
 	font-size: 12px;
 	margin: 8px 0;
 }
-
 .input__checkbox {
 	margin-bottom: 3px;
 	label {

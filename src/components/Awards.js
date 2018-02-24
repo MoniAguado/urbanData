@@ -17,8 +17,7 @@ class Awards extends React.Component {
 								<a href="http://www.consultorasinmobiliarias.es/assets/documents/161124_NP%20Entrega%20Premios%20ACI.pdf" className="awards__link" alt="Premios ACI" target="_blank" rel="noopener noreferrer" ><img src={premio1} alt="premio 2" className="awards-img" /></a>
 
 								<a href="https://opendataincubator.eu/category/urbandataanalytics/" className="awards__link last-image" alt="ODINE" target="_blank" rel="noopener noreferrer" ><img src={premio3} alt="premio 3" className="awards-img" /></a>
-
-
+								
 							</div>
 						</div>
 					</div>
