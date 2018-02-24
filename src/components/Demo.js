@@ -90,33 +90,24 @@ class Demo extends Component{
 
 			for (let i=1; i<= 3 ; i++) {
 		 		const priceM = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],0)]["1"]["o_pu"];
-				console.log(priceM);
 				priceMun.push(priceM);
 				const priceN = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],1)]["1"]["o_pu"];
-				console.log(priceN);
 				priceNeighborhood.push(priceN);
 			};
 
 			for (let i=1; i<= 3 ; i++) {
 			 	const priceM = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],0)]["1"]["o_pu"];
-				console.log(priceM);
 				priceMun.push(priceM);
 				const priceN = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],1)]["1"]["o_pu"];
-				console.log(priceN);
 				priceNeighborhood.push(priceN);
 			};
 
 			for (let i=1; i<= 3 ; i++) {
 			 	const priceM = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],0)]["1"]["o_pu"];
-				console.log(priceM);
 				priceMun.push(priceM);
 				const priceN = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],1)]["1"]["o_pu"];
-				console.log(priceN);
 				priceNeighborhood.push(priceN);
 			};
-
-			console.log(priceMun);
-			console.log(priceNeighborhood);
 			this.setState({
 				priceNeighborhood : priceNeighborhood,
 				priceMun : priceMun
@@ -135,12 +126,10 @@ class Demo extends Component{
 		})
 		.then(response => response.json())
 		.then(json => {
-			console.log(json);
 			const income =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["renthog_06_13_M"]["0"];
 			this.setState({
 				homeIncomeNeignborhood: income
 			})
-			console.log(this.state.homeIncomeNeignborhood);
 		})
 	}
 
@@ -162,7 +151,6 @@ class Demo extends Component{
 				timeNeighbourhood: neighbourhoodC,
 				timeDistrict: districtC
 			})
-			console.log(json);
 		})
 	}
 
@@ -175,7 +163,6 @@ class Demo extends Component{
 		})
 		.then(response => response.json())
 		.then(json => {
-			console.log(json);
 			const schools =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_EDU_C"];
 			const daycare =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_EDU_G"];
 			const parkings =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["PA_P"];
@@ -186,10 +173,6 @@ class Demo extends Component{
 				key_parking: parkings,
 				key_transport: transport
 			})
-			console.log(`colegios ${this.state.key_schools}`);
-			console.log(`guarderias ${this.state.key_daycare}`);
-			console.log(`parkings ${this.state.key_parking}`);
-			console.log(`transporte ${this.state.key_transport}`);
 		})
 	}
 
