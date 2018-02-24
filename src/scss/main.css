@@ -544,8 +544,8 @@ textarea {
     .carto-graphics {
       width: 100%; } }
 
-.fas.fa-map-marker-alt {
-  color: #e53935;
+.fa-map-marker-alt {
+  color: #ca1c24;
   padding-right: 15px; }
 
 #addressInput {
