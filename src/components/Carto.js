@@ -20,7 +20,7 @@ class Carto extends Component {
 			<div className="carto__container">
 				<iframe title="Carto" width="100%" height="100%" frameBorder="0" src="https://uda-maps.carto.com/u/udasaas/builder/608abb17-ee1f-4550-a7a4-490e5fe6f4e6/embed" allowFullScreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				<div className="share_map">
-					<button type="button" className="button--share" onClick={this.showIframe}><i class="fas fa-share-alt"></i> COMPARTIR</button>
+					<button type="button" className="button--share" onClick={this.showIframe}><i className="fas fa-share-alt"></i> COMPARTIR</button>
 				</div>
 				<div className={this.state.isOpen? "iframe--visible" : "iframe"}>
 					<div className="popup_iframe">

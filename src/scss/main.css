@@ -587,7 +587,9 @@ textarea {
   padding-right: 15px; }
 
 #addressInput {
-  width: 100%; }
+  width: 100%;
+  height: 40px;
+  line-height: 40px; }
 
 #PlacesAutocomplete__autocomplete-container {
   z-index: 1000;

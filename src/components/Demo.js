@@ -9,7 +9,7 @@ import data from '../token.json';
 
 const renderSuggestion = ({ formattedSuggestion }) => (
 	<div className="Demo__suggestion-item">
-		<i class="fas fa-map-marker-alt Demo__suggestion-icon"></i>
+		<i className="fas fa-map-marker-alt Demo__suggestion-icon"></i>
 		<strong>{formattedSuggestion.mainText}</strong>{' '}
 		<small className="text-muted">{formattedSuggestion.secondaryText}</small>
 	</div>
