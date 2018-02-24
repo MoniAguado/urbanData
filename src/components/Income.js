@@ -15,5 +15,9 @@ class Income extends Component {
 		);
 	}
 }
+// Income.defaulProps = {
+// 	incomeNeighborhood:
+// }
+
 
 export default Income;
