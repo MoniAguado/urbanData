@@ -73,7 +73,11 @@ class Indicators extends Component{
 							<div className="indicators__action" href='#demo'>
 								<p className="indicators__action--text"> Haz una prueba </p>
 								<span >
-									<Link activeClass="active" className="menu--item_desktop" to="demoSection" spy={true} smooth={true} duration={500} offset={-60} ><img className="indicators__arrow" src={down} alt="arrow"/></Link>
+									<Link activeClass="active" className="menu--item_desktop" to="demoSection" spy={true} smooth={true} duration={500} offset={-60} >
+										<div class="indicators__arrow--wrap">
+											<img className="indicators__arrow bounce" src={down} alt="arrow"/>
+										</div>
+									</Link>
 								</span>
 							</div>
 						</div>
