@@ -33,9 +33,8 @@ class Demo extends Component{
 		super(props);
 		this.state = {
 			address: '',
-			geocodeResults: null,
-			priceMun: [],
-			priceNeighborhood :[],
+			priceMun: '',
+			priceNeighborhood :'',
 			homeIncomeNeignborhood: '',
 			homeIncomeMun: '',
 			timeNeighbourhood: '',
@@ -69,10 +68,10 @@ class Demo extends Component{
 
 	  handleChange(address) {
 	    this.setState({
-	      address,
-	      geocodeResults: null
+	      address
 	    })
 	  }
+
 		getKeyNumber(Obj,index) {
 			const item = Object.keys(Obj);
 			return item[index];
@@ -144,11 +143,11 @@ class Demo extends Component{
 			const income =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["renthog_06_13_M"]["0"];
 
 			this.setState({
-				homeIncomeNeignborhood: income,
+				homeIncomeNeignborhood: income
 
 			})
 			console.log(this.state.homeIncomeNeignborhood);
-			
+
 		})
 	}
 
@@ -232,6 +231,7 @@ class Demo extends Component{
 							/>
 							<button type="button" className="button button--search" onClick={this.getinputValue}>BUSCAR</button>
 						</div>
+
 						<Area city={this.state.priceMun} neighborhood={this.state.priceNeighborhood}/>
 						<div className="carto-graphics">
 							<Carto />
@@ -247,5 +247,6 @@ class Demo extends Component{
 		);
 	}
 }
+
 
 export default Demo;

@@ -122,16 +122,19 @@
 .button--search {
   background: #070d1e;
   font-size: 14px;
-  padding: 0;
-  padding: 5px 17px;
-  outline: none;
-  border: 1px solid #fff; }
+  padding: 0 30px;
+  border: 1px solid #fff;
+  height: 40px;
+  line-height: 40px; }
 
+.button--contact
 .button--submit {
-  width: 100px;
-  padding: 7px 10px;
+  width: 100%;
+  padding: 0;
   margin-top: 10px;
-  font-size: 14px; }
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px; }
 
 .button--close {
   position: absolute;
@@ -141,8 +144,10 @@
   top: 15px;
   right: 30px;
   font-weight: bold;
-  width: 5px;
-  padding: 5px 10px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
   font-size: 14px; }
 
 .button--report {
@@ -165,12 +170,14 @@
 .button--share {
   background: #070d1e;
   font-size: 14px;
-  padding: 0;
-  padding: 8px 17px;
   outline: none;
   color: #fff;
   border: 1px solid #fff;
-  float: right; }
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  cursor: pointer; }
 
 .carto {
   position: relative;
@@ -218,18 +225,6 @@
 
 .iframe {
   display: none; }
-
-.highcharts-point.highcharts-color-0 {
-  width: 48px; }
-
-.highcharts-point.highcharts-color-1 {
-  fill: #070d1e;
-  width: 30px; }
-
-.highcharts-text-outline {
-  color: white;
-  fill: white;
-  stroke: none; }
 
 .contact {
   background-color: #eff2f7; }
@@ -307,18 +302,31 @@
       font-size: 0.9em; } }
 
 input,
-textarea, select {
+textarea {
   border: 2px solid #070d1e;
-  font-size: 0.8em;
-  height: 30px;
+  font-size: 1em;
   padding: 5px 10px;
-  border-radius: 3px;
   outline: none; }
   @media all and (max-width: 619px) {
     input,
-    textarea, select {
+    textarea {
       height: 30px;
       font-size: 0.75em; } }
+
+select {
+  border: 2px solid #070d1e;
+  font-size: 1em;
+  outline: none;
+  border-radius: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 5px 10px;
+  position: relative;
+  background: url("../images/arrow_down.svg") no-repeat;
+  background-size: 30px;
+  background-position: 100%, 50%; }
+  select:focus {
+    outline: none; }
 
 textarea {
   height: 60px;
@@ -350,7 +358,6 @@ textarea {
       height: 13px;
       background: #fff;
       border: 2px solid #070d1e;
-      border-radius: 2px;
       cursor: pointer;
       transition: background-color .3s;
       box-sizing: border-box; }
@@ -680,14 +687,14 @@ rect.highcharts-legend-box {
 .income__container {
   display: flex;
   padding: 20px;
-  margin-top: 20px;
   justify-content: space-between;
-  margin-bottom: 8px;
-  margin-right: 10px;
   text-align: left; }
 
 .income_graphic_container {
   display: flex; }
+
+.show_income h3 {
+  padding: 0 0 10px; }
 
 .show_income_title {
   padding-bottom: 10px; }
@@ -942,13 +949,15 @@ rect.highcharts-legend-box {
   align-self: center; }
 
 .salesTime {
-  margin-top: 20px;
   padding: 19px;
   box-sizing: border-box; }
 
 .salestime__container {
   flex-direction: column;
   text-align: center; }
+
+.salestime__container h3 {
+  padding: 0; }
 
 .salestime__title {
   padding-bottom: 10px;
@@ -975,8 +984,9 @@ rect.highcharts-legend-box {
 
 .services {
   background: #fff;
-  padding-top: 30px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
 .services__container {
   margin: 0 20px; }
@@ -989,7 +999,8 @@ rect.highcharts-legend-box {
   margin-top: 50px; }
 
 .services__title {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 25px; }
 
 .steps__container {
   display: flex;
@@ -1159,7 +1170,7 @@ p {
 .carto-graphics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 10px; }
   @media all and (max-width: 828px) {
     .carto-graphics {
@@ -1169,7 +1180,7 @@ p {
 
 .carto__container {
   grid-column: 1 / 3;
-  grid-row: 1 / 4;
+  grid-row: 1 / 5;
   position: relative; }
   @media all and (max-width: 828px) {
     .carto__container {
@@ -1182,7 +1193,7 @@ p {
 
 .services {
   grid-column: 3 / 6;
-  grid-row: 2 / 4; }
+  grid-row: 2 / 5; }
 
 .header {
   position: fixed;

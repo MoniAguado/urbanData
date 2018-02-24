@@ -37,17 +37,20 @@
 .button--search{
 	background: $color-darkBlue;
 	font-size: 14px;
-	padding: 0;
-	padding: 5px 17px;
-	outline: none;
+	padding: 0 30px;
 	border: 1px solid $color-white;
+	height: 40px;
+	line-height: 40px;
 }
 
+.button--contact
 .button--submit{
-	width: 100px;
-	padding: 7px 10px;
+	width: 100%;
+	padding: 0;
 	margin-top: 10px;
 	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
 }
 
 .button--close {
@@ -58,8 +61,10 @@
 	top: 15px;
 	right: 30px;
 	font-weight: bold;
-	width: 5px;
-	padding: 5px 10px;
+	width: 24px;
+	height: 24px;
+	padding:0;
+	line-height: 24px;
 	font-size: 14px;
 }
 
@@ -84,10 +89,13 @@
 .button--share{
 	background: $color-darkBlue;
 	font-size: 14px;
-	padding: 0;
-	padding: 8px 17px;
 	outline: none;
 	color: $color-white;
 	border: 1px solid $color-white;
 	float: right;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	cursor: pointer;
+
 }

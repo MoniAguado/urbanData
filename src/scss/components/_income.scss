@@ -8,14 +8,17 @@
 .income__container{
 	display: flex;
 	padding: 20px;
-	margin-top: 20px;
+
 	justify-content: space-between;
-	margin-bottom: 8px;
-	margin-right: 10px;
+
 	text-align: left;
+
 	}
 .income_graphic_container{
 	display: flex;
+}
+.show_income h3{
+	padding:0 0 10px;
 }
 .show_income_title{
 	padding-bottom: 10px;
@@ -56,3 +59,8 @@ background-color: rgb(91, 201, 182);
 border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 }
+// .income-sales{
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// }

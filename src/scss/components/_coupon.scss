@@ -65,17 +65,34 @@
 		}
 	}
 	input,
-	textarea, select {
+	textarea{
 		border: 2px solid $color-darkBlue;
-		font-size: 0.8em;
-		height: 30px;
+		font-size: 1em;
 		padding: 5px 10px;
-		border-radius: 3px;
 		outline: none;
 		@media all and (max-width: 619px) {
 			height: 30px;
 			font-size: 0.75em;
 		}
+	}
+	select {
+		border: 2px solid $color-darkBlue;
+		font-size: 1em;
+		outline: none;
+			border-radius:inherit;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			padding: 5px 10px;
+			position: relative;
+			background: url("../images/arrow_down.svg") no-repeat;
+			background-size: 30px;
+			background-position: 100%, 50%;
+		&:focus {
+			outline: none;
+		}
+
+
+
 	}
 	textarea {
 		height: 60px;
@@ -113,7 +130,6 @@
       height: 13px;
       background: $color-white;
       border: 2px solid $color-darkBlue;
-      border-radius: 2px;
       cursor: pointer;
       transition: background-color .3s;
 			box-sizing: border-box;

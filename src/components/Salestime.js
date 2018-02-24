@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 class Salestime extends Component {
 
 	render() {
+		const defaultSalesTimeNeighbourhood = 13.98;
+		const defaultSalesTimeDistrict = 16.34;
+
+
 		return (
 			<div className="salesTime">
 				<div className="salestime__container">
@@ -12,22 +16,27 @@ class Salestime extends Component {
 						<div className="salestime__data">
 							<h6 className="salestime__data--title">Barrio</h6>
 
-							<p className="salestime__data--number">	<span className="salestime_value">{this.props.salesTimeNeighbourhood.toLocaleString()}  semanas </span></p>
+							<p className="salestime__data--number">	<span className="salestime_value">{this.props.salesTimeNeighbourhood.toLocaleString() || defaultSalesTimeNeighbourhood}  semanas </span></p>
 
 						</div>
 						<div className="salestime__data">
 							<h6 className="salestime__data--title">Ciudad</h6>
 
-							<p className="salestime__data--number">	<span className="salestime_value">{this.props.salesTimeDistrict.toLocaleString()}  semanas </span></p>
+							<p className="salestime__data--number">	<span className="salestime_value">{this.props.salesTimeDistrict.toLocaleString() || defaultSalesTimeDistrict}  semanas </span></p>
 
 						</div>
 					</div>
 
 					<p className="salestime__text">*Semanas estimadas para la venta de un inmueble en el último trimestre.</p>
-					
+
 				</div>
 			</div>
 		);
 	}
 }
+
+// Salestime.defaulProps = {
+// 	salesTimeNeighbourhood: 13,98
+// 	salesTimeDistrict: 16,34
+// }
 export default Salestime;

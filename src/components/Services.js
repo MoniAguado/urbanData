@@ -3,17 +3,27 @@ import ReactHighcharts from 'react-highcharts';
 
 class Services extends Component {
 	render() {
+
+		const defaultServicesParkings = 75.44;
+		const defaultServicesTransport = 100;
+		const defaultServicesDaycare = 36.77;
+		const defaultServicesSchools = 89.55;
+
+
 		var config = {
-			chart: { type: 'bar', height: "200"},
+			chart: { type: 'bar', height: "250"},
 			title: { text: '' },
 			credits: {enabled: false},
 
 			xAxis: {
 				gridLineWidth: 1,
 	      gridLineColor: "#eff2f7",
-				categories: ['Transporte'],
+				categories: ['Acceso a transportes'],
 				title: {
 					text: null
+				},
+				labels: {
+					rotation: -90
 				}
 			},
 			yAxis: {
@@ -21,20 +31,18 @@ class Services extends Component {
 	      gridLineColor: "#eff2f7",
 	      title: {
 	          align: 'high',
-						text: '%',
-	          offset: 0,
-
-	          rotation: 0,
-	          y: -20
+						text: '%'
 	        },
 				min: 0,
 				max:100,
 				labels: {
-					overflow: 'justify'
+					overflow: 'justify',
 				}
 			},
 			tooltip: {
-				valueSuffix: ' %'
+				useHTML: true,
+				valueSuffix: ' %',
+				headerFormat: ''
 			},
 			plotOptions: {
 				bar: {
@@ -46,9 +54,74 @@ class Services extends Component {
 			legend: {
 				layout: 'vertical',
 				align: 'right',
-				verticalAlign: 'top',
-				x: -40,
-				y:  -10,
+				verticalAlign: 'center',
+				x: -10,
+				y: -10,
+				floating: true,
+				borderWidth: 1,
+				backgroundColor: '#FFFFFF',
+				shadow: true
+			},
+
+
+			series: [{
+				color: "#ca1c24",
+				name: 'Parkings',
+				data: [this.props.servicesParkings || defaultServicesParkings]
+			}, {
+				color: "#2d303b",
+				name: 'Transporte Público',
+				data: [this.props.servicesTransport || defaultServicesTransport]
+			}]
+		}
+
+		var config2 = {
+			chart: { type: 'bar', height: "250"},
+			title: { text: '' },
+			credits: {enabled: false},
+
+			xAxis: {
+				gridLineWidth: 1,
+	      gridLineColor: "#eff2f7",
+				categories: ['Acceso a educación'],
+				title: {
+					text: null
+				},
+				labels: {
+					rotation: -90
+				}
+			},
+			yAxis: {
+				gridLineWidth: 1,
+	      gridLineColor: "#eff2f7",
+	      title: {
+	          align: 'high',
+						text: '%'
+	        },
+				min: 0,
+				max:100,
+				labels: {
+					overflow: 'justify'
+				}
+			},
+			tooltip: {
+				useHTML: true,
+				valueSuffix: ' %',
+				headerFormat: ''
+			},
+			plotOptions: {
+				bar: {
+					dataLabels: {
+						enabled: true
+					}
+				}
+			},
+			legend: {
+				layout: 'vertical',
+				align: 'right',
+				verticalAlign: 'center',
+				x: -50,
+				y: -10,
 				floating: true,
 				borderWidth: 1,
 				backgroundColor: '#FFFFFF',
@@ -57,76 +130,14 @@ class Services extends Component {
 
 			series: [{
 				color: "#ca1c24",
-				name: 'Parkings',
-				data: [this.props.servicesParkings]
-			}, {
+				name: 'Guarderias',
+				data: [this.props.servicesDaycare || defaultServicesDaycare]
+			},
+			{
 				color: "#2d303b",
-				name: 'Transporte Público',
-				data: [this.props.servicesTransport]
+				name: 'Colegios',
+				data: [this.props.servicesSchools || defaultServicesSchools]
 			}]
-		}
-
-		var config2 = {
-			chart: { type: 'bar', height: "200"},
-			title: { text: '' },
-			credits: {enabled: false},
-
-xAxis: {
-			gridLineWidth: 1,
-      gridLineColor: "#eff2f7",
-			categories: ['Educación'],
-			title: {
-				text: null
-			}
-		},
-		yAxis: {
-			gridLineWidth: 1,
-      gridLineColor: "#eff2f7",
-      title: {
-          align: 'high',
-					text: '%',
-          offset: 0,
-          rotation: 90,
-          y: -20
-        },
-			min: 0,
-			max:100,
-			labels: {
-				overflow: 'justify'
-			}
-		},
-		tooltip: {
-			valueSuffix: ' %'
-		},
-		plotOptions: {
-			bar: {
-				dataLabels: {
-					enabled: true
-				}
-			}
-		},
-		legend: {
-			layout: 'vertical',
-			align: 'right',
-			verticalAlign: 'top',
-			x: -80,
-			y: -10,
-			floating: true,
-			borderWidth: 1,
-			backgroundColor: '#FFFFFF',
-			shadow: true
-		},
-
-		series: [{
-			color: "#ca1c24",
-			name: 'Guarderias',
-			data: [this.props.servicesDaycare]
-		},
-		{
-			color: "#2d303b",
-			name: 'Colegios',
-			data: [this.props.servicesSchools]
-		}]
 	}
 
 		return (
