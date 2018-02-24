@@ -199,7 +199,7 @@ class Coupon extends React.Component {
 											<option data-countrycode="SB" value="677">Solomon Islands (+677)</option>
 											<option data-countrycode="SO" value="252">Somalia (+252)</option>
 											<option data-countrycode="ZA" value="27">South Africa (+27)</option>
-											<option data-countrycode="ES" value="34">Spain (+34)</option>
+											<option data-countrycode="ES" value="34" selected>Spain (+34)</option>
 											<option data-countrycode="LK" value="94">Sri Lanka (+94)</option>
 											<option data-countrycode="SH" value="290">St. Helena (+290)</option>
 											<option data-countrycode="KN" value="1869">St. Kitts (+1869)</option>
@@ -266,7 +266,7 @@ class Coupon extends React.Component {
 								<textarea name="request" id="request" placeholder="Utiliza este campo para dar detalles de tu consulta y para ampliar información si fuera necesario">
 								</textarea>
 							</div>
-							<p className="text__conditions">Al hacer click en el botón estás aceptando nuestras <a href="#">Condiciones legales</a> y la <a href="#">Política de Privacidad</a></p>
+							<p className="text__conditions">Al hacer click en el botón estás aceptando nuestras <a href="">Condiciones legales</a> y la <a href="">Política de Privacidad</a></p>
 							<div className="input__submit">
 								<button className="button button--submit">ENVIAR</button>
 							</div>

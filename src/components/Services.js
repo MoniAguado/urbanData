@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
-import data from '../token.json';
 
 class Services extends Component {
 	render() {
@@ -24,7 +23,7 @@ class Services extends Component {
 	          align: 'high',
 						text: '%',
 	          offset: 0,
-	          text: '',
+
 	          rotation: 0,
 	          y: -20
 	        },
@@ -55,9 +54,7 @@ class Services extends Component {
 				backgroundColor: '#FFFFFF',
 				shadow: true
 			},
-			credits: {
-				enabled: false
-			},
+
 			series: [{
 				color: "#ca1c24",
 				name: 'Parkings',
@@ -89,7 +86,6 @@ xAxis: {
           align: 'high',
 					text: '%',
           offset: 0,
-          text: '',
           rotation: 90,
           y: -20
         },
@@ -120,9 +116,7 @@ xAxis: {
 			backgroundColor: '#FFFFFF',
 			shadow: true
 		},
-		credits: {
-			enabled: false
-		},
+
 		series: [{
 			color: "#ca1c24",
 			name: 'Guarderias',

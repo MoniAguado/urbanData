@@ -8,7 +8,7 @@ class Area extends React.Component {
 			title: { text: '' },
 			credits: {enabled: false},
 			xAxis: {
-				categories: ['2017Q1', '2017Q2', '2017Q3'],
+				categories: ['2017Q1', '2017Q2', '2017Q3','2016Q1', '2016Q2', '2016Q3','2015Q1', '2015Q2', '2015Q3'],
 				gridLineWidth: 1,
 				gridLineColor: "#eff2f7"
 		  },

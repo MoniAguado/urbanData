@@ -41,7 +41,7 @@ class Header extends Component {
 
 		menuToggle() {
 			let linksEl = document.querySelector('.nav');
-			if ((linksEl.style.display === 'flex') && (window.innerWidth<1000)) {
+			if ((linksEl.style.display === 'flex') && (window.innerWidth<1050)) {
 				linksEl.style.display = 'none';
 			} else {
 				linksEl.style.display = 'flex';
@@ -56,8 +56,8 @@ class Header extends Component {
 						<div className="header__item-redapi">
 							<img src={logoapi} alt="RED api logo" className="header__image-redapi" />
 						</div>
-						<nav className="header__nav">
-							<i className="fa fa-bars fa-2x" onClick={this.menuToggle}></i>
+						<nav className="header__nav" onClick={this.menuToggle}>
+							<i className="fa fa-bars fa-2x" ></i>
 							<ul className="nav">
 								<li className="nav__item" >
 									<Link activeClass="active" className="menu--item_desktop" to="infoSection" spy={true} smooth={true} duration={500} offset={-60} onClick={this.menuToggle}>¿Qué es?</Link>

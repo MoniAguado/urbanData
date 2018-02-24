@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import data from '../token.json';
 
 class Income extends Component {
 
