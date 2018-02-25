@@ -19,7 +19,4 @@ class Income extends Component {
 	}
 }
 
-
-
-
 export default Income;

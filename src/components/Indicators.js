@@ -31,7 +31,7 @@ class Indicators extends Component {
 								<h4 className="indicators__list--item-element-title">Inmueble</h4>
 								<ul className="indicators__list--item-element-list">
 									<li className="indicators__list--item-element-list-item">
-										Precio estimado</li>
+									Precio estimado</li>
 									<li className="indicators__list--item-element-list-item">Precios máximos y mínimos</li>
 									<li className="indicators__list--item-element-list-item">Precio por estado de conservación</li>
 									<li className="indicators__list--item-element-list-item">Rentabilidad</li>
@@ -45,7 +45,7 @@ class Indicators extends Component {
 								<h4 className="indicators__list--item-element-title">Mercado</h4>
 								<ul className="indicators__list--item-element-list">
 									<li className="indicators__list--item-element-list-item">
-										Precio Medio</li>
+									Precio Medio</li>
 									<li className="indicators__list--item-element-list-item">Oferta y Demanda de inmuebles</li>
 									<li className="indicators__list--item-element-list-item">Margen de negociación</li>
 									<li className="indicators__list--item-element-list-item">Semanas para vender / alquilar</li>
@@ -59,7 +59,7 @@ class Indicators extends Component {
 								<h4 className="indicators__list--item-element-title">Entorno</h4>
 								<ul className="indicators__list--item-element-list">
 									<li className="indicators__list--item-element-list-item">
-										Edad media edificaciones</li>
+									Edad media edificaciones</li>
 									<li className="indicators__list--item-element-list-item">Edad de la población</li>
 									<li className="indicators__list--item-element-list-item">Origen de la población</li>
 									<li className="indicators__list--item-element-list-item">Nivel de estudios</li>
@@ -86,7 +86,7 @@ class Indicators extends Component {
 				</div>
 			</div>
 		</section>);
-	}
-}
+				}
+			}
 
-export default Indicators;
+			export default Indicators;
