@@ -86,7 +86,7 @@ class Indicators extends Component {
 				</div>
 			</div>
 		</section>);
-	}
-}
+				}
+			}
 
-export default Indicators;
+			export default Indicators;

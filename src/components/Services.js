@@ -17,7 +17,7 @@ class Services extends Component {
 
 			xAxis: {
 				gridLineWidth: 1,
-	      gridLineColor: "#eff2f7",
+				gridLineColor: "#eff2f7",
 				categories: ['Acceso a transportes'],
 				title: {
 					text: null
@@ -28,11 +28,11 @@ class Services extends Component {
 			},
 			yAxis: {
 				gridLineWidth: 1,
-	      gridLineColor: "#eff2f7",
-	      title: {
-	          align: 'high',
-						text: '%'
-	        },
+				gridLineColor: "#eff2f7",
+				title: {
+					align: 'high',
+					text: '%'
+				},
 				min: 0,
 				max:100,
 				labels: {
@@ -82,7 +82,7 @@ class Services extends Component {
 
 			xAxis: {
 				gridLineWidth: 1,
-	      gridLineColor: "#eff2f7",
+				gridLineColor: "#eff2f7",
 				categories: ['Acceso a educación'],
 				title: {
 					text: null
@@ -93,11 +93,11 @@ class Services extends Component {
 			},
 			yAxis: {
 				gridLineWidth: 1,
-	      gridLineColor: "#eff2f7",
-	      title: {
-	          align: 'high',
-						text: '%'
-	        },
+				gridLineColor: "#eff2f7",
+				title: {
+					align: 'high',
+					text: '%'
+				},
 				min: 0,
 				max:100,
 				labels: {
@@ -138,7 +138,7 @@ class Services extends Component {
 				name: 'Colegios',
 				data: [this.props.servicesSchools || defaultServicesSchools]
 			}]
-	}
+		}
 
 		return (
 			<div className="services">
