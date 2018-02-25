@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class Carto extends Component {
 	constructor(props) {
 		super(props);
@@ -15,7 +16,6 @@ class Carto extends Component {
 	}
 
 	render() {
-
 		return (
 			<div className="carto__container">
 				<iframe title="Carto" width="100%" height="100%" frameBorder="0" src="https://uda-maps.carto.com/u/udasaas/builder/608abb17-ee1f-4550-a7a4-490e5fe6f4e6/embed" allowFullScreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>

@@ -20,8 +20,8 @@ class Info extends React.Component {
 					</div>
 				</div>
 			</section>
-			);
-		}
+		);
 	}
+}
 
-	export default Info;
+export default Info;

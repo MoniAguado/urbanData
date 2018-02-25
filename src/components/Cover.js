@@ -11,7 +11,7 @@ class Cover extends React.Component{
 					</div>
 				</div>
 			</section>
-		)
+		);
 	}
 }
 

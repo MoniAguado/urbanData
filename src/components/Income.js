@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 
 class Income extends Component {
-
-
 	render() {
-		const defaultIncomeValue = 48408;
+		const defaultIncomeValue = 48.408;
 
 		return (
 			<div className="homeIncome">

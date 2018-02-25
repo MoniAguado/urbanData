@@ -88,12 +88,14 @@ class Area extends React.Component {
 				}
 			]
 		}
-		return (<div className="area">
-			<div className="area__container">
-				<h3 className="graphic__title area_title">Precios medios de la zona (€/m²)</h3>
-				<ReactHighcharts config={config}></ReactHighcharts>
+		return (
+			<div className="area">
+				<div className="area__container">
+					<h3 className="graphic__title area_title">Precios medios de la zona (€/m²)</h3>
+					<ReactHighcharts config={config}></ReactHighcharts>
+				</div>
 			</div>
-		</div>);
+		);
 	}
 }
 

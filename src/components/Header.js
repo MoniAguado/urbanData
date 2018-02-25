@@ -38,16 +38,14 @@ class Header extends Component {
 			delay: 0,	smooth: 'easeInOutQuart',	offset:	-60})
 		}
 
-
-		menuToggle() {
-			let linksEl = document.querySelector('.nav');
-			if ((linksEl.style.display === 'flex') && (window.innerWidth<1050)) {
+	menuToggle() {
+		let linksEl = document.querySelector('.nav');
+		if ((linksEl.style.display === 'flex') && (window.innerWidth<1050)) {
 				linksEl.style.display = 'none';
-			} else {
+		} else {
 				linksEl.style.display = 'flex';
-			}
-
 		}
+	}
 
 		render() {
 			return (
