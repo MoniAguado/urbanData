@@ -52,7 +52,7 @@ class Header extends Component {
 				<header className={`header ${this.state.isMin ? 'small' : ''}`}>
 					<div className="header__container">
 						<div className="header__item-redapi">
-							<img src={logoapi} alt="RED api logo" className="header__image-redapi" />
+							<Link activeClass="active" className="menu--item_desktop" to="coverSection" spy={true} smooth={true} duration={500} offset={-60} onClick={this.menuToggle}><img src={logoapi} alt="RED api logo" className="header__image-redapi" /></Link>
 						</div>
 						<nav className="header__nav" onClick={this.menuToggle}>
 							<i className="fa fa-bars fa-2x" ></i>
