@@ -15,7 +15,7 @@ class Area extends React.Component {
 			3526.48
 		];
 
-		const defaultNeightborhood = [
+		const defaultNeighbourhood = [
 			2678.47,
 			2715.41,
 			2853.88,
@@ -80,7 +80,7 @@ class Area extends React.Component {
 					}
 				}, {
 					name: 'Barrio',
-					data: this.props.neighborhood || defaultNeightborhood,
+					data: this.props.neighborhood || defaultNeighbourhood,
 					color: "#2d303b",
 					marker: {
 						symbol: 'circle'

@@ -27,8 +27,8 @@ class Demo extends Component{
 		this.state = {
 			address: '',
 			priceMun: '',
-			priceNeighborhood :'',
-			homeIncomeNeignborhood: '',
+			priceNeighbourhood :'',
+			homeIncomeNeighbourhood: '',
 			homeIncomeMun: '',
 			timeNeighbourhood: '',
 			timeDistrict: '',
@@ -77,27 +77,27 @@ class Demo extends Component{
 	.then(response => response.json())
 	.then(json => {
 		let priceMun = [];
-		let priceNeighborhood = [];
+		let priceNeighbourhood = [];
 		for (let i=1; i<= 3 ; i++) {
 			const priceM = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],0)]["1"]["o_pu"];
 			priceMun.push(priceM);
 			const priceN = json["2017Q" + i][this.getKeyNumber(json["2017Q" + i],1)]["1"]["o_pu"];
-			priceNeighborhood.push(priceN);
+			priceNeighbourhood.push(priceN);
 		};
 		for (let i=1; i<= 3 ; i++) {
 			const priceM = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],0)]["1"]["o_pu"];
 			priceMun.push(priceM);
 			const priceN = json["2016Q" + i][this.getKeyNumber(json["2016Q" + i],1)]["1"]["o_pu"];
-			priceNeighborhood.push(priceN);
+			priceNeighbourhood.push(priceN);
 		};
 		for (let i=1; i<= 3 ; i++) {
 			const priceM = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],0)]["1"]["o_pu"];
 			priceMun.push(priceM);
 			const priceN = json["2015Q" + i][this.getKeyNumber(json["2015Q" + i],1)]["1"]["o_pu"];
-			priceNeighborhood.push(priceN);
+			priceNeighbourhood.push(priceN);
 		};
 		this.setState({
-			priceNeighborhood : priceNeighborhood,
+			priceNeighbourhood : priceNeighbourhood,
 			priceMun : priceMun
 		})
 	})
@@ -113,7 +113,7 @@ getResultsIncome(lng, lat) {
 .then(json => {
 	const income =  json["2017Q3"][this.getKeyNumber(json["2017Q3"],0)]["renthog_06_13_M"]["0"];
 	this.setState({
-		homeIncomeNeignborhood: income
+		homeIncomeNeighbourhood: income
 	})
 })
 }
@@ -186,11 +186,11 @@ render(){
 						/>
 						<button type="button" className="button button--search" onClick={this.getinputValue}>BUSCAR</button>
 					</div>
-					<Area city={this.state.priceMun} neighborhood={this.state.priceNeighborhood}/>
+					<Area city={this.state.priceMun} neighborhood={this.state.priceNeighbourhood}/>
 					<div className="carto-graphics">
 						<Carto />
 						<div className="income-sales">
-							<Income incomeNeighborhood={this.state.homeIncomeNeignborhood} />
+							<Income incomeNeighborhood={this.state.homeIncomeNeighbourhood} />
 							<Salestime salesTimeDistrict={this.state.timeDistrict} salesTimeNeighbourhood={this.state.timeNeighbourhood} />
 						</div>
 						<Services servicesSchools={this.state.key_schools} servicesDaycare={this.state.key_daycare} servicesParkings={this.state.key_parking} servicesTransport={this.state.key_transport}/>
